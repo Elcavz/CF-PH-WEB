@@ -1,0 +1,4094 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <script>
+    var gform;
+    gform || (document.addEventListener("gform_main_scripts_loaded", function () {
+      gform.scriptsLoaded = !0
+    }),
+      window.addEventListener("DOMContentLoaded", function () {
+        gform.domLoaded = !0
+      }),
+      gform = {
+        domLoaded: !1,
+        scriptsLoaded: !1,
+        initializeOnLoaded: function (o) {
+          gform.domLoaded && gform.scriptsLoaded ? o() : !gform.domLoaded && gform.scriptsLoaded ? window.addEventListener("DOMContentLoaded", o) : document.addEventListener("gform_main_scripts_loaded", o)
+        },
+        hooks: {
+          action: {},
+          filter: {}
+        },
+        addAction: function (o, n, r, t) {
+          gform.addHook("action", o, n, r, t)
+        },
+        addFilter: function (o, n, r, t) {
+          gform.addHook("filter", o, n, r, t)
+        },
+        doAction: function (o) {
+          gform.doHook("action", o, arguments)
+        },
+        applyFilters: function (o) {
+          return gform.doHook("filter", o, arguments)
+        },
+        removeAction: function (o, n) {
+          gform.removeHook("action", o, n)
+        },
+        removeFilter: function (o, n, r) {
+          gform.removeHook("filter", o, n, r)
+        },
+        addHook: function (o, n, r, t, i) {
+          null == gform.hooks[o][n] && (gform.hooks[o][n] = []);
+          var e = gform.hooks[o][n];
+          null == i && (i = n + "_" + e.length),
+            gform.hooks[o][n].push({
+              tag: i,
+              callable: r,
+              priority: t = null == t ? 10 : t
+            })
+        },
+        doHook: function (n, o, r) {
+          var t;
+          if (r = Array.prototype.slice.call(r, 1),
+            null != gform.hooks[n][o] && ((o = gform.hooks[n][o]).sort(function (o, n) {
+              return o.priority - n.priority
+            }),
+              o.forEach(function (o) {
+                "function" != typeof (t = o.callable) && (t = window[t]),
+                  "action" == n ? t.apply(null, r) : r[0] = t.apply(null, r)
+              })),
+            "filter" == n)
+            return r[0]
+        },
+        removeHook: function (o, n, t, i) {
+          var r;
+          null != gform.hooks[o][n] && (r = (r = gform.hooks[o][n]).filter(function (o, n, r) {
+            return !!(null != i && i != o.tag || null != t && t != o.priority)
+          }),
+            gform.hooks[o][n] = r)
+        }
+      });
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="profile" href="https://gmpg.org/xfn/11">
+  <title>C&F Mfg Phils. Corp.</title>
+  <link rel="preload" data-rocket-preload as="style"
+    href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400%2C%7CTinos%3A400i&#038;display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400%2C%7CTinos%3A400i&#038;display=swap" media="print"
+    onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open%20Sans%3A400%2C%7CTinos%3A400i&#038;display=swap" />
+  </noscript>
+  <link rel="preload" data-rocket-preload as="image" href="https://www.cftooling.ie/wp-content/uploads/Image-1.jpg"
+    fetchpriority="high">
+  <meta name='robots' content='max-image-preview:large' />
+  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+  <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+  <link rel="alternate" type="application/rss+xml" title="C &amp; F Tooling &raquo; Feed"
+    href="https://www.cftooling.ie/feed/" />
+  <link rel="alternate" type="application/rss+xml" title="C &amp; F Tooling &raquo; Comments Feed"
+    href="https://www.cftooling.ie/comments/feed/" />
+  <link rel='stylesheet' id='astra-bb-builder-css'
+    href='https://www.cftooling.ie/wp-content/themes/astra/assets/css/minified/compatibility/page-builder/bb-plugin.min.css?ver=4.8.3'
+    media='all' />
+  <link rel='stylesheet' id='astra-theme-css-css'
+    href='https://www.cftooling.ie/wp-content/themes/astra/assets/css/minified/style.min.css?ver=4.8.3' media='all' />
+  <style id='astra-theme-css-inline-css'>
+    .ast-no-sidebar .entry-content .alignfull {
+      margin-left: calc(-50vw + 50%);
+      margin-right: calc(-50vw + 50%);
+      max-width: 100vw;
+      width: 100vw;
+    }
+
+    .ast-no-sidebar .entry-content .alignwide {
+      margin-left: calc(-41vw + 50%);
+      margin-right: calc(-41vw + 50%);
+      max-width: unset;
+      width: unset;
+    }
+
+    .ast-no-sidebar .entry-content .alignfull .alignfull,
+    .ast-no-sidebar .entry-content .alignfull .alignwide,
+    .ast-no-sidebar .entry-content .alignwide .alignfull,
+    .ast-no-sidebar .entry-content .alignwide .alignwide,
+    .ast-no-sidebar .entry-content .wp-block-column .alignfull,
+    .ast-no-sidebar .entry-content .wp-block-column .alignwide {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .wp-block-gallery,
+    .blocks-gallery-grid {
+      margin: 0;
+    }
+
+    .wp-block-separator {
+      max-width: 100px;
+    }
+
+    .wp-block-separator.is-style-wide,
+    .wp-block-separator.is-style-dots {
+      max-width: none;
+    }
+
+    .entry-content .has-2-columns .wp-block-column:first-child {
+      padding-right: 10px;
+    }
+
+    .entry-content .has-2-columns .wp-block-column:last-child {
+      padding-left: 10px;
+    }
+
+    @media (max-width: 782px) {
+      .entry-content .wp-block-columns .wp-block-column {
+        flex-basis: 100%;
+      }
+
+      .entry-content .has-2-columns .wp-block-column:first-child {
+        padding-right: 0;
+      }
+
+      .entry-content .has-2-columns .wp-block-column:last-child {
+        padding-left: 0;
+      }
+    }
+
+    body .entry-content .wp-block-latest-posts {
+      margin-left: 0;
+    }
+
+    body .entry-content .wp-block-latest-posts li {
+      list-style: none;
+    }
+
+    .ast-no-sidebar .ast-container .entry-content .wp-block-latest-posts {
+      margin-left: 0;
+    }
+
+    .ast-header-break-point .entry-content .alignwide {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .entry-content .blocks-gallery-item img {
+      margin-bottom: auto;
+    }
+
+    .wp-block-pullquote {
+      border-top: 4px solid #555d66;
+      border-bottom: 4px solid #555d66;
+      color: #40464d;
+    }
+
+    :root {
+      --ast-post-nav-space: 0;
+      --ast-container-default-xlg-padding: 6.67em;
+      --ast-container-default-lg-padding: 5.67em;
+      --ast-container-default-slg-padding: 4.34em;
+      --ast-container-default-md-padding: 3.34em;
+      --ast-container-default-sm-padding: 6.67em;
+      --ast-container-default-xs-padding: 2.4em;
+      --ast-container-default-xxs-padding: 1.4em;
+      --ast-code-block-background: #EEEEEE;
+      --ast-comment-inputs-background: #FAFAFA;
+      --ast-normal-container-width: 1200px;
+      --ast-narrow-container-width: 750px;
+      --ast-blog-title-font-weight: normal;
+      --ast-blog-meta-weight: inherit;
+    }
+
+    html {
+      font-size: 93.75%;
+    }
+
+    a,
+    .page-title {
+      color: #de1f26;
+    }
+
+    a:hover,
+    a:focus {
+      color: #606060;
+    }
+
+    body,
+    button,
+    input,
+    select,
+    textarea,
+    .ast-button,
+    .ast-custom-button {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      font-size: 1rem;
+      line-height: var(--ast-body-line-height, 1.65em);
+    }
+
+    blockquote {
+      color: #151515;
+    }
+
+    .site-title {
+      font-size: 35px;
+      font-size: 2.3333333333333rem;
+      display: none;
+    }
+
+    header .custom-logo-link img {
+      max-width: 392px;
+      width: 392px;
+    }
+
+    .astra-logo-svg {
+      width: 392px;
+    }
+
+    .site-header .site-description {
+      font-size: 15px;
+      font-size: 1rem;
+      display: none;
+    }
+
+    .entry-title {
+      font-size: 30px;
+      font-size: 2rem;
+    }
+
+    .archive .ast-article-post .ast-article-inner,
+    .blog .ast-article-post .ast-article-inner,
+    .archive .ast-article-post .ast-article-inner:hover,
+    .blog .ast-article-post .ast-article-inner:hover {
+      overflow: hidden;
+    }
+
+    h1,
+    .entry-content h1,
+    .entry-content h1 a {
+      font-size: 48px;
+      font-size: 3.2rem;
+      line-height: 1.4em;
+    }
+
+    h2,
+    .entry-content h2,
+    .entry-content h2 a {
+      font-size: 42px;
+      font-size: 2.8rem;
+      line-height: 1.3em;
+    }
+
+    h3,
+    .entry-content h3,
+    .entry-content h3 a {
+      font-size: 30px;
+      font-size: 2rem;
+      line-height: 1.3em;
+    }
+
+    h4,
+    .entry-content h4,
+    .entry-content h4 a {
+      font-size: 24px;
+      font-size: 1.6rem;
+      line-height: 1.2em;
+    }
+
+    h5,
+    .entry-content h5,
+    .entry-content h5 a {
+      font-size: 20px;
+      font-size: 1.3333333333333rem;
+      line-height: 1.2em;
+    }
+
+    h6,
+    .entry-content h6,
+    .entry-content h6 a {
+      font-size: 16px;
+      font-size: 1.0666666666667rem;
+      line-height: 1.25em;
+    }
+
+    ::selection {
+      background-color: #de1f26;
+      color: #ffffff;
+    }
+
+    body,
+    h1,
+    .entry-title a,
+    .entry-content h1,
+    .entry-content h1 a,
+    h2,
+    .entry-content h2,
+    .entry-content h2 a,
+    h3,
+    .entry-content h3,
+    .entry-content h3 a,
+    h4,
+    .entry-content h4,
+    .entry-content h4 a,
+    h5,
+    .entry-content h5,
+    .entry-content h5 a,
+    h6,
+    .entry-content h6,
+    .entry-content h6 a {
+      color: #606060;
+    }
+
+    .tagcloud a:hover,
+    .tagcloud a:focus,
+    .tagcloud a.current-item {
+      color: #ffffff;
+      border-color: #de1f26;
+      background-color: #de1f26;
+    }
+
+    input:focus,
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="url"]:focus,
+    input[type="password"]:focus,
+    input[type="reset"]:focus,
+    input[type="search"]:focus,
+    textarea:focus {
+      border-color: #de1f26;
+    }
+
+    input[type="radio"]:checked,
+    input[type=reset],
+    input[type="checkbox"]:checked,
+    input[type="checkbox"]:hover:checked,
+    input[type="checkbox"]:focus:checked,
+    input[type=range]::-webkit-slider-thumb {
+      border-color: #de1f26;
+      background-color: #de1f26;
+      box-shadow: none;
+    }
+
+    .site-footer a:hover+.post-count,
+    .site-footer a:focus+.post-count {
+      background: #de1f26;
+      border-color: #de1f26;
+    }
+
+    .single .nav-links .nav-previous,
+    .single .nav-links .nav-next {
+      color: #de1f26;
+    }
+
+    .entry-meta,
+    .entry-meta * {
+      line-height: 1.45;
+      color: #de1f26;
+    }
+
+    .entry-meta a:not(.ast-button):hover,
+    .entry-meta a:not(.ast-button):hover *,
+    .entry-meta a:not(.ast-button):focus,
+    .entry-meta a:not(.ast-button):focus *,
+    .page-links>.page-link,
+    .page-links .page-link:hover,
+    .post-navigation a:hover {
+      color: #606060;
+    }
+
+    #cat option,
+    .secondary .calendar_wrap thead a,
+    .secondary .calendar_wrap thead a:visited {
+      color: #de1f26;
+    }
+
+    .secondary .calendar_wrap #today,
+    .ast-progress-val span {
+      background: #de1f26;
+    }
+
+    .secondary a:hover+.post-count,
+    .secondary a:focus+.post-count {
+      background: #de1f26;
+      border-color: #de1f26;
+    }
+
+    .calendar_wrap #today>a {
+      color: #ffffff;
+    }
+
+    .page-links .page-link,
+    .single .post-navigation a {
+      color: #de1f26;
+    }
+
+    .ast-search-menu-icon .search-form button.search-submit {
+      padding: 0 4px;
+    }
+
+    .ast-search-menu-icon form.search-form {
+      padding-right: 0;
+    }
+
+    .ast-header-search .ast-search-menu-icon.ast-dropdown-active .search-form,
+    .ast-header-search .ast-search-menu-icon.ast-dropdown-active .search-field:focus {
+      transition: all 0.2s;
+    }
+
+    .search-form input.search-field:focus {
+      outline: none;
+    }
+
+    .widget-title,
+    .widget .wp-block-heading {
+      font-size: 21px;
+      font-size: 1.4rem;
+      color: #606060;
+    }
+
+    .single .ast-author-details .author-title {
+      color: #606060;
+    }
+
+    .ast-search-menu-icon.slide-search a:focus-visible:focus-visible,
+    .astra-search-icon:focus-visible,
+    #close:focus-visible,
+    a:focus-visible,
+    .ast-menu-toggle:focus-visible,
+    .site .skip-link:focus-visible,
+    .wp-block-loginout input:focus-visible,
+    .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper,
+    .ast-header-navigation-arrow:focus-visible,
+    .woocommerce .wc-proceed-to-checkout>.checkout-button:focus-visible,
+    .woocommerce .woocommerce-MyAccount-navigation ul li a:focus-visible,
+    .ast-orders-table__row .ast-orders-table__cell:focus-visible,
+    .woocommerce .woocommerce-order-details .order-again>.button:focus-visible,
+    .woocommerce .woocommerce-message a.button.wc-forward:focus-visible,
+    .woocommerce #minus_qty:focus-visible,
+    .woocommerce #plus_qty:focus-visible,
+    a#ast-apply-coupon:focus-visible,
+    .woocommerce .woocommerce-info a:focus-visible,
+    .woocommerce .astra-shop-summary-wrap a:focus-visible,
+    .woocommerce a.wc-forward:focus-visible,
+    #ast-apply-coupon:focus-visible,
+    .woocommerce-js .woocommerce-mini-cart-item a.remove:focus-visible,
+    #close:focus-visible,
+    .button.search-submit:focus-visible,
+    #search_submit:focus,
+    .normal-search:focus-visible,
+    .ast-header-account-wrap:focus-visible,
+    .woocommerce .ast-on-card-button.ast-quick-view-trigger:focus {
+      outline-style: dotted;
+      outline-color: inherit;
+      outline-width: thin;
+    }
+
+    input:focus,
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="url"]:focus,
+    input[type="password"]:focus,
+    input[type="reset"]:focus,
+    input[type="search"]:focus,
+    input[type="number"]:focus,
+    textarea:focus,
+    .wp-block-search__input:focus,
+    [data-section="section-header-mobile-trigger"] .ast-button-wrap .ast-mobile-menu-trigger-minimal:focus,
+    .ast-mobile-popup-drawer.active .menu-toggle-close:focus,
+    .woocommerce-ordering select.orderby:focus,
+    #ast-scroll-top:focus,
+    #coupon_code:focus,
+    .woocommerce-page #comment:focus,
+    .woocommerce #reviews #respond input#submit:focus,
+    .woocommerce a.add_to_cart_button:focus,
+    .woocommerce .button.single_add_to_cart_button:focus,
+    .woocommerce .woocommerce-cart-form button:focus,
+    .woocommerce .woocommerce-cart-form__cart-item .quantity .qty:focus,
+    .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper .woocommerce-input-wrapper>.input-text:focus,
+    .woocommerce #order_comments:focus,
+    .woocommerce #place_order:focus,
+    .woocommerce .woocommerce-address-fields .woocommerce-address-fields__field-wrapper .woocommerce-input-wrapper>.input-text:focus,
+    .woocommerce .woocommerce-MyAccount-content form button:focus,
+    .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm .woocommerce-form-row .woocommerce-Input.input-text:focus,
+    .woocommerce .ast-woocommerce-container .woocommerce-pagination ul.page-numbers li a:focus,
+    body #content .woocommerce form .form-row .select2-container--default .select2-selection--single:focus,
+    #ast-coupon-code:focus,
+    .woocommerce.woocommerce-js .quantity input[type=number]:focus,
+    .woocommerce-js .woocommerce-mini-cart-item .quantity input[type=number]:focus,
+    .woocommerce p#ast-coupon-trigger:focus {
+      border-style: dotted;
+      border-color: inherit;
+      border-width: thin;
+    }
+
+    input {
+      outline: none;
+    }
+
+    .main-header-menu .menu-link,
+    .ast-header-custom-item a {
+      color: #606060;
+    }
+
+    .main-header-menu .menu-item:hover>.menu-link,
+    .main-header-menu .menu-item:hover>.ast-menu-toggle,
+    .main-header-menu .ast-masthead-custom-menu-items a:hover,
+    .main-header-menu .menu-item.focus>.menu-link,
+    .main-header-menu .menu-item.focus>.ast-menu-toggle,
+    .main-header-menu .current-menu-item>.menu-link,
+    .main-header-menu .current-menu-ancestor>.menu-link,
+    .main-header-menu .current-menu-item>.ast-menu-toggle,
+    .main-header-menu .current-menu-ancestor>.ast-menu-toggle {
+      color: #de1f26;
+    }
+
+    .header-main-layout-3 .ast-main-header-bar-alignment {
+      margin-right: auto;
+    }
+
+    .header-main-layout-2 .site-header-section-left .ast-site-identity {
+      text-align: left;
+    }
+
+    body .ast-oembed-container * {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      left: 0;
+    }
+
+    body .wp-block-embed-pocket-casts .ast-oembed-container * {
+      position: unset;
+    }
+
+    .ast-header-break-point .ast-mobile-menu-buttons-minimal.menu-toggle {
+      background: transparent;
+      color: #de1f26;
+    }
+
+    .ast-header-break-point .ast-mobile-menu-buttons-outline.menu-toggle {
+      background: transparent;
+      border: 1px solid #de1f26;
+      color: #de1f26;
+    }
+
+    .ast-header-break-point .ast-mobile-menu-buttons-fill.menu-toggle {
+      background: #de1f26;
+    }
+
+    .ast-single-post-featured-section+article {
+      margin-top: 2em;
+    }
+
+    .site-content .ast-single-post-featured-section img {
+      width: 100%;
+      overflow: hidden;
+      object-fit: cover;
+    }
+
+    .site>.ast-single-related-posts-container {
+      margin-top: 0;
+    }
+
+    @media (min-width: 769px) {
+      .ast-desktop .ast-container--narrow {
+        max-width: var(--ast-narrow-container-width);
+        margin: 0 auto;
+      }
+    }
+
+    .ast-page-builder-template .hentry {
+      margin: 0;
+    }
+
+    .ast-page-builder-template .site-content>.ast-container {
+      max-width: 100%;
+      padding: 0;
+    }
+
+    .ast-page-builder-template .site .site-content #primary {
+      padding: 0;
+      margin: 0;
+    }
+
+    .ast-page-builder-template .no-results {
+      text-align: center;
+      margin: 4em auto;
+    }
+
+    .ast-page-builder-template .ast-pagination {
+      padding: 2em;
+    }
+
+    .ast-page-builder-template .entry-header.ast-no-title.ast-no-thumbnail {
+      margin-top: 0;
+    }
+
+    .ast-page-builder-template .entry-header.ast-header-without-markup {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .ast-page-builder-template .entry-header.ast-no-title.ast-no-meta {
+      margin-bottom: 0;
+    }
+
+    .ast-page-builder-template.single .post-navigation {
+      padding-bottom: 2em;
+    }
+
+    .ast-page-builder-template.single-post .site-content>.ast-container {
+      max-width: 100%;
+    }
+
+    .ast-page-builder-template .entry-header {
+      margin-top: 4em;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .single.ast-page-builder-template .entry-header {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .ast-page-builder-template .ast-archive-description {
+      margin: 4em auto 0;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .ast-page-builder-template.ast-no-sidebar .entry-content .alignwide {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .footer-adv .footer-adv-overlay {
+      border-top-style: solid;
+      border-top-color: #7a7a7a;
+    }
+
+    .wp-block-buttons.aligncenter {
+      justify-content: center;
+    }
+
+    @media (max-width: 782px) {
+      .entry-content .wp-block-columns .wp-block-column {
+        margin-left: 0px;
+      }
+    }
+
+    .wp-block-image.aligncenter {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .wp-block-table.aligncenter {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.wp-element-button,
+    .ast-outline-button,
+    .wp-block-uagb-buttons-child .uagb-buttons-repeater.ast-outline-button {
+      border-top-width: 2px;
+      border-right-width: 2px;
+      border-bottom-width: 2px;
+      border-left-width: 2px;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: 1em;
+    }
+
+    .wp-block-button .wp-block-button__link.wp-element-button.is-style-outline:not(.has-background),
+    .wp-block-button.is-style-outline>.wp-block-button__link.wp-element-button:not(.has-background),
+    .ast-outline-button {
+      background-color: transparent;
+    }
+
+    .entry-content[data-ast-blocks-layout]>figure {
+      margin-bottom: 1em;
+    }
+
+    @media (max-width: 768px) {
+
+      .ast-separate-container #primary,
+      .ast-separate-container #secondary {
+        padding: 1.5em 0;
+      }
+
+      #primary,
+      #secondary {
+        padding: 1.5em 0;
+        margin: 0;
+      }
+
+      .ast-left-sidebar #content>.ast-container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+      }
+
+      .ast-separate-container .ast-article-post,
+      .ast-separate-container .ast-article-single {
+        padding: 1.5em 2.14em;
+      }
+
+      .ast-author-box img.avatar {
+        margin: 20px 0 0 0;
+      }
+    }
+
+    @media (min-width: 769px) {
+
+      .ast-separate-container.ast-right-sidebar #primary,
+      .ast-separate-container.ast-left-sidebar #primary {
+        border: 0;
+      }
+
+      .search-no-results.ast-separate-container #primary {
+        margin-bottom: 4em;
+      }
+    }
+
+    .menu-toggle,
+    button,
+    .ast-button,
+    .ast-custom-button,
+    .button,
+    input#submit,
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+      color: #ffffff;
+      border-color: #de1f26;
+      background-color: #de1f26;
+      padding-top: 10px;
+      padding-right: 40px;
+      padding-bottom: 10px;
+      padding-left: 40px;
+      font-family: inherit;
+      font-weight: inherit;
+    }
+
+    button:focus,
+    .menu-toggle:hover,
+    button:hover,
+    .ast-button:hover,
+    .ast-custom-button:hover .button:hover,
+    .ast-custom-button:hover,
+    input[type=reset]:hover,
+    input[type=reset]:focus,
+    input#submit:hover,
+    input#submit:focus,
+    input[type="button"]:hover,
+    input[type="button"]:focus,
+    input[type="submit"]:hover,
+    input[type="submit"]:focus {
+      color: #ffffff;
+      background-color: #606060;
+      border-color: #606060;
+    }
+
+    @media (max-width: 768px) {
+      .ast-mobile-header-stack .main-header-bar .ast-search-menu-icon {
+        display: inline-block;
+      }
+
+      .ast-header-break-point.ast-header-custom-item-outside .ast-mobile-header-stack .main-header-bar .ast-search-icon {
+        margin: 0;
+      }
+
+      .ast-comment-avatar-wrap img {
+        max-width: 2.5em;
+      }
+
+      .ast-comment-meta {
+        padding: 0 1.8888em 1.3333em;
+      }
+
+      .ast-separate-container .ast-comment-list li.depth-1 {
+        padding: 1.5em 2.14em;
+      }
+
+      .ast-separate-container .comment-respond {
+        padding: 2em 2.14em;
+      }
+    }
+
+    @media (min-width: 544px) {
+      .ast-container {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 544px) {
+
+      .ast-separate-container .ast-article-post,
+      .ast-separate-container .ast-article-single,
+      .ast-separate-container .comments-title,
+      .ast-separate-container .ast-archive-description {
+        padding: 1.5em 1em;
+      }
+
+      .ast-separate-container #content .ast-container {
+        padding-left: 0.54em;
+        padding-right: 0.54em;
+      }
+
+      .ast-separate-container .ast-comment-list .bypostauthor {
+        padding: .5em;
+      }
+
+      .ast-search-menu-icon.ast-dropdown-active .search-field {
+        width: 170px;
+      }
+
+      .site-branding img,
+      .site-header .site-logo-img .custom-logo-link img {
+        max-width: 100%;
+      }
+    }
+
+    #ast-mobile-header .ast-site-header-cart-li a {
+      pointer-events: none;
+    }
+
+    .ast-no-sidebar.ast-separate-container .entry-content .alignfull {
+      margin-left: -6.67em;
+      margin-right: -6.67em;
+      width: auto;
+    }
+
+    @media (max-width: 1200px) {
+      .ast-no-sidebar.ast-separate-container .entry-content .alignfull {
+        margin-left: -2.4em;
+        margin-right: -2.4em;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .ast-no-sidebar.ast-separate-container .entry-content .alignfull {
+        margin-left: -2.14em;
+        margin-right: -2.14em;
+      }
+    }
+
+    @media (max-width: 544px) {
+      .ast-no-sidebar.ast-separate-container .entry-content .alignfull {
+        margin-left: -1em;
+        margin-right: -1em;
+      }
+    }
+
+    .ast-no-sidebar.ast-separate-container .entry-content .alignwide {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+
+    .ast-no-sidebar.ast-separate-container .entry-content .wp-block-column .alignfull,
+    .ast-no-sidebar.ast-separate-container .entry-content .wp-block-column .alignwide {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .site-title {
+        display: none;
+      }
+
+      .site-header .site-description {
+        display: none;
+      }
+
+      h1,
+      .entry-content h1,
+      .entry-content h1 a {
+        font-size: 30px;
+      }
+
+      h2,
+      .entry-content h2,
+      .entry-content h2 a {
+        font-size: 25px;
+      }
+
+      h3,
+      .entry-content h3,
+      .entry-content h3 a {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 544px) {
+      .site-title {
+        display: none;
+      }
+
+      .site-header .site-description {
+        display: none;
+      }
+
+      h1,
+      .entry-content h1,
+      .entry-content h1 a {
+        font-size: 30px;
+      }
+
+      h2,
+      .entry-content h2,
+      .entry-content h2 a {
+        font-size: 25px;
+      }
+
+      h3,
+      .entry-content h3,
+      .entry-content h3 a {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      html {
+        font-size: 85.5%;
+      }
+    }
+
+    @media (max-width: 544px) {
+      html {
+        font-size: 85.5%;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .ast-container {
+        max-width: 1240px;
+      }
+    }
+
+    @font-face {
+      font-family: "Astra";
+      src: url(https://www.cftooling.ie/wp-content/themes/astra/assets/fonts/astra.woff) format("woff"), url(https://www.cftooling.ie/wp-content/themes/astra/assets/fonts/astra.ttf) format("truetype"), url(https://www.cftooling.ie/wp-content/themes/astra/assets/fonts/astra.svg#astra) format("svg");
+      font-weight: normal;
+      font-style: normal;
+      font-display: fallback;
+    }
+
+    @media (max-width: 921px) {
+      .main-header-bar .main-header-bar-navigation {
+        display: none;
+      }
+    }
+
+    .ast-desktop .main-header-menu.submenu-with-border .sub-menu,
+    .ast-desktop .main-header-menu.submenu-with-border .astra-full-megamenu-wrapper {
+      border-color: #eaeaea;
+    }
+
+    .ast-desktop .main-header-menu.submenu-with-border .sub-menu {
+      border-top-width: 1px;
+      border-right-width: 1px;
+      border-left-width: 1px;
+      border-bottom-width: 1px;
+      border-style: solid;
+    }
+
+    .ast-desktop .main-header-menu.submenu-with-border .sub-menu .sub-menu {
+      top: -1px;
+    }
+
+    .ast-desktop .main-header-menu.submenu-with-border .sub-menu .menu-link,
+    .ast-desktop .main-header-menu.submenu-with-border .children .menu-link {
+      border-bottom-width: 0px;
+      border-style: solid;
+      border-color: #eaeaea;
+    }
+
+    @media (min-width: 769px) {
+
+      .main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu:hover>.sub-menu,
+      .main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu.focus>.sub-menu {
+        margin-left: -2px;
+      }
+    }
+
+    .site .comments-area {
+      padding-bottom: 3em;
+    }
+
+    .ast-header-break-point.ast-header-custom-item-inside .main-header-bar .main-header-bar-navigation .ast-search-icon {
+      display: none;
+    }
+
+    .ast-header-break-point.ast-header-custom-item-inside .main-header-bar .ast-search-menu-icon .search-form {
+      padding: 0;
+      display: block;
+      overflow: hidden;
+    }
+
+    .ast-header-break-point .ast-header-custom-item .widget:last-child {
+      margin-bottom: 1em;
+    }
+
+    .ast-header-custom-item .widget {
+      margin: 0.5em;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .ast-header-custom-item .widget p {
+      margin-bottom: 0;
+    }
+
+    .ast-header-custom-item .widget li {
+      width: auto;
+    }
+
+    .ast-header-custom-item-inside .button-custom-menu-item .menu-link {
+      display: none;
+    }
+
+    .ast-header-custom-item-inside.ast-header-break-point .button-custom-menu-item .ast-custom-button-link {
+      display: none;
+    }
+
+    .ast-header-custom-item-inside.ast-header-break-point .button-custom-menu-item .menu-link {
+      display: block;
+    }
+
+    .ast-header-break-point.ast-header-custom-item-outside .main-header-bar .ast-search-icon {
+      margin-right: 1em;
+    }
+
+    .ast-header-break-point.ast-header-custom-item-inside .main-header-bar .ast-search-menu-icon .search-field,
+    .ast-header-break-point.ast-header-custom-item-inside .main-header-bar .ast-search-menu-icon.ast-inline-search .search-field {
+      width: 100%;
+      padding-right: 5.5em;
+    }
+
+    .ast-header-break-point.ast-header-custom-item-inside .main-header-bar .ast-search-menu-icon .search-submit {
+      display: block;
+      position: absolute;
+      height: 100%;
+      top: 0;
+      right: 0;
+      padding: 0 1em;
+      border-radius: 0;
+    }
+
+    .ast-header-break-point .ast-header-custom-item .ast-masthead-custom-menu-items {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+
+    .ast-header-custom-item-inside.ast-header-break-point .button-custom-menu-item {
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .astra-icon-down_arrow::after {
+      content: "\e900";
+      font-family: Astra;
+    }
+
+    .astra-icon-close::after {
+      content: "\e5cd";
+      font-family: Astra;
+    }
+
+    .astra-icon-drag_handle::after {
+      content: "\e25d";
+      font-family: Astra;
+    }
+
+    .astra-icon-format_align_justify::after {
+      content: "\e235";
+      font-family: Astra;
+    }
+
+    .astra-icon-menu::after {
+      content: "\e5d2";
+      font-family: Astra;
+    }
+
+    .astra-icon-reorder::after {
+      content: "\e8fe";
+      font-family: Astra;
+    }
+
+    .astra-icon-search::after {
+      content: "\e8b6";
+      font-family: Astra;
+    }
+
+    .astra-icon-zoom_in::after {
+      content: "\e56b";
+      font-family: Astra;
+    }
+
+    .astra-icon-check-circle::after {
+      content: "\e901";
+      font-family: Astra;
+    }
+
+    .astra-icon-shopping-cart::after {
+      content: "\f07a";
+      font-family: Astra;
+    }
+
+    .astra-icon-shopping-bag::after {
+      content: "\f290";
+      font-family: Astra;
+    }
+
+    .astra-icon-shopping-basket::after {
+      content: "\f291";
+      font-family: Astra;
+    }
+
+    .astra-icon-circle-o::after {
+      content: "\e903";
+      font-family: Astra;
+    }
+
+    .astra-icon-certificate::after {
+      content: "\e902";
+      font-family: Astra;
+    }
+
+    blockquote {
+      padding: 1.2em;
+    }
+
+    :root .has-ast-global-color-0-color {
+      color: var(--ast-global-color-0);
+    }
+
+    :root .has-ast-global-color-0-background-color {
+      background-color: var(--ast-global-color-0);
+    }
+
+    :root .wp-block-button .has-ast-global-color-0-color {
+      color: var(--ast-global-color-0);
+    }
+
+    :root .wp-block-button .has-ast-global-color-0-background-color {
+      background-color: var(--ast-global-color-0);
+    }
+
+    :root .has-ast-global-color-1-color {
+      color: var(--ast-global-color-1);
+    }
+
+    :root .has-ast-global-color-1-background-color {
+      background-color: var(--ast-global-color-1);
+    }
+
+    :root .wp-block-button .has-ast-global-color-1-color {
+      color: var(--ast-global-color-1);
+    }
+
+    :root .wp-block-button .has-ast-global-color-1-background-color {
+      background-color: var(--ast-global-color-1);
+    }
+
+    :root .has-ast-global-color-2-color {
+      color: var(--ast-global-color-2);
+    }
+
+    :root .has-ast-global-color-2-background-color {
+      background-color: var(--ast-global-color-2);
+    }
+
+    :root .wp-block-button .has-ast-global-color-2-color {
+      color: var(--ast-global-color-2);
+    }
+
+    :root .wp-block-button .has-ast-global-color-2-background-color {
+      background-color: var(--ast-global-color-2);
+    }
+
+    :root .has-ast-global-color-3-color {
+      color: var(--ast-global-color-3);
+    }
+
+    :root .has-ast-global-color-3-background-color {
+      background-color: var(--ast-global-color-3);
+    }
+
+    :root .wp-block-button .has-ast-global-color-3-color {
+      color: var(--ast-global-color-3);
+    }
+
+    :root .wp-block-button .has-ast-global-color-3-background-color {
+      background-color: var(--ast-global-color-3);
+    }
+
+    :root .has-ast-global-color-4-color {
+      color: var(--ast-global-color-4);
+    }
+
+    :root .has-ast-global-color-4-background-color {
+      background-color: var(--ast-global-color-4);
+    }
+
+    :root .wp-block-button .has-ast-global-color-4-color {
+      color: var(--ast-global-color-4);
+    }
+
+    :root .wp-block-button .has-ast-global-color-4-background-color {
+      background-color: var(--ast-global-color-4);
+    }
+
+    :root .has-ast-global-color-5-color {
+      color: var(--ast-global-color-5);
+    }
+
+    :root .has-ast-global-color-5-background-color {
+      background-color: var(--ast-global-color-5);
+    }
+
+    :root .wp-block-button .has-ast-global-color-5-color {
+      color: var(--ast-global-color-5);
+    }
+
+    :root .wp-block-button .has-ast-global-color-5-background-color {
+      background-color: var(--ast-global-color-5);
+    }
+
+    :root .has-ast-global-color-6-color {
+      color: var(--ast-global-color-6);
+    }
+
+    :root .has-ast-global-color-6-background-color {
+      background-color: var(--ast-global-color-6);
+    }
+
+    :root .wp-block-button .has-ast-global-color-6-color {
+      color: var(--ast-global-color-6);
+    }
+
+    :root .wp-block-button .has-ast-global-color-6-background-color {
+      background-color: var(--ast-global-color-6);
+    }
+
+    :root .has-ast-global-color-7-color {
+      color: var(--ast-global-color-7);
+    }
+
+    :root .has-ast-global-color-7-background-color {
+      background-color: var(--ast-global-color-7);
+    }
+
+    :root .wp-block-button .has-ast-global-color-7-color {
+      color: var(--ast-global-color-7);
+    }
+
+    :root .wp-block-button .has-ast-global-color-7-background-color {
+      background-color: var(--ast-global-color-7);
+    }
+
+    :root .has-ast-global-color-8-color {
+      color: var(--ast-global-color-8);
+    }
+
+    :root .has-ast-global-color-8-background-color {
+      background-color: var(--ast-global-color-8);
+    }
+
+    :root .wp-block-button .has-ast-global-color-8-color {
+      color: var(--ast-global-color-8);
+    }
+
+    :root .wp-block-button .has-ast-global-color-8-background-color {
+      background-color: var(--ast-global-color-8);
+    }
+
+    :root {
+      --ast-global-color-0: #0170B9;
+      --ast-global-color-1: #3a3a3a;
+      --ast-global-color-2: #3a3a3a;
+      --ast-global-color-3: #4B4F58;
+      --ast-global-color-4: #F5F5F5;
+      --ast-global-color-5: #FFFFFF;
+      --ast-global-color-6: #E5E5E5;
+      --ast-global-color-7: #424242;
+      --ast-global-color-8: #000000;
+    }
+
+    :root {
+      --ast-border-color: #dddddd;
+    }
+
+    .ast-single-entry-banner {
+      -js-display: flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      background: #eeeeee;
+    }
+
+    .ast-single-entry-banner[data-banner-layout="layout-1"] {
+      max-width: 1200px;
+      background: inherit;
+      padding: 20px 0;
+    }
+
+    .ast-single-entry-banner[data-banner-width-type="custom"] {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .ast-single-entry-banner+.site-content .entry-header {
+      margin-bottom: 0;
+    }
+
+    .site .ast-author-avatar {
+      --ast-author-avatar-size: ;
+    }
+
+    a.ast-underline-text {
+      text-decoration: underline;
+    }
+
+    .ast-container>.ast-terms-link {
+      position: relative;
+      display: block;
+    }
+
+    a.ast-button.ast-badge-tax {
+      padding: 4px 8px;
+      border-radius: 3px;
+      font-size: inherit;
+    }
+
+    header.entry-header>*:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    .ast-archive-entry-banner {
+      -js-display: flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      background: #eeeeee;
+    }
+
+    .ast-archive-entry-banner[data-banner-width-type="custom"] {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .ast-archive-entry-banner[data-banner-layout="layout-1"] {
+      background: inherit;
+      padding: 20px 0;
+      text-align: left;
+    }
+
+    body.archive .ast-archive-description {
+      max-width: 1200px;
+      width: 100%;
+      text-align: left;
+      padding-top: 3em;
+      padding-right: 3em;
+      padding-bottom: 3em;
+      padding-left: 3em;
+    }
+
+    body.archive .ast-archive-description .ast-archive-title,
+    body.archive .ast-archive-description .ast-archive-title * {
+      font-size: 40px;
+      font-size: 2.6666666666667rem;
+      text-transform: capitalize;
+    }
+
+    body.archive .ast-archive-description>*:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      body.archive .ast-archive-description {
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 544px) {
+      body.archive .ast-archive-description {
+        text-align: left;
+      }
+    }
+
+    .ast-breadcrumbs .trail-browse,
+    .ast-breadcrumbs .trail-items,
+    .ast-breadcrumbs .trail-items li {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      border: none;
+      background: inherit;
+      text-indent: 0;
+      text-decoration: none;
+    }
+
+    .ast-breadcrumbs .trail-browse {
+      font-size: inherit;
+      font-style: inherit;
+      font-weight: inherit;
+      color: inherit;
+    }
+
+    .ast-breadcrumbs .trail-items {
+      list-style: none;
+    }
+
+    .trail-items li::after {
+      padding: 0 0.3em;
+      content: "\00bb";
+    }
+
+    .trail-items li:last-of-type::after {
+      display: none;
+    }
+
+    h1,
+    .entry-content h1,
+    h2,
+    .entry-content h2,
+    h3,
+    .entry-content h3,
+    h4,
+    .entry-content h4,
+    h5,
+    .entry-content h5,
+    h6,
+    .entry-content h6 {
+      color: #606060;
+    }
+
+    .fl-row-content-wrap [CLASS*="ast-width-"] {
+      width: 100%;
+    }
+
+    body.fl-theme-builder-header.fl-theme-builder-part.fl-theme-builder-part-part #page {
+      display: block;
+    }
+
+    .ast-header-break-point .main-header-bar {
+      border-bottom-width: 0px;
+    }
+
+    @media (min-width: 769px) {
+      .main-header-bar {
+        border-bottom-width: 0px;
+      }
+    }
+
+    .ast-flex {
+      -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .main-header-bar {
+      padding: 1em 0;
+    }
+
+    .ast-site-identity {
+      padding: 0;
+    }
+
+    .header-main-layout-1 .ast-flex.main-header-container,
+    .header-main-layout-3 .ast-flex.main-header-container {
+      -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .header-main-layout-1 .ast-flex.main-header-container,
+    .header-main-layout-3 .ast-flex.main-header-container {
+      -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .main-header-menu .sub-menu .menu-item.menu-item-has-children>.menu-link:after {
+      position: absolute;
+      right: 1em;
+      top: 50%;
+      transform: translate(0, -50%) rotate(270deg);
+    }
+
+    .ast-header-break-point .main-header-bar .main-header-bar-navigation .page_item_has_children>.ast-menu-toggle::before,
+    .ast-header-break-point .main-header-bar .main-header-bar-navigation .menu-item-has-children>.ast-menu-toggle::before,
+    .ast-mobile-popup-drawer .main-header-bar-navigation .menu-item-has-children>.ast-menu-toggle::before,
+    .ast-header-break-point .ast-mobile-header-wrap .main-header-bar-navigation .menu-item-has-children>.ast-menu-toggle::before {
+      font-weight: bold;
+      content: "\e900";
+      font-family: Astra;
+      text-decoration: inherit;
+      display: inline-block;
+    }
+
+    .ast-header-break-point .main-navigation ul.sub-menu .menu-item .menu-link:before {
+      content: "\e900";
+      font-family: Astra;
+      font-size: .65em;
+      text-decoration: inherit;
+      display: inline-block;
+      transform: translate(0, -2px) rotateZ(270deg);
+      margin-right: 5px;
+    }
+
+    .widget_search .search-form:after {
+      font-family: Astra;
+      font-size: 1.2em;
+      font-weight: normal;
+      content: "\e8b6";
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translate(0, -50%);
+    }
+
+    .astra-search-icon::before {
+      content: "\e8b6";
+      font-family: Astra;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      z-index: 3;
+    }
+
+    .main-header-bar .main-header-bar-navigation .page_item_has_children>a:after,
+    .main-header-bar .main-header-bar-navigation .menu-item-has-children>a:after,
+    .menu-item-has-children .ast-header-navigation-arrow:after {
+      content: "\e900";
+      display: inline-block;
+      font-family: Astra;
+      font-size: .6rem;
+      font-weight: bold;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      margin-left: 10px;
+      line-height: normal;
+    }
+
+    .menu-item-has-children .sub-menu .ast-header-navigation-arrow:after {
+      margin-left: 0;
+    }
+
+    .ast-mobile-popup-drawer .main-header-bar-navigation .ast-submenu-expanded>.ast-menu-toggle::before {
+      transform: rotateX(180deg);
+    }
+
+    .ast-header-break-point .main-header-bar-navigation .menu-item-has-children>.menu-link:after {
+      display: none;
+    }
+
+    @media (min-width: 769px) {
+      .ast-builder-menu .main-navigation>ul>li:last-child a {
+        margin-right: 0;
+      }
+    }
+
+    .ast-separate-container .ast-article-inner {
+      background-color: transparent;
+      background-image: none;
+    }
+
+    .ast-separate-container .ast-article-post {
+      background-color: #ffffff;
+    }
+
+    .ast-separate-container .ast-article-single:not(.ast-related-post),
+    .woocommerce.ast-separate-container .ast-woocommerce-container,
+    .ast-separate-container .error-404,
+    .ast-separate-container .no-results,
+    .single.ast-separate-container.ast-author-meta,
+    .ast-separate-container .related-posts-title-wrapper,
+    .ast-separate-container .comments-count-wrapper,
+    .ast-box-layout.ast-plain-container .site-content,
+    .ast-padded-layout.ast-plain-container .site-content,
+    .ast-separate-container .ast-archive-description,
+    .ast-separate-container .comments-area .comment-respond,
+    .ast-separate-container .comments-area .ast-comment-list li,
+    .ast-separate-container .comments-area .comments-title {
+      background-color: #ffffff;
+    }
+
+    .ast-separate-container.ast-two-container #secondary .widget {
+      background-color: #ffffff;
+    }
+
+    #ast-scroll-top {
+      display: none;
+      position: fixed;
+      text-align: center;
+      cursor: pointer;
+      z-index: 99;
+      width: 2.1em;
+      height: 2.1em;
+      line-height: 2.1;
+      color: #ffffff;
+      border-radius: 2px;
+      content: "";
+      outline: inherit;
+    }
+
+    @media (min-width: 769px) {
+      #ast-scroll-top {
+        content: "769";
+      }
+    }
+
+    #ast-scroll-top .ast-icon.icon-arrow svg {
+      margin-left: 0px;
+      vertical-align: middle;
+      transform: translate(0, -20%) rotate(180deg);
+      width: 1.6em;
+    }
+
+    .ast-scroll-to-top-right {
+      right: 30px;
+      bottom: 30px;
+    }
+
+    .ast-scroll-to-top-left {
+      left: 30px;
+      bottom: 30px;
+    }
+
+    #ast-scroll-top {
+      background-color: #595959;
+      font-size: 30px;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+      border-bottom-left-radius: 100px;
+    }
+
+    #ast-scroll-top:hover {
+      color: #1e1e1e;
+    }
+
+    .ast-scroll-top-icon::before {
+      content: "\e900";
+      font-family: Astra;
+      text-decoration: inherit;
+    }
+
+    .ast-scroll-top-icon {
+      transform: rotate(180deg);
+    }
+
+    @media (max-width: 768px) {
+      #ast-scroll-top .ast-icon.icon-arrow svg {
+        width: 1em;
+      }
+    }
+  </style>
+  <style id='wp-emoji-styles-inline-css'>
+    img.wp-smiley,
+    img.emoji {
+      display: inline !important;
+      border: none !important;
+      box-shadow: none !important;
+      height: 1em !important;
+      width: 1em !important;
+      margin: 0 0.07em !important;
+      vertical-align: -0.1em !important;
+      background: none !important;
+      padding: 0 !important;
+    }
+  </style>
+  <link rel='stylesheet' id='wp-block-library-css'
+    href='https://www.cftooling.ie/wp-includes/css/dist/block-library/style.min.css?ver=6.6.2' media='all' />
+  <style id='global-styles-inline-css'>
+    :root {
+      --wp--preset--aspect-ratio--square: 1;
+      --wp--preset--aspect-ratio--4-3: 4/3;
+      --wp--preset--aspect-ratio--3-4: 3/4;
+      --wp--preset--aspect-ratio--3-2: 3/2;
+      --wp--preset--aspect-ratio--2-3: 2/3;
+      --wp--preset--aspect-ratio--16-9: 16/9;
+      --wp--preset--aspect-ratio--9-16: 9/16;
+      --wp--preset--color--black: #000000;
+      --wp--preset--color--cyan-bluish-gray: #abb8c3;
+      --wp--preset--color--white: #ffffff;
+      --wp--preset--color--pale-pink: #f78da7;
+      --wp--preset--color--vivid-red: #cf2e2e;
+      --wp--preset--color--luminous-vivid-orange: #ff6900;
+      --wp--preset--color--luminous-vivid-amber: #fcb900;
+      --wp--preset--color--light-green-cyan: #7bdcb5;
+      --wp--preset--color--vivid-green-cyan: #00d084;
+      --wp--preset--color--pale-cyan-blue: #8ed1fc;
+      --wp--preset--color--vivid-cyan-blue: #0693e3;
+      --wp--preset--color--vivid-purple: #9b51e0;
+      --wp--preset--color--ast-global-color-0: var(--ast-global-color-0);
+      --wp--preset--color--ast-global-color-1: var(--ast-global-color-1);
+      --wp--preset--color--ast-global-color-2: var(--ast-global-color-2);
+      --wp--preset--color--ast-global-color-3: var(--ast-global-color-3);
+      --wp--preset--color--ast-global-color-4: var(--ast-global-color-4);
+      --wp--preset--color--ast-global-color-5: var(--ast-global-color-5);
+      --wp--preset--color--ast-global-color-6: var(--ast-global-color-6);
+      --wp--preset--color--ast-global-color-7: var(--ast-global-color-7);
+      --wp--preset--color--ast-global-color-8: var(--ast-global-color-8);
+      --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+      --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+      --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+      --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+      --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+      --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+      --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+      --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+      --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+      --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+      --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+      --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+      --wp--preset--font-size--small: 13px;
+      --wp--preset--font-size--medium: 20px;
+      --wp--preset--font-size--large: 36px;
+      --wp--preset--font-size--x-large: 42px;
+      --wp--preset--spacing--20: 0.44rem;
+      --wp--preset--spacing--30: 0.67rem;
+      --wp--preset--spacing--40: 1rem;
+      --wp--preset--spacing--50: 1.5rem;
+      --wp--preset--spacing--60: 2.25rem;
+      --wp--preset--spacing--70: 3.38rem;
+      --wp--preset--spacing--80: 5.06rem;
+      --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+      --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+      --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+      --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+      --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+    }
+
+    :root {
+      --wp--style--global--content-size: var(--wp--custom--ast-content-width-size);
+      --wp--style--global--wide-size: var(--wp--custom--ast-wide-width-size);
+    }
+
+    :where(body) {
+      margin: 0;
+    }
+
+    .wp-site-blocks>.alignleft {
+      float: left;
+      margin-right: 2em;
+    }
+
+    .wp-site-blocks>.alignright {
+      float: right;
+      margin-left: 2em;
+    }
+
+    .wp-site-blocks>.aligncenter {
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    :where(.wp-site-blocks)>* {
+      margin-block-start: 24px;
+      margin-block-end: 0;
+    }
+
+    :where(.wp-site-blocks)> :first-child {
+      margin-block-start: 0;
+    }
+
+    :where(.wp-site-blocks)> :last-child {
+      margin-block-end: 0;
+    }
+
+    :root {
+      --wp--style--block-gap: 24px;
+    }
+
+    :root :where(.is-layout-flow)> :first-child {
+      margin-block-start: 0;
+    }
+
+    :root :where(.is-layout-flow)> :last-child {
+      margin-block-end: 0;
+    }
+
+    :root :where(.is-layout-flow)>* {
+      margin-block-start: 24px;
+      margin-block-end: 0;
+    }
+
+    :root :where(.is-layout-constrained)> :first-child {
+      margin-block-start: 0;
+    }
+
+    :root :where(.is-layout-constrained)> :last-child {
+      margin-block-end: 0;
+    }
+
+    :root :where(.is-layout-constrained)>* {
+      margin-block-start: 24px;
+      margin-block-end: 0;
+    }
+
+    :root :where(.is-layout-flex) {
+      gap: 24px;
+    }
+
+    :root :where(.is-layout-grid) {
+      gap: 24px;
+    }
+
+    .is-layout-flow>.alignleft {
+      float: left;
+      margin-inline-start: 0;
+      margin-inline-end: 2em;
+    }
+
+    .is-layout-flow>.alignright {
+      float: right;
+      margin-inline-start: 2em;
+      margin-inline-end: 0;
+    }
+
+    .is-layout-flow>.aligncenter {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    .is-layout-constrained>.alignleft {
+      float: left;
+      margin-inline-start: 0;
+      margin-inline-end: 2em;
+    }
+
+    .is-layout-constrained>.alignright {
+      float: right;
+      margin-inline-start: 2em;
+      margin-inline-end: 0;
+    }
+
+    .is-layout-constrained>.aligncenter {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+      max-width: var(--wp--style--global--content-size);
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    .is-layout-constrained>.alignwide {
+      max-width: var(--wp--style--global--wide-size);
+    }
+
+    body .is-layout-flex {
+      display: flex;
+    }
+
+    .is-layout-flex {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .is-layout-flex> :is(*, div) {
+      margin: 0;
+    }
+
+    body .is-layout-grid {
+      display: grid;
+    }
+
+    .is-layout-grid> :is(*, div) {
+      margin: 0;
+    }
+
+    body {
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+    }
+
+    a:where(:not(.wp-element-button)) {
+      text-decoration: none;
+    }
+
+    :root :where(.wp-element-button, .wp-block-button__link) {
+      background-color: #32373c;
+      border-width: 0;
+      color: #fff;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      padding: calc(0.667em + 2px) calc(1.333em + 2px);
+      text-decoration: none;
+    }
+
+    .has-black-color {
+      color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-color {
+      color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-color {
+      color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-color {
+      color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-color {
+      color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-color {
+      color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-color {
+      color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-color {
+      color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-color {
+      color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-color {
+      color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-color {
+      color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-color {
+      color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-ast-global-color-0-color {
+      color: var(--wp--preset--color--ast-global-color-0) !important;
+    }
+
+    .has-ast-global-color-1-color {
+      color: var(--wp--preset--color--ast-global-color-1) !important;
+    }
+
+    .has-ast-global-color-2-color {
+      color: var(--wp--preset--color--ast-global-color-2) !important;
+    }
+
+    .has-ast-global-color-3-color {
+      color: var(--wp--preset--color--ast-global-color-3) !important;
+    }
+
+    .has-ast-global-color-4-color {
+      color: var(--wp--preset--color--ast-global-color-4) !important;
+    }
+
+    .has-ast-global-color-5-color {
+      color: var(--wp--preset--color--ast-global-color-5) !important;
+    }
+
+    .has-ast-global-color-6-color {
+      color: var(--wp--preset--color--ast-global-color-6) !important;
+    }
+
+    .has-ast-global-color-7-color {
+      color: var(--wp--preset--color--ast-global-color-7) !important;
+    }
+
+    .has-ast-global-color-8-color {
+      color: var(--wp--preset--color--ast-global-color-8) !important;
+    }
+
+    .has-black-background-color {
+      background-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-background-color {
+      background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-background-color {
+      background-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-background-color {
+      background-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-background-color {
+      background-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-background-color {
+      background-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-background-color {
+      background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-background-color {
+      background-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-ast-global-color-0-background-color {
+      background-color: var(--wp--preset--color--ast-global-color-0) !important;
+    }
+
+    .has-ast-global-color-1-background-color {
+      background-color: var(--wp--preset--color--ast-global-color-1) !important;
+    }
+
+    .has-ast-global-color-2-background-color {
+      background-color: var(--wp--preset--color--ast-global-color-2) !important;
+    }
+
+    .has-ast-global-color-3-background-color {
+      background-color: var(--wp--preset--color--ast-global-color-3) !important;
+    }
+
+    .has-ast-global-color-4-background-color {
+      background-color: var(--wp--preset--color--ast-global-color-4) !important;
+    }
+
+    .has-ast-global-color-5-background-color {
+      background-color: var(--wp--preset--color--ast-global-color-5) !important;
+    }
+
+    .has-ast-global-color-6-background-color {
+      background-color: var(--wp--preset--color--ast-global-color-6) !important;
+    }
+
+    .has-ast-global-color-7-background-color {
+      background-color: var(--wp--preset--color--ast-global-color-7) !important;
+    }
+
+    .has-ast-global-color-8-background-color {
+      background-color: var(--wp--preset--color--ast-global-color-8) !important;
+    }
+
+    .has-black-border-color {
+      border-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-border-color {
+      border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-border-color {
+      border-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-border-color {
+      border-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-border-color {
+      border-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-border-color {
+      border-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-border-color {
+      border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-border-color {
+      border-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-ast-global-color-0-border-color {
+      border-color: var(--wp--preset--color--ast-global-color-0) !important;
+    }
+
+    .has-ast-global-color-1-border-color {
+      border-color: var(--wp--preset--color--ast-global-color-1) !important;
+    }
+
+    .has-ast-global-color-2-border-color {
+      border-color: var(--wp--preset--color--ast-global-color-2) !important;
+    }
+
+    .has-ast-global-color-3-border-color {
+      border-color: var(--wp--preset--color--ast-global-color-3) !important;
+    }
+
+    .has-ast-global-color-4-border-color {
+      border-color: var(--wp--preset--color--ast-global-color-4) !important;
+    }
+
+    .has-ast-global-color-5-border-color {
+      border-color: var(--wp--preset--color--ast-global-color-5) !important;
+    }
+
+    .has-ast-global-color-6-border-color {
+      border-color: var(--wp--preset--color--ast-global-color-6) !important;
+    }
+
+    .has-ast-global-color-7-border-color {
+      border-color: var(--wp--preset--color--ast-global-color-7) !important;
+    }
+
+    .has-ast-global-color-8-border-color {
+      border-color: var(--wp--preset--color--ast-global-color-8) !important;
+    }
+
+    .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+      background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+    }
+
+    .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+      background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+    }
+
+    .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+    }
+
+    .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+      background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+    }
+
+    .has-cool-to-warm-spectrum-gradient-background {
+      background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+    }
+
+    .has-blush-light-purple-gradient-background {
+      background: var(--wp--preset--gradient--blush-light-purple) !important;
+    }
+
+    .has-blush-bordeaux-gradient-background {
+      background: var(--wp--preset--gradient--blush-bordeaux) !important;
+    }
+
+    .has-luminous-dusk-gradient-background {
+      background: var(--wp--preset--gradient--luminous-dusk) !important;
+    }
+
+    .has-pale-ocean-gradient-background {
+      background: var(--wp--preset--gradient--pale-ocean) !important;
+    }
+
+    .has-electric-grass-gradient-background {
+      background: var(--wp--preset--gradient--electric-grass) !important;
+    }
+
+    .has-midnight-gradient-background {
+      background: var(--wp--preset--gradient--midnight) !important;
+    }
+
+    .has-small-font-size {
+      font-size: var(--wp--preset--font-size--small) !important;
+    }
+
+    .has-medium-font-size {
+      font-size: var(--wp--preset--font-size--medium) !important;
+    }
+
+    .has-large-font-size {
+      font-size: var(--wp--preset--font-size--large) !important;
+    }
+
+    .has-x-large-font-size {
+      font-size: var(--wp--preset--font-size--x-large) !important;
+    }
+
+    :root :where(.wp-block-pullquote) {
+      font-size: 1.5em;
+      line-height: 1.6;
+    }
+  </style>
+  <link rel='stylesheet' id='yui3-css'
+    href='https://www.cftooling.ie/wp-content/plugins/bb-plugin/css/yui3.css?ver=2.8.4.3' media='all' />
+  <link rel='stylesheet' id='fl-slideshow-css'
+    href='https://www.cftooling.ie/wp-content/plugins/bb-plugin/css/fl-slideshow.min.css?ver=2.8.4.3' media='all' />
+  <link rel='stylesheet' id='font-awesome-5-css'
+    href='https://www.cftooling.ie/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.4/css/all.min.css?ver=2.8.4.3'
+    media='all' />
+  <link rel='stylesheet' id='pp-owl-carousel-css'
+    href='https://www.cftooling.ie/wp-content/plugins/bbpowerpack/assets/css/owl.carousel.css?ver=2.38.3' media='all' />
+  <link rel='stylesheet' id='pp-owl-carousel-theme-css'
+    href='https://www.cftooling.ie/wp-content/plugins/bbpowerpack/assets/css/owl.theme.css?ver=2.38.3' media='all' />
+  <link rel='stylesheet' id='fl-builder-layout-7-css'
+    href='https://www.cftooling.ie/wp-content/uploads/bb-plugin/cache/7-layout.css?ver=fa2108d06d44c52f9972f2bafd92751b'
+    media='all' />
+  <link rel='stylesheet' id='font-awesome-css'
+    href='https://www.cftooling.ie/wp-content/plugins/bb-plugin/fonts/fontawesome/5.15.4/css/v4-shims.min.css?ver=2.8.4.3'
+    media='all' />
+  <link rel='stylesheet' id='fl-builder-layout-bundle-bf2f94a8659027e0a286c5364ebea273-css'
+    href='https://www.cftooling.ie/wp-content/uploads/bb-plugin/cache/bf2f94a8659027e0a286c5364ebea273-layout-bundle.css?ver=2.8.4.3-1.4.11.2'
+    media='all' />
+  <link rel='stylesheet' id='astra-addon-css-css'
+    href='https://www.cftooling.ie/wp-content/uploads/astra-addon/astra-addon-670407e6caa429-00640148.css?ver=4.8.3'
+    media='all' />
+  <style id='astra-addon-css-inline-css'>
+    h1,
+    .entry-content h1 {
+      color: #606060;
+    }
+
+    h2,
+    .entry-content h2 {
+      color: #606060;
+    }
+
+    h3,
+    .entry-content h3 {
+      color: #de1f26;
+    }
+
+    h4,
+    .entry-content h4 {
+      color: #de1f26;
+    }
+
+    h5,
+    .entry-content h5 {
+      color: #606060;
+    }
+
+    h6,
+    .entry-content h6 {
+      color: #000000;
+    }
+
+    .ast-header-search .ast-search-menu-icon .search-field {
+      border-radius: 2px;
+    }
+
+    .ast-header-search .ast-search-menu-icon .search-submit {
+      border-radius: 2px;
+    }
+
+    .ast-header-search .ast-search-menu-icon .search-form {
+      border-top-width: 1px;
+      border-bottom-width: 1px;
+      border-left-width: 1px;
+      border-right-width: 1px;
+      border-color: #ddd;
+      border-radius: 2px;
+    }
+
+    .site-title,
+    .site-title a {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.23em;
+    }
+
+    #secondary .widget-title,
+    .woocommerce-page #secondary .widget .widget-title {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.23em;
+    }
+
+    .blog .entry-title,
+    .blog .entry-title a,
+    .archive .entry-title,
+    .archive .entry-title a,
+    .search .entry-title,
+    .search .entry-title a {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.23em;
+    }
+
+    .ast-search-box.header-cover #close::before,
+    .ast-search-box.full-screen #close::before {
+      font-family: Astra;
+      content: "\e5cd";
+      display: inline-block;
+      transition: transform .3s ease-in-out;
+    }
+
+    .site-header .ast-inline-search.ast-search-menu-icon .search-field {
+      width: auto;
+    }
+  </style>
+  <link rel='stylesheet' id='martec-theme-css-css'
+    href='https://www.cftooling.ie/wp-content/themes/martec/style.css?ver=1.0.0' media='all' />
+  <link rel='stylesheet' id='pp-animate-css'
+    href='https://www.cftooling.ie/wp-content/plugins/bbpowerpack/assets/css/animate.min.css?ver=3.5.1' media='all' />
+  <!--[if IE]>
+<script src="https://www.cftooling.ie/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=4.8.3" id="astra-flexibility-js"></script>
+<script id="astra-flexibility-js-after">
+flexibility(document.documentElement);</script>
+<![endif]-->
+  <script src="https://www.cftooling.ie/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+  <script src="https://www.cftooling.ie/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
+    id="jquery-migrate-js"></script>
+  <link rel="https://api.w.org/" href="https://www.cftooling.ie/wp-json/" />
+  <link rel="alternate" title="JSON" type="application/json" href="https://www.cftooling.ie/wp-json/wp/v2/pages/7" />
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.cftooling.ie/xmlrpc.php?rsd" />
+  <meta name="generator" content="WordPress 6.6.2" />
+  <link rel="canonical" href="https://www.cftooling.ie/" />
+  <link rel='shortlink' href='https://www.cftooling.ie/' />
+  <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
+    href="https://www.cftooling.ie/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cftooling.ie%2F" />
+  <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
+    href="https://www.cftooling.ie/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cftooling.ie%2F&#038;format=xml" />
+  <script>
+    var bb_powerpack = {
+      search_term: '',
+      version: '2.38.3',
+      getAjaxUrl: function () {
+        return atob('aHR0cHM6Ly93d3cuY2Z0b29saW5nLmllL3dwLWFkbWluL2FkbWluLWFqYXgucGhw');
+      },
+      callback: function () { }
+    };
+  </script>
+  <style>
+    .recentcomments a {
+      display: inline !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  </style>
+  <link rel="icon" href="https://www.cftooling.ie/wp-content/uploads/cropped-CF-icon-32x32.png" sizes="32x32" />
+  <link rel="icon" href="https://www.cftooling.ie/wp-content/uploads/cropped-CF-icon-192x192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="https://www.cftooling.ie/wp-content/uploads/cropped-CF-icon-180x180.png" />
+  <meta name="msapplication-TileImage"
+    content="https://www.cftooling.ie/wp-content/uploads/cropped-CF-icon-270x270.png" />
+  <style id="rocket-lazyrender-inline-css">
+    [data-wpr-lazyrender] {
+      content-visibility: auto;
+    }
+  </style>
+</head>
+
+<body itemtype='https://schema.org/WebPage' itemscope='itemscope'
+  class="home page-template-default page page-id-7 fl-builder fl-builder-2-8-4-3 fl-themer-1-4-11-2 fl-theme-builder-footer fl-theme-builder-footer-footer fl-theme-builder-header fl-theme-builder-header-main-header ast-desktop ast-page-builder-template ast-no-sidebar astra-4.8.3 ast-header-custom-item-inside ast-single-post ast-replace-site-logo-transparent astra-addon-4.8.3">
+  <a class="skip-link screen-reader-text" href="#content" title="Skip to content">Skip to content</a>
+  <div class="hfeed site" id="page">
+    <header class="fl-builder-content fl-builder-content-267 fl-builder-global-templates-locked" data-post-id="267"
+      data-type="header" data-sticky="1" data-sticky-on="" data-sticky-breakpoint="medium" data-shrink="1"
+      data-overlay="0" data-overlay-bg="transparent" data-shrink-image-height="50px" role="banner" itemscope="itemscope"
+      itemtype="http://schema.org/WPHeader">
+      <div
+        class="fl-row fl-row-full-width fl-row-bg-color fl-node-5e908973deeaf fl-row-default-height fl-row-align-center"
+        data-node="5e908973deeaf">
+        <div class="fl-row-content-wrap">
+          <div class="uabb-row-separator uabb-top-row-separator"></div>
+          <div class="fl-row-content fl-row-fixed-width fl-node-content">
+            <div
+              class="fl-col-group fl-node-5e908973deeb6 fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width"
+              data-node="5e908973deeb6">
+              <div class="fl-col fl-node-5e908973deeb9 fl-col-bg-color fl-col-small fl-col-small-custom-width"
+                data-node="5e908973deeb9">
+                <div class="fl-col-content fl-node-content">
+                  <div class="fl-module fl-module-pp-image fl-node-5e9089e393af0" data-node="5e9089e393af0">
+                    <div class="fl-module-content fl-node-content">
+                      <div class="pp-photo-container">
+                        <div class="pp-photo pp-photo-align-center pp-photo-align-responsive-default" itemscope
+                          itemtype="http://schema.org/ImageObject">
+                          <div class="pp-photo-content">
+                            <div class="pp-photo-content-inner">
+                              <a href="https://www.cftooling.ie" target="_self" itemprop="url">
+                                <img loading="lazy" decoding="async" class="pp-photo-img wp-image-549 size-full"
+                                  src="https://www.cftooling.ie/wp-content/uploads/cf-and-icon.png" alt="cf and icon"
+                                  itemprop="image" height="640" width="1996"
+                                  srcset="https://www.cftooling.ie/wp-content/uploads/cf-and-icon.png 1996w, https://www.cftooling.ie/wp-content/uploads/cf-and-icon-300x96.png 300w, https://www.cftooling.ie/wp-content/uploads/cf-and-icon-1024x328.png 1024w, https://www.cftooling.ie/wp-content/uploads/cf-and-icon-768x246.png 768w, https://www.cftooling.ie/wp-content/uploads/cf-and-icon-1536x493.png 1536w"
+                                  sizes="(max-width: 1996px) 100vw, 1996px" title="cf and icon" />
+                                <div class="pp-overlay-bg"></div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fl-col fl-node-5e908973deeba fl-col-bg-color fl-col-small-custom-width"
+                data-node="5e908973deeba">
+                <div class="fl-col-content fl-node-content">
+                  <div class="fl-module fl-module-uabb-advanced-menu fl-node-5e9ebb4d0548e" data-node="5e9ebb4d0548e">
+                    <div class="fl-module-content fl-node-content">
+                      <div class="uabb-creative-menu
+	 uabb-creative-menu-accordion-collapse	uabb-menu-default">
+                        <div class="uabb-creative-menu-mobile-toggle-container">
+                          <div class="uabb-creative-menu-mobile-toggle hamburger" tabindex="0">
+                            <div class="uabb-svg-container">
+                              <svg title="uabb-menu-toggle" version="1.1" class="hamburger-menu"
+                                xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"
+                                viewBox="0 0 50 50">
+                                <rect class="uabb-hamburger-menu-top" width="50" height="10" />
+                                <rect class="uabb-hamburger-menu-middle" y="20" width="50" height="10" />
+                                <rect class="uabb-hamburger-menu-bottom" y="40" width="50" height="10" />
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uabb-clear"></div>
+                        <ul id="menu-main" class="menu uabb-creative-menu-horizontal uabb-toggle-arrows">
+                          <li id="menu-item-22"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item uabb-creative-menu uabb-cm-style">
+                            <a href="https://www.cftooling.ie/">
+                              <span class="menu-item-text">Home</span>
+                            </a>
+                          </li>
+                          <li id="menu-item-205"
+                            class="menu-item menu-item-type-post_type menu-item-object-page uabb-creative-menu uabb-cm-style">
+                            <a href="https://www.cftooling.ie/about-us/">
+                              <span class="menu-item-text">About Us</span>
+                            </a>
+                          </li>
+                          <li id="menu-item-204"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children uabb-has-submenu uabb-creative-menu uabb-cm-style"
+                            aria-haspopup="true">
+                            <div class="uabb-has-submenu-container">
+                              <a aria-expanded="false" href="https://www.cftooling.ie/services/">
+                                <span class="menu-item-text">
+                                  Services<span class="uabb-menu-toggle"></span>
+                                </span>
+                              </a>
+                            </div>
+                            <ul class="sub-menu">
+                              <li id="menu-item-491"
+                                class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style">
+                                <a href="https://www.cftooling.ie/services/#design">
+                                  <span class="menu-item-text">Design &#038;Project Management</span>
+                                </a>
+                              </li>
+                              <li id="menu-item-492"
+                                class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style">
+                                <a href="https://www.cftooling.ie/services/#tooling">
+                                  <span class="menu-item-text">Tooling Manufacture &#038;Maintenance</span>
+                                </a>
+                              </li>
+                              <li id="menu-item-494"
+                                class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style">
+                                <a href="https://www.cftooling.ie/services/#cnc-punching">
+                                  <span class="menu-item-text">CNC Punching &#038;Forming</span>
+                                </a>
+                              </li>
+                              <li id="menu-item-495"
+                                class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style">
+                                <a href="https://www.cftooling.ie/services/#stamping">
+                                  <span class="menu-item-text">Stamping</span>
+                                </a>
+                              </li>
+                              <li id="menu-item-496"
+                                class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style">
+                                <a href="https://www.cftooling.ie/services/#welding">
+                                  <span class="menu-item-text">Welding</span>
+                                </a>
+                              </li>
+                              <li id="menu-item-497"
+                                class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style">
+                                <a href="https://www.cftooling.ie/services/#rivets">
+                                  <span class="menu-item-text">Riveting &#038;Clinch Nut Insertion</span>
+                                </a>
+                              </li>
+                              <li id="menu-item-498"
+                                class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style">
+                                <a href="https://www.cftooling.ie/services/#painting">
+                                  <span class="menu-item-text">Painting &#038;Protective Coatings</span>
+                                </a>
+                              </li>
+                              <li id="menu-item-499"
+                                class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style">
+                                <a href="https://www.cftooling.ie/services/#assemblies">
+                                  <span class="menu-item-text">Electro / Mechanical Assemblies</span>
+                                </a>
+                              </li>
+                              <li id="menu-item-500"
+                                class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style">
+                                <a href="https://www.cftooling.ie/services/#electronic">
+                                  <span class="menu-item-text">Electronic Assemblies &#038;Software</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li id="menu-item-203"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children uabb-has-submenu uabb-creative-menu uabb-cm-style"
+                            aria-haspopup="true">
+                            <div class="uabb-has-submenu-container">
+                              <a aria-expanded="false" href="https://www.cftooling.ie/sectors/">
+                                <span class="menu-item-text">
+                                  Sectors<span class="uabb-menu-toggle"></span>
+                                </span>
+                              </a>
+                            </div>
+                            <ul class="sub-menu">
+                              <li id="menu-item-501"
+                                class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style">
+                                <a href="https://www.cftooling.ie/sectors/#data">
+                                  <span class="menu-item-text">Server racks / Data storage</span>
+                                </a>
+                              </li>
+                              <li id="menu-item-502"
+                                class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style">
+                                <a href="https://www.cftooling.ie/sectors/#industrial">
+                                  <span class="menu-item-text">Industrial</span>
+                                </a>
+                              </li>
+                              <li id="menu-item-503"
+                                class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style">
+                                <a href="https://www.cftooling.ie/sectors/#transport">
+                                  <span class="menu-item-text">Transport refrigeration / climate control</span>
+                                </a>
+                              </li>
+                              <li id="menu-item-504"
+                                class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style">
+                                <a href="https://www.cftooling.ie/sectors/#renewables">
+                                  <span class="menu-item-text">Renewables</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li id="menu-item-609"
+                            class="menu-item menu-item-type-post_type menu-item-object-page uabb-creative-menu uabb-cm-style">
+                            <a href="https://www.cftooling.ie/careers/">
+                              <span class="menu-item-text">Careers</span>
+                            </a>
+                          </li>
+                          <li id="menu-item-304"
+                            class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style">
+                            <a href="#contact-us">
+                              <span class="menu-item-text">Contact Us</span>
+                            </a>
+                          </li>
+                          <li id="menu-item-304"
+                            class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style">
+                            <a href="#contact-us">
+                              <span class="menu-item-text">Sustainability</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="uabb-js-breakpoint" style="display: none;"></div>
+    <div id="content" class="site-content">
+      <div class="ast-container">
+        <div id="primary" class="content-area primary">
+          <main id="main" class="site-main">
+            <article class="post-7 page type-page status-publish ast-article-single" id="post-7"
+              itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
+              <header class="entry-header ast-no-title ast-header-without-markup"></header>
+              <!-- .entry-header -->
+              <div class="entry-content clear" itemprop="text">
+                <div
+                  class="fl-builder-content fl-builder-content-7 fl-builder-content-primary fl-builder-global-templates-locked"
+                  data-post-id="7">
+                  <div
+                    class="fl-row fl-row-full-width fl-row-bg-slideshow fl-node-5e8da1db0b99d fl-row-custom-height fl-row-align-center fl-row-bg-overlay uabb-bottom-row uabb-xlarge_triangle"
+                    data-node="5e8da1db0b99d">
+                    <div class="fl-row-content-wrap">
+                      <div class="uabb-row-separator uabb-top-row-separator"></div>
+                      <div class="fl-bg-slideshow"></div>
+                      <div class="uabb-row-separator uabb-bottom-row-separator uabb-xlarge-triangle uabb-has-svg">
+                        <svg class="uasvg-xlarge-triangle" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                          fill="#E1E0E0" opacity="1" width="100" height="30" viewBox="0 0 4.66666 0.333331"
+                          preserveAspectRatio="none">
+                          <path class="fil0"
+                            d="M-0 0.333331l4.66666 0 0 -3.93701e-006 -2.33333 0 -2.33333 0 0 3.93701e-006zm0 -0.333331l4.66666 0 0 0.166661 -4.66666 0 0 -0.166661zm4.66666 0.332618l0 -0.165953 -4.66666 0 0 0.165953 1.16162 -0.0826181 1.17171 -0.0833228 1.17171 0.0833228 1.16162 0.0826181z" />
+                        </svg>
+                      </div>
+                      <div class="fl-row-content fl-row-fixed-width fl-node-content">
+                        <div class="fl-col-group fl-node-5e8da1db0b9a0" data-node="5e8da1db0b9a0">
+                          <div class="fl-col fl-node-5e8da1db0b9a1 fl-col-bg-color" data-node="5e8da1db0b9a1">
+                            <div class="fl-col-content fl-node-content">
+                              <div
+                                class="fl-module fl-module-pp-image fl-node-5e8da1db0b9ac fl-animation fl-bounce-down"
+                                data-node="5e8da1db0b9ac" data-animation-delay="0" data-animation-duration="1">
+                                <div class="fl-module-content fl-node-content">
+                                  <div class="pp-photo-container">
+                                    <div class="pp-photo pp-photo-align-center pp-photo-align-responsive-default"
+                                      itemscope itemtype="http://schema.org/ImageObject">
+                                      <div class="pp-photo-content">
+                                        <div class="pp-photo-content-inner">
+                                          <img fetchpriority="high" decoding="async"
+                                            class="pp-photo-img wp-image-551 size-full"
+                                            src="https://www.cftooling.ie/wp-content/uploads/new-logo-white.png"
+                                            alt="new logo white" itemprop="image" height="257" width="800"
+                                            srcset="https://www.cftooling.ie/wp-content/uploads/new-logo-white.png 800w, https://www.cftooling.ie/wp-content/uploads/new-logo-white-300x96.png 300w, https://www.cftooling.ie/wp-content/uploads/new-logo-white-768x247.png 768w"
+                                            sizes="(max-width: 800px) 100vw, 800px" title="new logo white" />
+                                          <div class="pp-overlay-bg"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="fl-module fl-module-heading fl-node-5e8da1db0b9a3 fl-animation fl-fancy-light-speed"
+                                data-node="5e8da1db0b9a3" data-animation-delay="0" data-animation-duration="1">
+                                <div class="fl-module-content fl-node-content">
+                                  <h2 class="fl-heading">
+                                    <span class="fl-heading-text">Global design and manufacture of precision sheet metal
+                                      assemblies</span>
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="fl-row fl-row-full-width fl-row-bg-parallax fl-node-5e8daed9318dd fl-row-default-height fl-row-align-center fl-row-bg-overlay"
+                    data-node="5e8daed9318dd" data-parallax-speed="2"
+                    data-parallax-image="https://www.cftooling.ie/wp-content/uploads/CF-33-1.jpg">
+                    <div class="fl-row-content-wrap">
+                      <div class="uabb-row-separator uabb-top-row-separator"></div>
+                      <div class="fl-row-content fl-row-fixed-width fl-node-content">
+                        <div
+                          class="fl-col-group fl-node-5e8daed93628b fl-col-group-equal-height fl-col-group-align-center fl-col-group-responsive-reversed"
+                          data-node="5e8daed93628b">
+                          <div class="fl-col fl-node-5e8daed936510 fl-col-bg-color fl-col-small"
+                            data-node="5e8daed936510">
+                            <div class="fl-col-content fl-node-content">
+                              <div class="fl-module fl-module-rich-text fl-node-5e8daee197813"
+                                data-node="5e8daee197813">
+                                <div class="fl-module-content fl-node-content">
+                                  <div class="fl-rich-text">
+                                    <p>World class in sheet metal processing! Our company has been operating in the
+                                      Czech Republic since 2001 and is part of the Irish C&F Group. We have professional
+                                      knowledge and many years of experience in the field of sheet metal processing. We
+                                      provide our customers with full support in the area of ​​optimization and product
+                                      development. A team of 150 stable employees ensures serial metal production to
+                                      order, even in large volumes.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="fl-col fl-node-5e8daed936517 fl-col-bg-color fl-col-small"
+                            data-node="5e8daed936517">
+                            <div class="fl-col-content fl-node-content">
+                              <div class="fl-module fl-module-slideshow fl-node-5e8db02c9a282"
+                                data-node="5e8db02c9a282">
+                                <div class="fl-module-content fl-node-content">
+                                  <div class="fl-slideshow-container"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="fl-row fl-row-full-width fl-row-bg-color fl-node-5e9eb689bc311 fl-row-default-height fl-row-align-center"
+                    data-node="5e9eb689bc311">
+                    <div class="fl-row-content-wrap">
+                      <div class="uabb-row-separator uabb-top-row-separator"></div>
+                      <div class="fl-row-content fl-row-full-width fl-node-content">
+                        <div class="fl-col-group fl-node-5e9eb689af351" data-node="5e9eb689af351">
+                          <div class="fl-col fl-node-5e9eb689af359 fl-col-bg-color fl-col-small"
+                            data-node="5e9eb689af359">
+                            <div class="fl-col-content fl-node-content">
+                              <div class="fl-module fl-module-pp-info-banner fl-node-5e9eb689af35d"
+                                data-node="5e9eb689af35d">
+                                <div class="fl-module-content fl-node-content">
+                                  <div class="pp-info-banner-content background">
+                                    <div class="pp-info-banner-inner">
+                                      <div class="pp-info-banner-bg"></div>
+                                      <div class="info-banner-wrap info-center animated" data-animation-class="none">
+                                        <div class="banner-title">Design & Project Management</div>
+                                        <div class="banner-description"></div>
+                                        <a class="banner-link" href="https://www.cftooling.ie/services/#design"
+                                          target="_self" role="button"></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="fl-col fl-node-5e9eb689af358 fl-col-bg-color fl-col-small"
+                            data-node="5e9eb689af358">
+                            <div class="fl-col-content fl-node-content">
+                              <div class="fl-module fl-module-pp-info-banner fl-node-5e9eb689af35c"
+                                data-node="5e9eb689af35c">
+                                <div class="fl-module-content fl-node-content">
+                                  <div class="pp-info-banner-content background">
+                                    <div class="pp-info-banner-inner">
+                                      <div class="pp-info-banner-bg"></div>
+                                      <div class="info-banner-wrap info-center animated" data-animation-class="none">
+                                        <div class="banner-title">Tool-making & CNC Machining</div>
+                                        <div class="banner-description"></div>
+                                        <a class="banner-link" href="https://www.cftooling.ie/services/#tooling"
+                                          target="_self" role="button"></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="fl-col fl-node-5e9eb689af356 fl-col-bg-color fl-col-small"
+                            data-node="5e9eb689af356">
+                            <div class="fl-col-content fl-node-content">
+                              <div class="fl-module fl-module-pp-info-banner fl-node-5e9eb689af35a"
+                                data-node="5e9eb689af35a">
+                                <div class="fl-module-content fl-node-content">
+                                  <div class="pp-info-banner-content background">
+                                    <div class="pp-info-banner-inner">
+                                      <div class="pp-info-banner-bg"></div>
+                                      <div class="info-banner-wrap info-center animated" data-animation-class="none">
+                                        <div class="banner-title">Punching, Forming, Stamping, & Welding</div>
+                                        <div class="banner-description"></div>
+                                        <a class="banner-link" href="https://www.cftooling.ie/services/#cnc-punching"
+                                          target="_self" role="button"></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="fl-col fl-node-5e9eb689af357 fl-col-bg-color fl-col-small"
+                            data-node="5e9eb689af357">
+                            <div class="fl-col-content fl-node-content">
+                              <div class="fl-module fl-module-pp-info-banner fl-node-5e9eb689af35b"
+                                data-node="5e9eb689af35b">
+                                <div class="fl-module-content fl-node-content">
+                                  <div class="pp-info-banner-content background">
+                                    <div class="pp-info-banner-inner">
+                                      <div class="pp-info-banner-bg"></div>
+                                      <div class="info-banner-wrap info-center animated" data-animation-class="none">
+                                        <div class="banner-title">Finishing & Assembly</div>
+                                        <div class="banner-description"></div>
+                                        <a class="banner-link" href="https://www.cftooling.ie/services/#painting"
+                                          target="_self" role="button"></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="fl-row fl-row-full-width fl-row-bg-none fl-node-5e9eb203cec88 fl-row-default-height fl-row-align-center"
+                    data-node="5e9eb203cec88">
+                    <div class="fl-row-content-wrap">
+                      <div class="uabb-row-separator uabb-top-row-separator"></div>
+                      <div class="fl-row-content fl-row-full-width fl-node-content">
+                        <div class="fl-col-group fl-node-5e9eb203c55c1" data-node="5e9eb203c55c1">
+                          <div class="fl-col fl-node-5e9eb203c55c5 fl-col-bg-color" data-node="5e9eb203c55c5">
+                            <div class="fl-col-content fl-node-content">
+                              <div class="fl-module fl-module-heading fl-node-5e9eb203c55c6" data-node="5e9eb203c55c6">
+                                <div class="fl-module-content fl-node-content">
+                                  <h4 class="fl-heading">
+                                    <span class="fl-heading-text">Some of the industry-leading brands we are proud to
+                                      have worked with</span>
+                                  </h4>
+                                </div>
+                              </div>
+                              <div class="fl-module fl-module-uabb-image-carousel fl-node-5e9eb203c55c7"
+                                data-node="5e9eb203c55c7">
+                                <div class="fl-module-content fl-node-content">
+                                  <div class="uabb-module-content uabb-image-carousel uabb-img-col-9 ">
+                                    <div class="uabb-image-carousel-item ">
+                                      <div class="uabb-image-carousel-content">
+                                        <img class="uabb-gallery-img"
+                                          data-lazy="https://www.cftooling.ie/wp-content/uploads/Logo-3-1.png" alt=""
+                                          title="Logo 3" />
+                                      </div>
+                                    </div>
+                                    <div class="uabb-image-carousel-item ">
+                                      <div class="uabb-image-carousel-content">
+                                        <img class="uabb-gallery-img"
+                                          data-lazy="https://www.cftooling.ie/wp-content/uploads/Logo-4-1.png" alt=""
+                                          title="Logo 4" />
+                                      </div>
+                                    </div>
+                                    <div class="uabb-image-carousel-item ">
+                                      <div class="uabb-image-carousel-content">
+                                        <img class="uabb-gallery-img"
+                                          data-lazy="https://www.cftooling.ie/wp-content/uploads/Logo-5-1.png" alt=""
+                                          title="Logo 5" />
+                                      </div>
+                                    </div>
+                                    <div class="uabb-image-carousel-item ">
+                                      <div class="uabb-image-carousel-content">
+                                        <img class="uabb-gallery-img"
+                                          data-lazy="https://www.cftooling.ie/wp-content/uploads/Ingersoll-Rand.png"
+                                          alt="" title="Ingersoll Rand" />
+                                      </div>
+                                    </div>
+                                    <div class="uabb-image-carousel-item ">
+                                      <div class="uabb-image-carousel-content">
+                                        <img class="uabb-gallery-img"
+                                          data-lazy="https://www.cftooling.ie/wp-content/uploads/Logo-6-1.png" alt=""
+                                          title="Logo 6" />
+                                      </div>
+                                    </div>
+                                    <div class="uabb-image-carousel-item ">
+                                      <div class="uabb-image-carousel-content">
+                                        <img class="uabb-gallery-img"
+                                          data-lazy="https://www.cftooling.ie/wp-content/uploads/Logo-9-1.png" alt=""
+                                          title="Logo 9" />
+                                      </div>
+                                    </div>
+                                    <div class="uabb-image-carousel-item ">
+                                      <div class="uabb-image-carousel-content">
+                                        <img class="uabb-gallery-img"
+                                          data-lazy="https://www.cftooling.ie/wp-content/uploads/Logo-10-1.png" alt=""
+                                          title="Logo 10" />
+                                      </div>
+                                    </div>
+                                    <div class="uabb-image-carousel-item ">
+                                      <div class="uabb-image-carousel-content">
+                                        <img class="uabb-gallery-img"
+                                          data-lazy="https://www.cftooling.ie/wp-content/uploads/Logo-11-1.png" alt=""
+                                          title="Logo 11" />
+                                      </div>
+                                    </div>
+                                    <div class="uabb-image-carousel-item ">
+                                      <div class="uabb-image-carousel-content">
+                                        <img class="uabb-gallery-img"
+                                          data-lazy="https://www.cftooling.ie/wp-content/uploads/Logo-12-1.png" alt=""
+                                          title="Logo 12" />
+                                      </div>
+                                    </div>
+                                    <div class="uabb-image-carousel-item ">
+                                      <div class="uabb-image-carousel-content">
+                                        <img class="uabb-gallery-img"
+                                          data-lazy="https://www.cftooling.ie/wp-content/uploads/Logo-1-2.png" alt=""
+                                          title="Logo 1" />
+                                      </div>
+                                    </div>
+                                    <div class="uabb-image-carousel-item ">
+                                      <div class="uabb-image-carousel-content">
+                                        <img class="uabb-gallery-img"
+                                          data-lazy="https://www.cftooling.ie/wp-content/uploads/Logo-2-2.png" alt=""
+                                          title="Logo 2" />
+                                      </div>
+                                    </div>
+                                    <div class="uabb-image-carousel-item ">
+                                      <div class="uabb-image-carousel-content">
+                                        <img class="uabb-gallery-img"
+                                          data-lazy="https://www.cftooling.ie/wp-content/uploads/Logo-13-2.png" alt=""
+                                          title="Logo 13" />
+                                      </div>
+                                    </div>
+                                    <div class="uabb-image-carousel-item ">
+                                      <div class="uabb-image-carousel-content">
+                                        <img class="uabb-gallery-img"
+                                          data-lazy="https://www.cftooling.ie/wp-content/uploads/ross-eng-e1587631658459.png"
+                                          alt="" title="ross-eng" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="fl-col-group fl-node-5ea2be7420690" data-node="5ea2be7420690">
+                          <div class="fl-col fl-node-5ea2be74207ef fl-col-bg-color" data-node="5ea2be74207ef">
+                            <div class="fl-col-content fl-node-content">
+                              <div class="fl-module fl-module-pp-testimonials fl-node-5ea2d335c424a"
+                                data-node="5ea2d335c424a">
+                                <div class="fl-module-content fl-node-content">
+                                  <div class="pp-testimonials-wrap pp-testimonials-slider">
+                                    <h2 class="pp-testimonials-heading">Testimonials</h2>
+                                    <div class="pp-testimonials">
+                                      <div class="owl-carousel owl-theme" tabindex="0" aria-label="Testimonials">
+                                        <div class="pp-testimonial layout-5">
+                                          <div class="pp-vertical-align"></div>
+                                          <div class="pp-content-wrapper">
+                                            <div class="pp-testimonials-content">
+                                              <p>“Having worked with C &amp;F tooling for 8 years now our company has
+                                                always found them easy to deal with and very professional. Nothing is
+                                                too much hassle for them and the ability to respond to spikes in our
+                                                order book is exactly what we require.</p>
+                                              <p>Their attitude to quality, cost and delivery of product is second to
+                                                none and we hope to be working with them for the foreseeable future.”
+                                              </p>
+                                              <p>
+                                                <em>
+                                                  <strong>Jonny Gilpin, Commodity Buyer, AJ Power</strong>
+                                                </em>
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="pp-testimonial layout-5">
+                                          <div class="pp-vertical-align"></div>
+                                          <div class="pp-content-wrapper">
+                                            <div class="pp-testimonials-content">
+                                              <p>“C &amp;F have been not just a manufacturing supplier to ROSS
+                                                Engineering Services, instead a trusted and valued business partner. On
+                                                no occasion, has there been a time where C &amp;F have said, “It can’t
+                                                be done / This could be a problem / This is not our area of expertise”.
+                                                The response has always been, “nothing is impossible”.</p>
+                                              <p>C &amp;F are a company that make their customer commitments a reality.
+                                                The C &amp;F team come together to form one of the most talent
+                                                engineering manufacturing companies I have had the opportunity to work
+                                                with. The skill set, capabilities, and commitment to customer
+                                                satisfaction is exceptional.</p>
+                                              <p>ROSS Engineering Services have had many years of successful project
+                                                partnering with C &amp;F, and we hope to have many more in the future.”
+                                              </p>
+                                              <p>
+                                                <em>
+                                                  <strong>Fergus Naughton, Managing Director, Ross Engineering
+                                                    Services</strong>
+                                                </em>
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="owl-nav pp-testimonials-nav position-bottom"></div>
+                                    </div>
+                                    <!-- /.pp-testimonials -->
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="uabb-js-breakpoint" style="display: none;"></div>
+              </div>
+              <!-- .entry-content .clear -->
+            </article>
+            <!-- #post-## -->
+          </main>
+          <!-- #main -->
+        </div>
+        <!-- #primary -->
+      </div>
+      <!-- ast-container -->
+    </div>
+    <!-- #content -->
+    <footer class="fl-builder-content fl-builder-content-35 fl-builder-global-templates-locked" data-post-id="35"
+      data-type="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+      <div
+        class="fl-row fl-row-full-width fl-row-bg-color fl-node-5e8da6c40f7f1 fl-row-default-height fl-row-align-center"
+        data-node="5e8da6c40f7f1">
+        <div class="fl-row-content-wrap">
+          <div class="uabb-row-separator uabb-top-row-separator"></div>
+          <div class="fl-row-content fl-row-fixed-width fl-node-content">
+            <div class="fl-col-group fl-node-5e8da6c40f7f2" data-node="5e8da6c40f7f2">
+              <div class="fl-col fl-node-5e8da6c40f7f3 fl-col-bg-color fl-col-small" data-node="5e8da6c40f7f3">
+                <div class="fl-col-content fl-node-content">
+                  <div id="ft-ireland" class="fl-module fl-module-rich-text fl-node-5e8da6c40f7f6"
+                    data-node="5e8da6c40f7f6">
+                    <div class="fl-module-content fl-node-content">
+                      <div class="fl-rich-text">
+                        <p>IRELAND</p>
+                        <p>
+                          C &amp;F Tooling Ltd.,<br />
+                          Cashla, Athenry.<br />
+                          Co. Galway, H65 V243<br />
+                          Ireland<br />
+                          T: <a href="tel:+35391790868">+353 91 790 868</a>
+                          <br />
+                          E: <a href="mailto:enquiries@cftooling.ie">enquiries@cftooling.ie</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fl-module fl-module-pp-image fl-node-xbn8wq2m649z" data-node="xbn8wq2m649z">
+                    <div class="fl-module-content fl-node-content">
+                      <div class="pp-photo-container">
+                        <div class="pp-photo pp-photo-align-center pp-photo-align-responsive-default" itemscope
+                          itemtype="http://schema.org/ImageObject">
+                          <div class="pp-photo-content">
+                            <div class="pp-photo-content-inner">
+                              <img loading="lazy" decoding="async" class="pp-photo-img wp-image-671 size-full"
+                                src="https://www.cftooling.ie/wp-content/uploads/4-footer-logo-white-iso-logos-e1693572037680.png"
+                                alt="4-footer-logo-white-iso-logos" itemprop="image" height="207" width="711"
+                                srcset="https://www.cftooling.ie/wp-content/uploads/4-footer-logo-white-iso-logos-e1693572037680.png 711w, https://www.cftooling.ie/wp-content/uploads/4-footer-logo-white-iso-logos-e1693572037680-300x87.png 300w"
+                                sizes="(max-width: 711px) 100vw, 711px" title="4-footer-logo-white-iso-logos" />
+                              <div class="pp-overlay-bg"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fl-col fl-node-5e8da6c40f7f4 fl-col-bg-color fl-col-small" data-node="5e8da6c40f7f4">
+                <div class="fl-col-content fl-node-content">
+                  <div id="ft-czech" class="fl-module fl-module-rich-text fl-node-5e8da6c40f7f9"
+                    data-node="5e8da6c40f7f9">
+                    <div class="fl-module-content fl-node-content">
+                      <div class="fl-rich-text">
+                        <p>CZECH REPUBLIC</p>
+                        <p>
+                          C &amp;F Manufacturing s.r.o.<br />
+                          Palackého 647,<br />
+                          Velim,<br />
+                          28101 Czech Republic<br />
+                          T: <a href="tel:+420321737060">+420 321 737 060</a>
+                          <br />
+                          E: <a href="mailto:reception@cfmanufacturing.cz">enquiries@cfmanufacturing.cz</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fl-module fl-module-pp-image fl-node-tmp8s7ou2w6z" data-node="tmp8s7ou2w6z">
+                    <div class="fl-module-content fl-node-content">
+                      <div class="pp-photo-container">
+                        <div class="pp-photo pp-photo-align-center pp-photo-align-responsive-default" itemscope
+                          itemtype="http://schema.org/ImageObject">
+                          <div class="pp-photo-content">
+                            <div class="pp-photo-content-inner">
+                              <img loading="lazy" decoding="async" class="pp-photo-img wp-image-680 size-full"
+                                src="https://www.cftooling.ie/wp-content/uploads/9001white-iso-logo.png"
+                                alt="9001white-iso-logo" itemprop="image" height="205" width="206"
+                                srcset="https://www.cftooling.ie/wp-content/uploads/9001white-iso-logo.png 206w, https://www.cftooling.ie/wp-content/uploads/9001white-iso-logo-150x150.png 150w"
+                                sizes="(max-width: 206px) 100vw, 206px" title="9001white-iso-logo" />
+                              <div class="pp-overlay-bg"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fl-module fl-module-uabb-button fl-node-5f58970339c9a" data-node="5f58970339c9a">
+                    <div class="fl-module-content fl-node-content">
+                      <div
+                        class="uabb-module-content uabb-button-wrap uabb-creative-button-wrap uabb-button-width-auto uabb-creative-button-width-auto uabb-button-center uabb-creative-button-center uabb-button-reponsive-center uabb-creative-button-reponsive-center">
+                        <a href="https://www.cfmanufacturing.cz/" title="Click Here" target="_self"
+                          class="uabb-button  uabb-creative-button uabb-creative-transparent-btn  uabb-transparent-fade-btn  "
+                          role="button" aria-label="Click here to go to our Czech language website">
+                          <span class="uabb-button-text uabb-creative-button-text">Click here to go to our Czech
+                            language website</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fl-col fl-node-5e8da6c40f7f5 fl-col-bg-color fl-col-small" data-node="5e8da6c40f7f5">
+                <div class="fl-col-content fl-node-content">
+                  <div id="ft-phils" class="fl-module fl-module-rich-text fl-node-5e8da6c40f7fa"
+                    data-node="5e8da6c40f7fa">
+                    <div class="fl-module-content fl-node-content">
+                      <div class="fl-rich-text">
+                        <p>PHILIPPINES</p>
+                        <p>
+                          C &amp;F Manufacturing Philippines Corporation<br />
+                          Lot. 1 &amp;4, Block 11, Phase 3<br />
+                          FCIE-SEZ, Dasmarinas City, Cavite Philippines, 4114<br />
+                          T: <a href="tel:+63464371079">+63 46 437 1079</a>
+                          <br />
+                          E: <a href="mailto:enquiries@cfmanufacturing.com">enquiries@cfmanufacturing.com</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fl-module fl-module-pp-image fl-node-5e8dab3d1b857" data-node="5e8dab3d1b857">
+                    <div class="fl-module-content fl-node-content">
+                      <div class="pp-photo-container">
+                        <div class="pp-photo pp-photo-align-center pp-photo-align-responsive-default" itemscope
+                          itemtype="http://schema.org/ImageObject">
+                          <div class="pp-photo-content">
+                            <div class="pp-photo-content-inner">
+                              <img loading="lazy" decoding="async" class="pp-photo-img wp-image-671 size-full"
+                                src="https://www.cftooling.ie/wp-content/uploads/4-footer-logo-white-iso-logos-e1693572037680.png"
+                                alt="4-footer-logo-white-iso-logos" itemprop="image" height="207" width="711"
+                                srcset="https://www.cftooling.ie/wp-content/uploads/4-footer-logo-white-iso-logos-e1693572037680.png 711w, https://www.cftooling.ie/wp-content/uploads/4-footer-logo-white-iso-logos-e1693572037680-300x87.png 300w"
+                                sizes="(max-width: 711px) 100vw, 711px" title="4-footer-logo-white-iso-logos" />
+                              <div class="pp-overlay-bg"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fl-col-group fl-node-5e8daa28e7b5e fl-col-group-equal-height fl-col-group-align-top"
+              data-node="5e8daa28e7b5e">
+              <div class="fl-col fl-node-5e8daa28e7cc6 fl-col-bg-color fl-col-small" data-node="5e8daa28e7cc6">
+                <div class="fl-col-content fl-node-content">
+                  <div id="contact-us" class="fl-module fl-module-pp-gravity-form fl-node-5e956479b3edc"
+                    data-node="5e956479b3edc">
+                    <div class="fl-module-content fl-node-content">
+                      <div class="pp-gf-content">
+                        <div class="pp-gf-inner">
+                          <div
+                            class='gf_browser_unknown gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework'
+                            data-form-theme='legacy' data-form-index='0' id='gform_wrapper_1'>
+                            <div id='gf_1' class='gform_anchor' tabindex='-1'></div>
+                            <div class='gform_heading'>
+                              <h3 class="gform_title">Contact Us</h3>
+                            </div>
+                            <form method='post' enctype='multipart/form-data' target='gform_ajax_frame_1' id='gform_1'
+                              action='/#gf_1' data-formid='1' novalidate>
+                              <div class='gform-body gform_body'>
+                                <ul id='gform_fields_1'
+                                  class='gform_fields top_label form_sublabel_below description_below validation_below'>
+                                  <li id="field_1_1"
+                                    class="gfield gfield--type-name gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"
+                                    data-js-reload="field_1_1">
+                                    <label class='gfield_label gform-field-label gfield_label_before_complex'>
+                                      Name
+                                      <span class="gfield_required">
+                                        <span class="gfield_required gfield_required_asterisk">*</span>
+                                      </span>
+                                    </label>
+                                    <div
+                                      class='ginput_complex ginput_container ginput_container--name no_prefix has_first_name no_middle_name has_last_name no_suffix gf_name_has_2 ginput_container_name gform-grid-row'
+                                      id='input_1_1'>
+                                      <span id='input_1_1_3_container'
+                                        class='name_first gform-grid-col gform-grid-col--size-auto'>
+                                        <input type='text' name='input_1.3' id='input_1_1_3' value='' tabindex='101'
+                                          aria-required='true' placeholder='First Name' />
+                                        <label for='input_1_1_3'
+                                          class='gform-field-label gform-field-label--type-sub '>First</label>
+                                      </span>
+                                      <span id='input_1_1_6_container'
+                                        class='name_last gform-grid-col gform-grid-col--size-auto'>
+                                        <input type='text' name='input_1.6' id='input_1_1_6' value='' tabindex='103'
+                                          aria-required='true' placeholder='Last Name' />
+                                        <label for='input_1_1_6'
+                                          class='gform-field-label gform-field-label--type-sub '>Last</label>
+                                      </span>
+                                    </div>
+                                  </li>
+                                  <li id="field_1_2"
+                                    class="gfield gfield--type-email gf_left_half gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"
+                                    data-js-reload="field_1_2">
+                                    <label class='gfield_label gform-field-label' for='input_1_2'>
+                                      Email
+                                      <span class="gfield_required">
+                                        <span class="gfield_required gfield_required_asterisk">*</span>
+                                      </span>
+                                    </label>
+                                    <div class='ginput_container ginput_container_email'>
+                                      <input name='input_2' id='input_1_2' type='email' value='' class='medium'
+                                        tabindex='105' placeholder='Email Address' aria-required="true"
+                                        aria-invalid="false" />
+                                    </div>
+                                  </li>
+                                  <li id="field_1_3"
+                                    class="gfield gfield--type-phone gf_right_half field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"
+                                    data-js-reload="field_1_3">
+                                    <label class='gfield_label gform-field-label' for='input_1_3'>Phone</label>
+                                    <div class='ginput_container ginput_container_phone'>
+                                      <input name='input_3' id='input_1_3' type='tel' value='' class='medium'
+                                        tabindex='106' placeholder='Phone' aria-invalid="false" />
+                                    </div>
+                                  </li>
+                                  <li id="field_1_4"
+                                    class="gfield gfield--type-textarea gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"
+                                    data-js-reload="field_1_4">
+                                    <label class='gfield_label gform-field-label' for='input_1_4'>
+                                      Your Enquiry
+                                      <span class="gfield_required">
+                                        <span class="gfield_required gfield_required_asterisk">*</span>
+                                      </span>
+                                    </label>
+                                    <div class='ginput_container ginput_container_textarea'>
+                                      <textarea name='input_4' id='input_1_4' class='textarea small' tabindex='107'
+                                        placeholder='Your Enquiry' aria-required="true" aria-invalid="false" rows='10'
+                                        cols='50'></textarea>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class='gform_footer top_label'>
+                                <input type='submit' id='gform_submit_button_1' class='gform_button button'
+                                  value='Submit' tabindex='108'
+                                  onclick='if(window["gf_submitting_1"]){return false;}  if( !jQuery("#gform_1")[0].checkValidity || jQuery("#gform_1")[0].checkValidity()){window["gf_submitting_1"]=true;}  '
+                                  onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_1"]){return false;} if( !jQuery("#gform_1")[0].checkValidity || jQuery("#gform_1")[0].checkValidity()){window["gf_submitting_1"]=true;}  jQuery("#gform_1").trigger("submit",[true]); }' />
+                                <input type='hidden' name='gform_ajax'
+                                  value='form_id=1&amp;title=1&amp;description=&amp;tabindex=100&amp;theme=legacy' />
+                                <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+                                <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+                                <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+                                <input type='hidden' class='gform_hidden' name='state_1'
+                                  value='WyJbXSIsIjRhNGMxMjYwM2Y5N2VkMDEyYzM0NjFjNjFmZWVkNGIyIl0=' />
+                                <input type='hidden' class='gform_hidden' name='gform_target_page_number_1'
+                                  id='gform_target_page_number_1' value='0' />
+                                <input type='hidden' class='gform_hidden' name='gform_source_page_number_1'
+                                  id='gform_source_page_number_1' value='1' />
+                                <input type='hidden' name='gform_field_values' value='' />
+                              </div>
+                              <p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_">
+                                <label>
+                                  &#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea>
+                                </label>
+                                <input type="hidden" id="ak_js_1" name="ak_js" value="119" />
+                                <script>
+                                  document.getElementById("ak_js_1").setAttribute("value", (new Date()).getTime());
+                                </script>
+                              </p>
+                            </form>
+                          </div>
+                          <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_1'
+                            id='gform_ajax_frame_1'
+                            title='This iframe contains the logic required to handle Ajax powered Gravity Forms.'></iframe>
+                          <script>
+                            gform.initializeOnLoaded(function () {
+                              gformInitSpinner(1, 'https://www.cftooling.ie/wp-content/plugins/gravityforms/images/spinner.svg', true);
+                              jQuery('#gform_ajax_frame_1').on('load', function () {
+                                var contents = jQuery(this).contents().find('*').html();
+                                var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;
+                                if (!is_postback) {
+                                  return;
+                                }
+                                var form_content = jQuery(this).contents().find('#gform_wrapper_1');
+                                var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_1').length > 0;
+                                var is_redirect = contents.indexOf('gformRedirect(){') >= 0;
+                                var is_form = form_content.length > 0 && !is_redirect && !is_confirmation;
+                                var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;
+                                if (is_form) {
+                                  jQuery('#gform_wrapper_1').html(form_content.html());
+                                  if (form_content.hasClass('gform_validation_error')) {
+                                    jQuery('#gform_wrapper_1').addClass('gform_validation_error');
+                                  } else {
+                                    jQuery('#gform_wrapper_1').removeClass('gform_validation_error');
+                                  }
+                                  setTimeout(function () {
+                                    /* delay the scroll by 50 milliseconds to fix a bug in chrome */
+                                    jQuery(document).scrollTop(jQuery('#gform_wrapper_1').offset().top - mt);
+                                  }, 50);
+                                  if (window['gformInitDatepicker']) {
+                                    gformInitDatepicker();
+                                  }
+                                  if (window['gformInitPriceFields']) {
+                                    gformInitPriceFields();
+                                  }
+                                  var current_page = jQuery('#gform_source_page_number_1').val();
+                                  gformInitSpinner(1, 'https://www.cftooling.ie/wp-content/plugins/gravityforms/images/spinner.svg', true);
+                                  jQuery(document).trigger('gform_page_loaded', [1, current_page]);
+                                  window['gf_submitting_1'] = false;
+                                } else if (!is_redirect) {
+                                  var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();
+                                  if (!confirmation_content) {
+                                    confirmation_content = contents;
+                                  }
+                                  jQuery('#gform_wrapper_1').replaceWith(confirmation_content);
+                                  jQuery(document).scrollTop(jQuery('#gf_1').offset().top - mt);
+                                  jQuery(document).trigger('gform_confirmation_loaded', [1]);
+                                  window['gf_submitting_1'] = false;
+                                  wp.a11y.speak(jQuery('#gform_confirmation_message_1').text());
+                                } else {
+                                  jQuery('#gform_1').append(contents);
+                                  if (window['gformRedirect']) {
+                                    gformRedirect();
+                                  }
+                                }
+                                jQuery(document).trigger("gform_pre_post_render", [{
+                                  formId: "1",
+                                  currentPage: "current_page",
+                                  abort: function () {
+                                    this.preventDefault();
+                                  }
+                                }]);
+                                if (event && event.defaultPrevented) {
+                                  return;
+                                }
+                                const gformWrapperDiv = document.getElementById("gform_wrapper_1");
+                                if (gformWrapperDiv) {
+                                  const visibilitySpan = document.createElement("span");
+                                  visibilitySpan.id = "gform_visibility_test_1";
+                                  gformWrapperDiv.insertAdjacentElement("afterend", visibilitySpan);
+                                }
+                                const visibilityTestDiv = document.getElementById("gform_visibility_test_1");
+                                let postRenderFired = false;
+                                function triggerPostRender() {
+                                  if (postRenderFired) {
+                                    return;
+                                  }
+                                  postRenderFired = true;
+                                  jQuery(document).trigger('gform_post_render', [1, current_page]);
+                                  gform.utils.trigger({
+                                    event: 'gform/postRender',
+                                    native: false,
+                                    data: {
+                                      formId: 1,
+                                      currentPage: current_page
+                                    }
+                                  });
+                                  if (visibilityTestDiv) {
+                                    visibilityTestDiv.parentNode.removeChild(visibilityTestDiv);
+                                  }
+                                }
+                                function debounce(func, wait, immediate) {
+                                  var timeout;
+                                  return function () {
+                                    var context = this
+                                      , args = arguments;
+                                    var later = function () {
+                                      timeout = null;
+                                      if (!immediate)
+                                        func.apply(context, args);
+                                    };
+                                    var callNow = immediate && !timeout;
+                                    clearTimeout(timeout);
+                                    timeout = setTimeout(later, wait);
+                                    if (callNow)
+                                      func.apply(context, args);
+                                  }
+                                    ;
+                                }
+                                const debouncedTriggerPostRender = debounce(function () {
+                                  triggerPostRender();
+                                }, 200);
+                                if (visibilityTestDiv && visibilityTestDiv.offsetParent === null) {
+                                  const observer = new MutationObserver((mutations) => {
+                                    mutations.forEach((mutation) => {
+                                      if (mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null) {
+                                        debouncedTriggerPostRender();
+                                        observer.disconnect();
+                                      }
+                                    }
+                                    );
+                                  }
+                                  );
+                                  observer.observe(document.body, {
+                                    attributes: true,
+                                    childList: false,
+                                    subtree: true,
+                                    attributeFilter: ['style', 'class'],
+                                  });
+                                } else {
+                                  triggerPostRender();
+                                }
+                              });
+                            });
+                          </script>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fl-module fl-module-rich-text fl-node-5ec65fa6ce3d8" data-node="5ec65fa6ce3d8">
+                    <div class="fl-module-content fl-node-content">
+                      <div class="fl-rich-text">
+                        <p>
+                          C&F Mfg Phils. Corp.,<br />Registered Office: Lot. 1 & 4, Block 11, Phase 3 FCIE-SEZ,
+                          Dasmarinas City, Cavite Philippines, 4114
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fl-col fl-node-5e909738278fa fl-col-bg-color" data-node="5e909738278fa">
+                <div class="fl-col-content fl-node-content">
+                  <div class="fl-module fl-module-pp-image fl-node-5e90973827a0f" data-node="5e90973827a0f">
+                    <div class="fl-module-content fl-node-content">
+                      <div class="pp-photo-container">
+                        <div class="pp-photo pp-photo-align-center pp-photo-align-responsive-center" itemscope
+                          itemtype="http://schema.org/ImageObject">
+                          <div class="pp-photo-content">
+                            <div class="pp-photo-content-inner">
+                              <img loading="lazy" decoding="async" class="pp-photo-img wp-image-298 size-full"
+                                src="https://www.cftooling.ie/wp-content/uploads/WORLD-MAP2.png" alt="WORLD-MAP2"
+                                itemprop="image" height="425" width="800"
+                                srcset="https://www.cftooling.ie/wp-content/uploads/WORLD-MAP2.png 800w, https://www.cftooling.ie/wp-content/uploads/WORLD-MAP2-300x159.png 300w, https://www.cftooling.ie/wp-content/uploads/WORLD-MAP2-768x408.png 768w"
+                                sizes="(max-width: 800px) 100vw, 800px" title="WORLD-MAP2" />
+                              <div class="pp-overlay-bg"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fl-module fl-module-pp-image fl-node-5e90973827a12" data-node="5e90973827a12">
+                    <div class="fl-module-content fl-node-content">
+                      <div class="pp-photo-container">
+                        <div class="pp-photo pp-photo-align-center pp-photo-align-responsive-default" itemscope
+                          itemtype="http://schema.org/ImageObject">
+                          <div class="pp-photo-content">
+                            <div class="pp-photo-content-inner">
+                              <img decoding="async" class="pp-photo-img"
+                                src="https://www.cftooling.ie/wp-content/plugins/bb-plugin/img/pixel.png" alt=""
+                                itemprop="image" />
+                              <div class="pp-overlay-bg"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-wpr-lazyrender="1"
+        class="fl-row fl-row-full-width fl-row-bg-color fl-node-5a26c488c0f46 fl-row-default-height fl-row-align-center"
+        data-node="5a26c488c0f46">
+        <div class="fl-row-content-wrap">
+          <div class="uabb-row-separator uabb-top-row-separator"></div>
+          <div class="fl-row-content fl-row-fixed-width fl-node-content">
+            <div class="fl-col-group fl-node-5a26c488c0f83" data-node="5a26c488c0f83">
+              <div class="fl-col fl-node-5a26c488c0fbd fl-col-bg-color" data-node="5a26c488c0fbd">
+                <div class="fl-col-content fl-node-content">
+                  <div class="fl-module fl-module-rich-text fl-node-5a26c488c0ff5" data-node="5a26c488c0ff5">
+                    <div class="fl-module-content fl-node-content">
+                      <div class="fl-rich-text">
+                        <p>© 2024 C&F Mfg Phils. Corp</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fl-col fl-node-5a26c5242dc60 fl-col-bg-color fl-col-small" data-node="5a26c5242dc60">
+                <div class="fl-col-content fl-node-content">
+                  <div class="fl-module fl-module-rich-text fl-node-5a26c53e2ce28" data-node="5a26c53e2ce28">
+                    <div class="fl-module-content fl-node-content">
+                      <div class="fl-rich-text">
+                        <p>
+                          <a title="Website Design Galway" href="http://www.martec.ie/service/web-design/"
+                            target="_blank" rel="noopener">Website Design Ireland</a>
+                          by <a href="http://www.martec.ie" target="_blank" rel="noopener">Martec</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="uabb-js-breakpoint" style="display: none;"></div>
+  </div>
+  <!-- #page -->
+  <div id="ast-scroll-top" tabindex="0" class="ast-scroll-top-icon ast-scroll-to-top-right" data-on-devices="both">
+    <span class="screen-reader-text">Scroll to Top</span>
+  </div>
+  <link rel='stylesheet' id='gforms_reset_css-css'
+    href='https://www.cftooling.ie/wp-content/plugins/gravityforms/legacy/css/formreset.min.css?ver=2.8.18'
+    media='all' />
+  <link rel='stylesheet' id='gforms_formsmain_css-css'
+    href='https://www.cftooling.ie/wp-content/plugins/gravityforms/legacy/css/formsmain.min.css?ver=2.8.18'
+    media='all' />
+  <link rel='stylesheet' id='gforms_ready_class_css-css'
+    href='https://www.cftooling.ie/wp-content/plugins/gravityforms/legacy/css/readyclass.min.css?ver=2.8.18'
+    media='all' />
+  <link rel='stylesheet' id='gforms_browsers_css-css'
+    href='https://www.cftooling.ie/wp-content/plugins/gravityforms/legacy/css/browsers.min.css?ver=2.8.18'
+    media='all' />
+  <link rel='stylesheet' id='astra-gravity-forms-css'
+    href='https://www.cftooling.ie/wp-content/themes/astra/assets/css/minified/compatibility/gravity-forms.min.css?ver=4.8.3'
+    media='all' />
+  <script id="astra-theme-js-js-extra">
+    var astra = {
+      "break_point": "921",
+      "isRtl": "",
+      "is_scroll_to_id": "",
+      "is_scroll_to_top": "1",
+      "is_header_footer_builder_active": "",
+      "responsive_cart_click": "flyout"
+    };
+  </script>
+  <script src="https://www.cftooling.ie/wp-content/themes/astra/assets/js/minified/style.min.js?ver=4.8.3"
+    id="astra-theme-js-js"></script>
+  <script src="https://www.cftooling.ie/wp-content/plugins/bb-plugin/js/yui3.min.js?ver=2.8.4.3" id="yui3-js"></script>
+  <script src="https://www.cftooling.ie/wp-content/plugins/bb-plugin/js/fl-slideshow.min.js?ver=2.8.4.3"
+    id="fl-slideshow-js"></script>
+  <script src="https://www.cftooling.ie/wp-content/plugins/bb-plugin/js/jquery.imagesloaded.min.js?ver=2.8.4.3"
+    id="imagesloaded-js"></script>
+  <script src="https://www.cftooling.ie/wp-content/plugins/bb-plugin/js/jquery.waypoints.min.js?ver=2.8.4.3"
+    id="jquery-waypoints-js"></script>
+  <script
+    src="https://www.cftooling.ie/wp-content/plugins/bb-ultimate-addon/assets/js/global-scripts/jquery-carousel.js?ver=6.6.2"
+    id="carousel-js"></script>
+  <script
+    src="https://www.cftooling.ie/wp-content/plugins/bb-ultimate-addon/assets/js/global-scripts/imagesloaded.min.js?ver=6.6.2"
+    id="imagesloaded-uabb-js"></script>
+  <script src="https://www.cftooling.ie/wp-content/plugins/bbpowerpack/assets/js/owl.carousel.min.js?ver=2.38.3"
+    id="pp-owl-carousel-js"></script>
+  <script
+    src="https://www.cftooling.ie/wp-content/uploads/bb-plugin/cache/7-layout.js?ver=7439404269ab9b73ce1c742121c11357"
+    id="fl-builder-layout-7-js"></script>
+  <script src="https://www.cftooling.ie/wp-content/plugins/bb-plugin/js/jquery.ba-throttle-debounce.min.js?ver=2.8.4.3"
+    id="jquery-throttle-js"></script>
+  <script
+    src="https://www.cftooling.ie/wp-content/uploads/bb-plugin/cache/36e582fae76c34056261f823deed25b4-layout-bundle.js?ver=2.8.4.3-1.4.11.2"
+    id="fl-builder-layout-bundle-36e582fae76c34056261f823deed25b4-js"></script>
+  <script id="rocket-browser-checker-js-after">
+    "use strict";
+    var _createClass = function () {
+      function defineProperties(target, props) {
+        for (var i = 0; i < props.length; i++) {
+          var descriptor = props[i];
+          descriptor.enumerable = descriptor.enumerable || !1,
+            descriptor.configurable = !0,
+            "value" in descriptor && (descriptor.writable = !0),
+            Object.defineProperty(target, descriptor.key, descriptor)
+        }
+      }
+      return function (Constructor, protoProps, staticProps) {
+        return protoProps && defineProperties(Constructor.prototype, protoProps),
+          staticProps && defineProperties(Constructor, staticProps),
+          Constructor
+      }
+    }();
+    function _classCallCheck(instance, Constructor) {
+      if (!(instance instanceof Constructor))
+        throw new TypeError("Cannot call a class as a function")
+    }
+    var RocketBrowserCompatibilityChecker = function () {
+      function RocketBrowserCompatibilityChecker(options) {
+        _classCallCheck(this, RocketBrowserCompatibilityChecker),
+          this.passiveSupported = !1,
+          this._checkPassiveOption(this),
+          this.options = !!this.passiveSupported && options
+      }
+      return _createClass(RocketBrowserCompatibilityChecker, [{
+        key: "_checkPassiveOption",
+        value: function (self) {
+          try {
+            var options = {
+              get passive() {
+                return !(self.passiveSupported = !0)
+              }
+            };
+            window.addEventListener("test", null, options),
+              window.removeEventListener("test", null, options)
+          } catch (err) {
+            self.passiveSupported = !1
+          }
+        }
+      }, {
+        key: "initRequestIdleCallback",
+        value: function () {
+          !1 in window && (window.requestIdleCallback = function (cb) {
+            var start = Date.now();
+            return setTimeout(function () {
+              cb({
+                didTimeout: !1,
+                timeRemaining: function () {
+                  return Math.max(0, 50 - (Date.now() - start))
+                }
+              })
+            }, 1)
+          }
+          ),
+            !1 in window && (window.cancelIdleCallback = function (id) {
+              return clearTimeout(id)
+            }
+            )
+        }
+      }, {
+        key: "isDataSaverModeOn",
+        value: function () {
+          return "connection" in navigator && !0 === navigator.connection.saveData
+        }
+      }, {
+        key: "supportsLinkPrefetch",
+        value: function () {
+          var elem = document.createElement("link");
+          return elem.relList && elem.relList.supports && elem.relList.supports("prefetch") && window.IntersectionObserver && "isIntersecting" in IntersectionObserverEntry.prototype
+        }
+      }, {
+        key: "isSlowConnection",
+        value: function () {
+          return "connection" in navigator && "effectiveType" in navigator.connection && ("2g" === navigator.connection.effectiveType || "slow-2g" === navigator.connection.effectiveType)
+        }
+      }]),
+        RocketBrowserCompatibilityChecker
+    }();
+  </script>
+  <script id="rocket-preload-links-js-extra">
+    var RocketPreloadLinksConfig = {
+      "excludeUris": "\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/",
+      "usesTrailingSlash": "1",
+      "imageExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php",
+      "fileExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm",
+      "siteUrl": "https:\/\/www.cftooling.ie",
+      "onHoverDelay": "100",
+      "rateThrottle": "3"
+    };
+  </script>
+  <script id="rocket-preload-links-js-after">
+    (function () {
+      "use strict";
+      var r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (e) {
+        return typeof e
+      }
+        : function (e) {
+          return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
+        }
+        , e = function () {
+          function i(e, t) {
+            for (var n = 0; n < t.length; n++) {
+              var i = t[n];
+              i.enumerable = i.enumerable || !1,
+                i.configurable = !0,
+                "value" in i && (i.writable = !0),
+                Object.defineProperty(e, i.key, i)
+            }
+          }
+          return function (e, t, n) {
+            return t && i(e.prototype, t),
+              n && i(e, n),
+              e
+          }
+        }();
+      function i(e, t) {
+        if (!(e instanceof t))
+          throw new TypeError("Cannot call a class as a function")
+      }
+      var t = function () {
+        function n(e, t) {
+          i(this, n),
+            this.browser = e,
+            this.config = t,
+            this.options = this.browser.options,
+            this.prefetched = new Set,
+            this.eventTime = null,
+            this.threshold = 1111,
+            this.numOnHover = 0
+        }
+        return e(n, [{
+          key: "init",
+          value: function () {
+            !this.browser.supportsLinkPrefetch() || this.browser.isDataSaverModeOn() || this.browser.isSlowConnection() || (this.regex = {
+              excludeUris: RegExp(this.config.excludeUris, "i"),
+              images: RegExp(".(" + this.config.imageExt + ")$", "i"),
+              fileExt: RegExp(".(" + this.config.fileExt + ")$", "i")
+            },
+              this._initListeners(this))
+          }
+        }, {
+          key: "_initListeners",
+          value: function (e) {
+            -1 < this.config.onHoverDelay && document.addEventListener("mouseover", e.listener.bind(e), e.listenerOptions),
+              document.addEventListener("mousedown", e.listener.bind(e), e.listenerOptions),
+              document.addEventListener("touchstart", e.listener.bind(e), e.listenerOptions)
+          }
+        }, {
+          key: "listener",
+          value: function (e) {
+            var t = e.target.closest("a")
+              , n = this._prepareUrl(t);
+            if (null !== n)
+              switch (e.type) {
+                case "mousedown":
+                case "touchstart":
+                  this._addPrefetchLink(n);
+                  break;
+                case "mouseover":
+                  this._earlyPrefetch(t, n, "mouseout")
+              }
+          }
+        }, {
+          key: "_earlyPrefetch",
+          value: function (t, e, n) {
+            var i = this
+              , r = setTimeout(function () {
+                if (r = null,
+                  0 === i.numOnHover)
+                  setTimeout(function () {
+                    return i.numOnHover = 0
+                  }, 1e3);
+                else if (i.numOnHover > i.config.rateThrottle)
+                  return;
+                i.numOnHover++,
+                  i._addPrefetchLink(e)
+              }, this.config.onHoverDelay);
+            t.addEventListener(n, function e() {
+              t.removeEventListener(n, e, {
+                passive: !0
+              }),
+                null !== r && (clearTimeout(r),
+                  r = null)
+            }, {
+              passive: !0
+            })
+          }
+        }, {
+          key: "_addPrefetchLink",
+          value: function (i) {
+            return this.prefetched.add(i.href),
+              new Promise(function (e, t) {
+                var n = document.createElement("link");
+                n.rel = "prefetch",
+                  n.href = i.href,
+                  n.onload = e,
+                  n.onerror = t,
+                  document.head.appendChild(n)
+              }
+              ).catch(function () { })
+          }
+        }, {
+          key: "_prepareUrl",
+          value: function (e) {
+            if (null === e || "object" !== (void 0 === e ? "undefined" : r(e)) || !1 in e || -1 === ["http:", "https:"].indexOf(e.protocol))
+              return null;
+            var t = e.href.substring(0, this.config.siteUrl.length)
+              , n = this._getPathname(e.href, t)
+              , i = {
+                original: e.href,
+                protocol: e.protocol,
+                origin: t,
+                pathname: n,
+                href: t + n
+              };
+            return this._isLinkOk(i) ? i : null
+          }
+        }, {
+          key: "_getPathname",
+          value: function (e, t) {
+            var n = t ? e.substring(this.config.siteUrl.length) : e;
+            return n.startsWith("/") || (n = "/" + n),
+              this._shouldAddTrailingSlash(n) ? n + "/" : n
+          }
+        }, {
+          key: "_shouldAddTrailingSlash",
+          value: function (e) {
+            return this.config.usesTrailingSlash && !e.endsWith("/") && !this.regex.fileExt.test(e)
+          }
+        }, {
+          key: "_isLinkOk",
+          value: function (e) {
+            return null !== e && "object" === (void 0 === e ? "undefined" : r(e)) && (!this.prefetched.has(e.href) && e.origin === this.config.siteUrl && -1 === e.href.indexOf("?") && -1 === e.href.indexOf("#") && !this.regex.excludeUris.test(e.href) && !this.regex.images.test(e.href))
+          }
+        }], [{
+          key: "run",
+          value: function () {
+            "undefined" != typeof RocketPreloadLinksConfig && new n(new RocketBrowserCompatibilityChecker({
+              capture: !0,
+              passive: !0
+            }), RocketPreloadLinksConfig).init()
+          }
+        }]),
+          n
+      }();
+      t.run();
+    }());
+  </script>
+  <script id="astra-addon-js-js-extra">
+    var astraAddon = {
+      "sticky_active": "",
+      "svgIconClose": "<span class=\"ast-icon icon-close\"><\/span>",
+      "is_header_builder_active": ""
+    };
+  </script>
+  <script src="https://www.cftooling.ie/wp-content/uploads/astra-addon/astra-addon-670407e6cac936-65357786.js?ver=4.8.3"
+    id="astra-addon-js-js"></script>
+  <script src="https://www.cftooling.ie/wp-content/plugins/astra-addon/assets/js/minified/purify.min.js?ver=4.8.3"
+    id="astra-dom-purify-js"></script>
+  <script src="https://www.cftooling.ie/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381"
+    id="wp-dom-ready-js"></script>
+  <script src="https://www.cftooling.ie/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18"
+    id="wp-hooks-js"></script>
+  <script src="https://www.cftooling.ie/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6"
+    id="wp-i18n-js"></script>
+  <script id="wp-i18n-js-after">
+    wp.i18n.setLocaleData({
+      'text direction\u0004ltr': ['ltr']
+    });
+  </script>
+  <script src="https://www.cftooling.ie/wp-includes/js/dist/a11y.min.js?ver=d90eebea464f6c09bfd5"
+    id="wp-a11y-js"></script>
+  <script defer='defer' src="https://www.cftooling.ie/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.8.18"
+    id="gform_json-js"></script>
+  <script id="gform_gravityforms-js-extra">
+    var gform_i18n = {
+      "datepicker": {
+        "days": {
+          "monday": "Mo",
+          "tuesday": "Tu",
+          "wednesday": "We",
+          "thursday": "Th",
+          "friday": "Fr",
+          "saturday": "Sa",
+          "sunday": "Su"
+        },
+        "months": {
+          "january": "January",
+          "february": "February",
+          "march": "March",
+          "april": "April",
+          "may": "May",
+          "june": "June",
+          "july": "July",
+          "august": "August",
+          "september": "September",
+          "october": "October",
+          "november": "November",
+          "december": "December"
+        },
+        "firstDay": 1,
+        "iconText": "Select date"
+      }
+    };
+    var gf_legacy_multi = [];
+    var gform_gravityforms = {
+      "strings": {
+        "invalid_file_extension": "This type of file is not allowed. Must be one of the following:",
+        "delete_file": "Delete this file",
+        "in_progress": "in progress",
+        "file_exceeds_limit": "File exceeds size limit",
+        "illegal_extension": "This type of file is not allowed.",
+        "max_reached": "Maximum number of files reached",
+        "unknown_error": "There was a problem while saving the file on the server",
+        "currently_uploading": "Please wait for the uploading to complete",
+        "cancel": "Cancel",
+        "cancel_upload": "Cancel this upload",
+        "cancelled": "Cancelled"
+      },
+      "vars": {
+        "images_url": "https:\/\/www.cftooling.ie\/wp-content\/plugins\/gravityforms\/images"
+      }
+    };
+    var gf_global = {
+      "gf_currency_config": {
+        "name": "Euro",
+        "symbol_left": "",
+        "symbol_right": "&#8364;",
+        "symbol_padding": " ",
+        "thousand_separator": ".",
+        "decimal_separator": ",",
+        "decimals": 2,
+        "code": "EUR"
+      },
+      "base_url": "https:\/\/www.cftooling.ie\/wp-content\/plugins\/gravityforms",
+      "number_formats": [],
+      "spinnerUrl": "https:\/\/www.cftooling.ie\/wp-content\/plugins\/gravityforms\/images\/spinner.svg",
+      "version_hash": "05531c5287e8e45711bc172e8f950878",
+      "strings": {
+        "newRowAdded": "New row added.",
+        "rowRemoved": "Row removed",
+        "formSaved": "The form has been saved.  The content contains the link to return and complete the form."
+      }
+    };
+  </script>
+  <script id="gform_gravityforms-js-before"></script>
+  <script defer='defer' src="https://www.cftooling.ie/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.8.18"
+    id="gform_gravityforms-js"></script>
+  <script defer='defer'
+    src="https://www.cftooling.ie/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.8.18"
+    id="gform_placeholder-js"></script>
+  <script defer='defer'
+    src="https://www.cftooling.ie/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=50c7bea9c2320e16728e44ae9fde5f26"
+    id="gform_gravityforms_utils-js"></script>
+  <script defer='defer'
+    src="https://www.cftooling.ie/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=54e7080aa7a02c83aa61fae430b9d869"
+    id="gform_gravityforms_theme_vendors-js"></script>
+  <script id="gform_gravityforms_theme-js-extra">
+    var gform_theme_config = {
+      "common": {
+        "form": {
+          "honeypot": {
+            "version_hash": "05531c5287e8e45711bc172e8f950878"
+          }
+        }
+      },
+      "hmr_dev": "",
+      "public_path": "https:\/\/www.cftooling.ie\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/"
+    };
+  </script>
+  <script defer='defer'
+    src="https://www.cftooling.ie/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=bab19fd84843dabc070e73326d787910"
+    id="gform_gravityforms_theme-js"></script>
+  <script defer src="https://www.cftooling.ie/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1720671007"
+    id="akismet-frontend-js"></script>
+  <script>
+    /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () {
+      var t, e = location.hash.substring(1);
+      /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1),
+        t.focus())
+    }, !1);
+  </script>
+  <script>
+    gform.initializeOnLoaded(function () {
+      jQuery(document).on('gform_post_render', function (event, formId, currentPage) {
+        if (formId == 1) {
+          if (typeof Placeholders != 'undefined') {
+            Placeholders.enable();
+          }
+          jQuery("#gform_1").on('submit', function (event) {
+            jQuery('<input>').attr('type', 'hidden').attr('name', 'gf_zero_spam_key').attr('value', 'Y0qdUJXzyq4czoYdVyoE0LP8rrY6YYVZk93PTDTfRvuXXEcRXoJ2qHKLWaPk6VhQ').attr('autocomplete', 'new-password').appendTo(jQuery(this));
+          });
+        }
+      });
+      jQuery(document).on('gform_post_conditional_logic', function (event, formId, fields, isInit) { })
+    });
+  </script>
+  <script>
+    gform.initializeOnLoaded(function () {
+      jQuery(document).trigger("gform_pre_post_render", [{
+        formId: "1",
+        currentPage: "1",
+        abort: function () {
+          this.preventDefault();
+        }
+      }]);
+      if (event && event.defaultPrevented) {
+        return;
+      }
+      const gformWrapperDiv = document.getElementById("gform_wrapper_1");
+      if (gformWrapperDiv) {
+        const visibilitySpan = document.createElement("span");
+        visibilitySpan.id = "gform_visibility_test_1";
+        gformWrapperDiv.insertAdjacentElement("afterend", visibilitySpan);
+      }
+      const visibilityTestDiv = document.getElementById("gform_visibility_test_1");
+      let postRenderFired = false;
+      function triggerPostRender() {
+        if (postRenderFired) {
+          return;
+        }
+        postRenderFired = true;
+        jQuery(document).trigger('gform_post_render', [1, 1]);
+        gform.utils.trigger({
+          event: 'gform/postRender',
+          native: false,
+          data: {
+            formId: 1,
+            currentPage: 1
+          }
+        });
+        if (visibilityTestDiv) {
+          visibilityTestDiv.parentNode.removeChild(visibilityTestDiv);
+        }
+      }
+      function debounce(func, wait, immediate) {
+        var timeout;
+        return function () {
+          var context = this
+            , args = arguments;
+          var later = function () {
+            timeout = null;
+            if (!immediate)
+              func.apply(context, args);
+          };
+          var callNow = immediate && !timeout;
+          clearTimeout(timeout);
+          timeout = setTimeout(later, wait);
+          if (callNow)
+            func.apply(context, args);
+        }
+          ;
+      }
+      const debouncedTriggerPostRender = debounce(function () {
+        triggerPostRender();
+      }, 200);
+      if (visibilityTestDiv && visibilityTestDiv.offsetParent === null) {
+        const observer = new MutationObserver((mutations) => {
+          mutations.forEach((mutation) => {
+            if (mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null) {
+              debouncedTriggerPostRender();
+              observer.disconnect();
+            }
+          }
+          );
+        }
+        );
+        observer.observe(document.body, {
+          attributes: true,
+          childList: false,
+          subtree: true,
+          attributeFilter: ['style', 'class'],
+        });
+      } else {
+        triggerPostRender();
+      }
+    });
+  </script>
+</body>
+
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1730319417 -->
