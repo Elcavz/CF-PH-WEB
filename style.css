@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    border-bottom: solid 5px red;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 18px;
+}
