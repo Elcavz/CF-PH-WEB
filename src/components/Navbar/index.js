@@ -9,7 +9,7 @@ function Navbar() {
             </div>
             <ul class="m-0 p-0">
                 <li>
-                    <Link to="/">Home1</Link>
+                    <Link to="/">Home</Link>
                 </li>
                 <li>
                     Services
