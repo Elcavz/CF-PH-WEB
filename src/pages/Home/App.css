@@ -16,3 +16,17 @@ li {
 .carousel .carousel-item {
   height: 500px;
 }
+
+.card {
+  width: 18rem;
+  min-height: 25rem;
+}
+
+.card img {
+  height: 275px;
+}
+
+.customer-logo img {
+  height: 100px;
+  width: 272px;
+}

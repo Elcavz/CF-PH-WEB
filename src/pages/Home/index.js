@@ -1,5 +1,26 @@
 import '../Home/App.css';
-import img1 from './img/CF-54-1024x683.jpg'
+import img1 from './img/CF-54-1024x683.jpg';
+import cardImg1 from './img/CF-4-1024x768.jpg';
+import cardImg2 from './img/CFv81.jpg';
+import cardImg3 from './img/CF-36-1024x724.jpg';
+import cardImg4 from './img/CF-59-1024x683.jpg';
+import cs1 from './customer_logo/se_logo.png';
+import cs2 from './customer_logo/ae_logo.png';
+import cs3 from './customer_logo/tk_logo.png';
+import cs4 from './customer_logo/vertiv_logo.png';
+import cs5 from './customer_logo/sanyo_denki_logo.png';
+import cs6 from './customer_logo/carrier_logo.png';
+import cs7 from './customer_logo/emc2_logo.png';
+import cs8 from './customer_logo/siemens_logo.png';
+import cs9 from './customer_logo/IBM_logo.png';
+import cs10 from './customer_logo/dell_Logo.png';
+import cs11 from './customer_logo/macrowiring_logo.png';
+import cs12 from './customer_logo/ingersoll_logo.png';
+import cs13 from './customer_logo/ross_logo.png';
+import cs14 from './customer_logo/AJP-logo.png';
+import cs15 from './customer_logo/panasonic_logo.png';
+import cs16 from './customer_logo/mchale_logo.png';
+import cs17 from './customer_logo/flex_logo.png';
 
 function Home() {
   return (
@@ -64,6 +85,128 @@ function Home() {
         </div>
         <div>
           <img className='img-fluid' src={img1}></img>
+        </div>
+      </div>
+
+      <div className='container py-4 px-0 d-flex flex-row justify-content-between'>
+        <div class="card border-dark">
+          <div class="view overlay">
+            <img class="card-img-top" src={cardImg1} alt="Card image cap"></img>
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <div class="card-body d-flex justify-content-between flex-column">
+            <h6 class="card-title">Tool-making and CNC Machining</h6>
+            <button type="button" class="btn btn-danger btn-md">EXPLORE</button>
+          </div>
+        </div>
+        <div class="card border-dark">
+          <div class="view overlay">
+            <img class="card-img-top" src={cardImg2} alt="Card image cap"></img>
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <div class="card-body d-flex justify-content-between flex-column">
+            <h6 class="card-title">Finishing & Assembly</h6>
+            <button type="button" class="btn btn-danger btn-md">EXPLORE</button>
+          </div>
+        </div>
+        <div class="card border-dark">
+          <div class="view overlay">
+            <img class="card-img-top" src={cardImg3} alt="Card image cap"></img>
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <div class="card-body d-flex justify-content-between flex-column">
+            <h6 class="card-title">Design & Project Management</h6>
+            <button type="button" class="btn btn-danger btn-md">EXPLORE</button>
+          </div>
+        </div>
+        <div class="card border-dark">
+          <div class="view overlay">
+            <img class="card-img-top" src={cardImg4} alt="Card image cap"></img>
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <div class="card-body d-flex justify-content-between flex-column">
+            <h6 class="card-title">Punching, Forming, Stamping & Welding</h6>
+            <button type="button" class="btn btn-danger btn-md">EXPLORE</button>
+          </div>
+        </div>
+      </div>
+
+      <div className='container my-5'>
+        <div className='text-center'>
+          <h5>
+            Some of the industry-leading brands we are proud to have worked with
+          </h5>
+        </div>
+        <div id='customer-logo-container' className='d-flex flex-column justify-content-between gap-3'>
+          <div className='d-flex flex-row justify-content-between'>
+            <div className='customer-logo border border-danger'>
+              <img src={cs1}></img>
+            </div>
+            <div className='customer-logo border border-danger'>
+              <img src={cs2}></img>
+            </div>
+            <div className='customer-logo border border-danger'>
+              <img src={cs3}></img>
+            </div>
+            <div className='customer-logo border border-danger'>
+              <img src={cs4}></img>
+            </div>
+          </div>
+          <div className='d-flex flex-row justify-content-between'>
+            <div className='customer-logo border border-danger'>
+              <img src={cs5}></img>
+            </div>
+            <div className='customer-logo border border-danger'>
+              <img src={cs6}></img>
+            </div>
+            <div className='customer-logo border border-danger'>
+              <img src={cs7}></img>
+            </div>
+            <div className='customer-logo border border-danger'>
+              <img src={cs8}></img>
+            </div>
+          </div>
+          <div className='d-flex flex-row justify-content-between'>
+            <div className='customer-logo border border-danger'>
+              <img src={cs9}></img>
+            </div>
+            <div className='customer-logo border border-danger'>
+              <img src={cs10}></img>
+            </div>
+            <div className='customer-logo border border-danger'>
+              <img src={cs11}></img>
+            </div>
+            <div className='customer-logo border border-danger'>
+              <img src={cs12}></img>
+            </div>
+          </div>
+          <div className='d-flex flex-row justify-content-between'>
+            <div className='customer-logo border border-danger'>
+              <img src={cs13}></img>
+            </div>
+            <div className='customer-logo border border-danger'>
+              <img src={cs14}></img>
+            </div>
+            <div className='customer-logo border border-danger'>
+              <img src={cs15}></img>
+            </div>
+            <div className='customer-logo border border-danger'>
+              <img src={cs16}></img>
+            </div>
+          </div>
+          <div className='d-flex flex-row justify-content-between'>
+            <div className='customer-logo border border-danger'>
+              <img src={cs17}></img>
+            </div>
+          </div>
         </div>
       </div>
     </div>
