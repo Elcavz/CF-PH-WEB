@@ -1,4 +1,5 @@
 import '../Home/App.css';
+import carousel_img1 from './landing_page_image/Screenshot 2024-12-16 132115.png';
 import img1 from './img/CF-54-1024x683.jpg';
 import cardImg1 from './img/CF-4-1024x768.jpg';
 import cardImg2 from './img/CFv81.jpg';
@@ -21,6 +22,7 @@ import cs14 from './customer_logo/AJP-logo.png';
 import cs15 from './customer_logo/panasonic_logo.png';
 import cs16 from './customer_logo/mchale_logo.png';
 import cs17 from './customer_logo/flex_logo.png';
+import cs18 from './customer_logo/eaton_logo.png';
 
 function Home() {
   return (
@@ -40,7 +42,7 @@ function Home() {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="https://mdevelopers.com/storage/0_web-development-testing_94af65a7.webp" className="d-block w-100 h-100"
+            <img src={carousel_img1} className="d-block w-100 h-100"
               alt="..."></img>
           </div>
           <div className="carousel-item">
@@ -139,72 +141,104 @@ function Home() {
         </div>
       </div>
 
-      <div className='container my-5'>
+      <div id='customer-logo-container' className='my-5 w-100 py-5'>
         <div className='text-center'>
           <h5>
             Some of the industry-leading brands we are proud to have worked with
           </h5>
         </div>
-        <div id='customer-logo-container' className='d-flex flex-column justify-content-between gap-3'>
-          <div className='d-flex flex-row justify-content-between'>
-            <div className='customer-logo border border-danger'>
+        <div className='d-flex flex-column justify-content-between gap-5 mt-5'>
+          <div className='d-flex flex-row justify-content-evenly'>
+            <div className='customer-logo'>
               <img src={cs1}></img>
             </div>
-            <div className='customer-logo border border-danger'>
+            <div className='customer-logo'>
               <img src={cs2}></img>
             </div>
-            <div className='customer-logo border border-danger'>
+            <div className='customer-logo'>
               <img src={cs3}></img>
             </div>
-            <div className='customer-logo border border-danger'>
+            <div className='customer-logo'>
               <img src={cs4}></img>
             </div>
           </div>
-          <div className='d-flex flex-row justify-content-between'>
-            <div className='customer-logo border border-danger'>
+          <div className='d-flex flex-row justify-content-evenly'>
+            <div className='customer-logo'>
               <img src={cs5}></img>
             </div>
-            <div className='customer-logo border border-danger'>
+            <div className='customer-logo'>
               <img src={cs6}></img>
             </div>
-            <div className='customer-logo border border-danger'>
+            <div className='customer-logo'>
               <img src={cs7}></img>
             </div>
-            <div className='customer-logo border border-danger'>
+            <div className='customer-logo'>
               <img src={cs8}></img>
             </div>
           </div>
-          <div className='d-flex flex-row justify-content-between'>
-            <div className='customer-logo border border-danger'>
+          <div className='d-flex flex-row justify-content-evenly'>
+            <div className='customer-logo'>
               <img src={cs9}></img>
             </div>
-            <div className='customer-logo border border-danger'>
+            <div className='customer-logo'>
               <img src={cs10}></img>
             </div>
-            <div className='customer-logo border border-danger'>
+            <div className='customer-logo'>
               <img src={cs11}></img>
             </div>
-            <div className='customer-logo border border-danger'>
+            <div className='customer-logo'>
               <img src={cs12}></img>
             </div>
           </div>
-          <div className='d-flex flex-row justify-content-between'>
-            <div className='customer-logo border border-danger'>
+          <div className='d-flex flex-row justify-content-evenly'>
+            <div className='customer-logo'>
               <img src={cs13}></img>
             </div>
-            <div className='customer-logo border border-danger'>
+            <div className='customer-logo'>
               <img src={cs14}></img>
             </div>
-            <div className='customer-logo border border-danger'>
+            <div className='customer-logo'>
               <img src={cs15}></img>
             </div>
-            <div className='customer-logo border border-danger'>
+            <div className='customer-logo'>
               <img src={cs16}></img>
             </div>
           </div>
-          <div className='d-flex flex-row justify-content-between'>
-            <div className='customer-logo border border-danger'>
+          <div className='d-flex flex-row justify-content-evenly'>
+            <div className='customer-logo'>
               <img src={cs17}></img>
+            </div>
+            <div className='customer-logo'>
+              <img src={cs18}></img>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fl-row-content-wrap">
+        <div class="uabb-row-separator uabb-top-row-separator">
+        </div>
+        <div class="fl-row-content fl-row-fixed-width fl-node-content">
+
+          <div class="fl-col-group fl-node-5a26c488c0f83" data-node="5a26c488c0f83">
+            <div class="fl-col fl-node-5a26c488c0fbd fl-col-bg-color" data-node="5a26c488c0fbd">
+              <div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-5a26c488c0ff5" data-node="5a26c488c0ff5">
+                <div class="fl-module-content fl-node-content">
+                  <div class="fl-rich-text">
+                    <p>© 2024 C &amp; F Tooling - Global design and manufacture of precision sheet metal assemblies.</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="fl-col fl-node-5a26c5242dc60 fl-col-bg-color fl-col-small" data-node="5a26c5242dc60">
+              <div class="fl-col-content fl-node-content"><div class="fl-module fl-module-rich-text fl-node-5a26c53e2ce28" data-node="5a26c53e2ce28">
+                <div class="fl-module-content fl-node-content">
+                  <div class="fl-rich-text">
+                    <p><a title="Website Design Galway" href="http://www.martec.ie/service/web-design/" target="_blank" rel="noopener">Website Design Ireland</a> by <a href="http://www.martec.ie" target="_blank" rel="noopener">Martec</a></p>
+                  </div>
+                </div>
+              </div>
+              </div>
             </div>
           </div>
         </div>

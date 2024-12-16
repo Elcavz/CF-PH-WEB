@@ -26,6 +26,10 @@ li {
   height: 275px;
 }
 
+#customer-logo-container {
+  background-color: rgb(220, 220, 220);
+}
+
 .customer-logo img {
   height: 100px;
   width: 272px;
