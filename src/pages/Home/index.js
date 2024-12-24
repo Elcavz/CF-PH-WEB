@@ -27,13 +27,16 @@ import cs15 from './customer_logo/panasonic_logo.png';
 import cs16 from './customer_logo/mchale_logo.png';
 import cs17 from './customer_logo/flex_logo.png';
 import cs18 from './customer_logo/eaton_logo.png';
+import qaIso from './img/qa_iso.png';
+import qcEcovadis from './img/qa_ecovadis.png';
+import qcTqm from './img/qc_tqm.png';
 
 function Home() {
   return (
     <div id='body'>
       <div className='bg-white container'>
         <div className='d-flex m-auto container'>
-          <div id="carouselExampleIndicators" className="carousel slide bg-dark w-100" data-bs-ride="carousel">
+          <div id="carouselExampleIndicators" className="carousel slide bg-dark w-100 mt-3" data-bs-ride="carousel">
             <div className="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -70,12 +73,12 @@ function Home() {
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
               data-bs-slide="prev">
-              <span><i class="fa-solid fa-chevron-left fa-2xl" style={{ color: '#ff0000' }}></i></span>
+              <span><i className="fa-solid fa-chevron-left fa-2xl" style={{ color: '#ff0000' }}></i></span>
               <span className="visually-hidden">Previous</span>
             </button>
             <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
               data-bs-slide="next">
-              <span><i class="fa-solid fa-chevron-right fa-2xl" style={{ color: '#ff0000' }}></i></span>
+              <span><i className="fa-solid fa-chevron-right fa-2xl" style={{ color: '#ff0000' }}></i></span>
               <span className="visually-hidden">Next</span>
             </button>
           </div>
@@ -97,65 +100,65 @@ function Home() {
           </div>
         </div>
 
-        <div className='container py-4 px-0 d-flex justify-content-between'>
-          <div class="card border-dark">
-            <div class="view overlay">
-              <img class="card-img-top" src={cardImg1} alt="Card image cap"></img>
+        <div className='container py-4 px-0 d-flex justify-content-between flex-wrap'>
+          <div className="card border-dark">
+            <div className="view overlay">
+              <img className="card-img-top" src={cardImg1} alt="Card image cap"></img>
               <a href="#!">
-                <div class="mask rgba-white-slight"></div>
+                <div className="mask rgba-white-slight"></div>
               </a>
             </div>
-            <div class="card-body d-flex justify-content-between flex-column">
-              <h6 class="card-title">Tool-making and CNC Machining</h6>
-              <button type="button" class="btn btn-danger btn-md">EXPLORE</button>
+            <div className="card-body d-flex justify-content-between flex-column">
+              <h6 className="card-title">Tool-making and CNC Machining</h6>
+              <button type="button" className="btn btn-danger btn-md">EXPLORE</button>
             </div>
           </div>
-          <div class="card border-dark">
-            <div class="view overlay">
-              <img class="card-img-top" src={cardImg2} alt="Card image cap"></img>
+          <div className="card border-dark">
+            <div className="view overlay">
+              <img className="card-img-top" src={cardImg2} alt="Card image cap"></img>
               <a href="#!">
-                <div class="mask rgba-white-slight"></div>
+                <div className="mask rgba-white-slight"></div>
               </a>
             </div>
-            <div class="card-body d-flex justify-content-between flex-column">
-              <h6 class="card-title">Finishing & Assembly</h6>
-              <button type="button" class="btn btn-danger btn-md">EXPLORE</button>
+            <div className="card-body d-flex justify-content-between flex-column">
+              <h6 className="card-title">Finishing & Assembly</h6>
+              <button type="button" className="btn btn-danger btn-md">EXPLORE</button>
             </div>
           </div>
-          <div class="card border-dark">
-            <div class="view overlay">
-              <img class="card-img-top" src={cardImg3} alt="Card image cap"></img>
+          <div className="card border-dark">
+            <div className="view overlay">
+              <img className="card-img-top" src={cardImg3} alt="Card image cap"></img>
               <a href="#!">
-                <div class="mask rgba-white-slight"></div>
+                <div className="mask rgba-white-slight"></div>
               </a>
             </div>
-            <div class="card-body d-flex justify-content-between flex-column">
-              <h6 class="card-title">Design & Project Management</h6>
-              <button type="button" class="btn btn-danger btn-md">EXPLORE</button>
+            <div className="card-body d-flex justify-content-between flex-column">
+              <h6 className="card-title">Design & Project Management</h6>
+              <button type="button" className="btn btn-danger btn-md">EXPLORE</button>
             </div>
           </div>
-          <div class="card border-dark">
-            <div class="view overlay">
-              <img class="card-img-top" src={cardImg4} alt="Card image cap"></img>
+          <div className="card border-dark">
+            <div className="view overlay">
+              <img className="card-img-top" src={cardImg4} alt="Card image cap"></img>
               <a href="#!">
-                <div class="mask rgba-white-slight"></div>
+                <div className="mask rgba-white-slight"></div>
               </a>
             </div>
-            <div class="card-body d-flex justify-content-between flex-column">
-              <h6 class="card-title">Punching, Forming, Stamping & Welding</h6>
-              <button type="button" class="btn btn-danger btn-md">EXPLORE</button>
+            <div className="card-body d-flex justify-content-between flex-column">
+              <h6 className="card-title">Punching, Forming, Stamping & Welding</h6>
+              <button type="button" className="btn btn-danger btn-md">EXPLORE</button>
             </div>
           </div>
         </div>
 
-        <div id='customer-logo-container' className='container my-3 w-100 py-5'>
+        <div id='customer-logo-container' className='container w-100 py-5'>
           <div className='text-center'>
             <h3>
               Some of the industry-leading brands we are proud to have worked with
             </h3>
           </div>
-          <div className='d-flex flex-column justify-content-between gap-5 mt-5'>
-            <div className='d-flex flex-row justify-content-evenly'>
+          <div className='d-flex flex-column justify-content-between flex-wrap gap-5 mt-5'>
+            <div className='d-flex flex-row justify-content-evenly flex-wrap'>
               <div className='customer-logo'>
                 <img className='img-fluid' src={cs1}></img>
               </div>
@@ -169,7 +172,7 @@ function Home() {
                 <img className='img-fluid' src={cs4}></img>
               </div>
             </div>
-            <div className='d-flex flex-row justify-content-evenly'>
+            <div className='d-flex flex-row justify-content-evenly flex-wrap'>
               <div className='customer-logo'>
                 <img className='img-fluid' src={cs5}></img>
               </div>
@@ -183,7 +186,7 @@ function Home() {
                 <img className='img-fluid' src={cs8}></img>
               </div>
             </div>
-            <div className='d-flex flex-row justify-content-evenly'>
+            <div className='d-flex flex-row justify-content-evenly flex-wrap'>
               <div className='customer-logo'>
                 <img className='img-fluid' src={cs9}></img>
               </div>
@@ -197,7 +200,7 @@ function Home() {
                 <img className='img-fluid' src={cs12}></img>
               </div>
             </div>
-            <div className='d-flex flex-row justify-content-evenly'>
+            <div className='d-flex flex-row justify-content-evenly flex-wrap'>
               <div className='customer-logo'>
                 <img className='img-fluid' src={cs13}></img>
               </div>
@@ -211,13 +214,44 @@ function Home() {
                 <img className='img-fluid' src={cs16}></img>
               </div>
             </div>
-            <div className='d-flex flex-row justify-content-evenly'>
+            <div className='d-flex flex-row justify-content-evenly flex-wrap'>
               <div className='customer-logo'>
                 <img className='img-fluid' src={cs17}></img>
               </div>
               <div className='customer-logo'>
                 <img className='img-fluid' src={cs18}></img>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className='py-4'>
+          <div className='text-center pb-3'>
+            <h3>Quality Assurance</h3>
+          </div>
+          <div className='d-flex flex-row justify-content-between flex-wrap gap-3'>
+            <div className='fw-bold text-danger fs-5 d-flex flex-column justify-content-between'>
+              <div>
+                <p>ISO 9001:2015</p>
+                <p>ISO14001:2015</p>
+                <p>ISO45001:2018 CERTIFIED</p>
+              </div>
+              <div>
+                <img className='img-fluid' src={qaIso}></img>
+              </div>
+            </div>
+            <div className='d-flex flex-column justify-content-between'>
+              <p className='fw-bold text-danger fs-5'>ECOVADIS</p><br></br>
+              <p>Silver rated in our industry sector for
+                Sustainable Supply Management.</p>
+              <div className='text-center'>
+                <img className='img-fluid' src={qcEcovadis} height={295} width={300}></img>
+              </div>
+            </div>
+            <div className='fw-bold text-danger fs-5 d-flex flex-column justify-content-between'>
+              <p>TOTAL
+                QUALITY
+                MANAGEMENT</p>
+              <img className='img-fluid' src={qcTqm}></img>
             </div>
           </div>
         </div>

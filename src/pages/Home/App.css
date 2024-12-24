@@ -15,6 +15,10 @@ p {
   margin: 0 !important;
 }
 
+h3 {
+  margin: 0;
+}
+
 li {
   display: inline-block;
   padding: 12px;

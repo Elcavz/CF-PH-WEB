@@ -5,13 +5,13 @@ import '../Navbar/navbar.css';
 function Navbar() {
     return (
         <div id="nav">
-            <div class="container w-100 d-flex justify-content-between p-0">
+            <div className="container w-100 d-flex justify-content-between p-0">
                 <div id="cf-logo">
                     <img src={Logo} alt="cf-logo" height="50px" width="150px"></img>
                 </div>
-                <ul class="m-0 p-0">
+                <ul className="m-0 p-0">
                     <li>
-                        <Link to="/">Home</Link>
+                        <a href="/">Home</a>
                     </li>
                     <li>
                         <Link to="/Services">Services</Link>
