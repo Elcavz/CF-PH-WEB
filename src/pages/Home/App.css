@@ -12,7 +12,7 @@
 }
 
 p {
-  margin: 0 !important;
+  margin-bottom: 25.65px !important;
 }
 
 h3 {
@@ -49,4 +49,12 @@ li {
 
 .carousel-indicators [data-bs-target] {
   background-color: red;
+}
+
+#isoFooter div {
+  width: 33%;
+}
+
+#contact input {
+  height: 50px;
 }

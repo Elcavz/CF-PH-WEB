@@ -224,34 +224,82 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className='py-4'>
-          <div className='text-center pb-3'>
-            <h3>Quality Assurance</h3>
+        <div id='isoFooter' className='d-flex justify-content-between flex-row'>
+          <div className='m-3 ms-0'>
+            <p>PHILIPPINES</p>
+            <p>
+              C&F Manufacturing Philippines Corporation
+              <br></br>
+              Lot. 1 & 4, Block 11, Phase 3
+              <br></br>
+              FCIE-SEZ, Dasmarinas City, Cavite Philippines,
+              <br></br>
+              4114
+              <br></br>
+              T: +63 46 437 1079
+              <br></br>
+              E: enquiries@cfmanufacturing.com
+            </p>
+            <div className='w-100'>
+              <img className='img-fluid bg-dark' src="https://www.cftooling.ie/wp-content/uploads/4-footer-logo-white-iso-logos-e1693572037680.png" alt="4-footer-logo-white-iso-logos"></img>
+            </div>
           </div>
-          <div className='d-flex flex-row justify-content-between flex-wrap gap-3'>
-            <div className='fw-bold text-danger fs-5 d-flex flex-column justify-content-between'>
-              <div>
-                <p>ISO 9001:2015</p>
-                <p>ISO14001:2015</p>
-                <p>ISO45001:2018 CERTIFIED</p>
-              </div>
-              <div>
-                <img className='img-fluid' src={qaIso}></img>
-              </div>
+          <div className='m-3'>
+            <p>IRELAND</p>
+            <p>
+              C&F Tooling Ltd.,
+              <br></br>
+              Cashla, Athenry.
+              <br></br>
+              Co. Galway, H65 V243
+              <br></br>
+              Ireland
+              <br></br>
+              T: +353 91 790 868
+              <br></br>
+              E: enquiries@cftooling.ie
+            </p>
+            <div className='w-100 text-center'>
+              <img className='bg-dark' src='https://www.cftooling.ie/wp-content/uploads/9001white-iso-logo-150x150.png' alt='4-footer-logo-white-iso-logos' height={116.45}></img>
             </div>
-            <div className='d-flex flex-column justify-content-between'>
-              <p className='fw-bold text-danger fs-5'>ECOVADIS</p><br></br>
-              <p>Silver rated in our industry sector for
-                Sustainable Supply Management.</p>
-              <div className='text-center'>
-                <img className='img-fluid' src={qcEcovadis} height={295} width={300}></img>
-              </div>
+          </div>
+          <div className='m-3 me-0'>
+            <p>CZECH REPUBLIC</p>
+            <p>
+              C&F Manufacturing s.r.o.
+              <br></br>
+              Palackého 647,
+              <br></br>
+              Velim,
+              <br></br>
+              28101 Czech Republic
+              <br></br>
+              T: +420 321 737 060
+              <br></br>
+              E: enquiries@cfmanufacturing.cz
+            </p>
+            <div className='w-100'>
+              <img className='img-fluid bg-dark' src='https://www.cftooling.ie/wp-content/uploads/4-footer-logo-white-iso-logos-e1693572037680.png' alt="4-footer-logo-white-iso-logos"></img>
             </div>
-            <div className='fw-bold text-danger fs-5 d-flex flex-column justify-content-between'>
-              <p>TOTAL
-                QUALITY
-                MANAGEMENT</p>
-              <img className='img-fluid' src={qcTqm}></img>
+          </div>
+        </div>
+        <div id='contact' className='mt-5'>
+          <h4>Contact Us</h4>
+          <div className='d-flex justify-content-between flex-row'>
+            <div className='w-50'>
+              <form>
+                <div>
+                  <input placeholder='First Name'></input>
+                  <input placeholder='Last Name'></input>
+                </div>
+                <div>
+                  <input placeholder='Email Address'></input>
+                  <input placeholder='Phone Number'></input>
+                </div>
+                <div>
+                  <textarea placeholder='Your Inquiry'></textarea>
+                </div>
+              </form>
             </div>
           </div>
         </div>
