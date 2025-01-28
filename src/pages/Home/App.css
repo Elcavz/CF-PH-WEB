@@ -51,10 +51,22 @@ li {
   background-color: red;
 }
 
-#isoFooter div {
-  width: 33%;
+#isoFooter [id^='isoContainer'] {
+  width: 28%;
 }
 
 #contact input {
   height: 50px;
+  width: 318px;
+}
+
+#contact textarea {
+  height: 150px;
+  width: 648px;
+  resize: none;
+}
+
+#contact button {
+  height: 47px;
+  width: 100px;
 }

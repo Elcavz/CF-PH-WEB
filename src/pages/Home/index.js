@@ -35,7 +35,7 @@ function Home() {
   return (
     <div id='body'>
       <div className='bg-white container'>
-        <div className='d-flex m-auto container'>
+        <div className='d-flex m-auto container p-0'>
           <div id="carouselExampleIndicators" className="carousel slide bg-dark w-100 mt-3" data-bs-ride="carousel">
             <div className="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active"
@@ -100,7 +100,7 @@ function Home() {
           </div>
         </div>
 
-        <div className='container py-4 px-0 d-flex justify-content-between flex-wrap'>
+        <div className='container py-4 px-0 d-flex justify-content-center flex-wrap gap-5'>
           <div className="card border-dark">
             <div className="view overlay">
               <img className="card-img-top" src={cardImg1} alt="Card image cap"></img>
@@ -158,7 +158,7 @@ function Home() {
             </h3>
           </div>
           <div className='d-flex flex-column justify-content-between flex-wrap gap-5 mt-5'>
-            <div className='d-flex flex-row justify-content-evenly flex-wrap'>
+            <div className='d-flex flex-row justify-content-center flex-wrap gap-5'>
               <div className='customer-logo'>
                 <img className='img-fluid' src={cs1}></img>
               </div>
@@ -172,7 +172,7 @@ function Home() {
                 <img className='img-fluid' src={cs4}></img>
               </div>
             </div>
-            <div className='d-flex flex-row justify-content-evenly flex-wrap'>
+            <div className='d-flex flex-row justify-content-center flex-wrap gap-5'>
               <div className='customer-logo'>
                 <img className='img-fluid' src={cs5}></img>
               </div>
@@ -186,7 +186,7 @@ function Home() {
                 <img className='img-fluid' src={cs8}></img>
               </div>
             </div>
-            <div className='d-flex flex-row justify-content-evenly flex-wrap'>
+            <div className='d-flex flex-row justify-content-center flex-wrap gap-5'>
               <div className='customer-logo'>
                 <img className='img-fluid' src={cs9}></img>
               </div>
@@ -200,7 +200,7 @@ function Home() {
                 <img className='img-fluid' src={cs12}></img>
               </div>
             </div>
-            <div className='d-flex flex-row justify-content-evenly flex-wrap'>
+            <div className='d-flex flex-row justify-content-center flex-wrap gap-5'>
               <div className='customer-logo'>
                 <img className='img-fluid' src={cs13}></img>
               </div>
@@ -214,7 +214,7 @@ function Home() {
                 <img className='img-fluid' src={cs16}></img>
               </div>
             </div>
-            <div className='d-flex flex-row justify-content-evenly flex-wrap'>
+            <div className='d-flex flex-row justify-content-center flex-wrap gap-5'>
               <div className='customer-logo'>
                 <img className='img-fluid' src={cs17}></img>
               </div>
@@ -224,8 +224,8 @@ function Home() {
             </div>
           </div>
         </div>
-        <div id='isoFooter' className='d-flex justify-content-between flex-row'>
-          <div className='m-3 ms-0'>
+        <div id='isoFooter' className='d-flex justify-content-between flex-row gap-5 flex-wrap'>
+          <div id='isoContainer1' className='m-3 ms-0'>
             <p>PHILIPPINES</p>
             <p>
               C&F Manufacturing Philippines Corporation
@@ -244,7 +244,7 @@ function Home() {
               <img className='img-fluid bg-dark' src="https://www.cftooling.ie/wp-content/uploads/4-footer-logo-white-iso-logos-e1693572037680.png" alt="4-footer-logo-white-iso-logos"></img>
             </div>
           </div>
-          <div className='m-3'>
+          <div id='isoContainer2' className='m-3'>
             <p>IRELAND</p>
             <p>
               C&F Tooling Ltd.,
@@ -260,10 +260,10 @@ function Home() {
               E: enquiries@cftooling.ie
             </p>
             <div className='w-100 text-center'>
-              <img className='bg-dark' src='https://www.cftooling.ie/wp-content/uploads/9001white-iso-logo-150x150.png' alt='4-footer-logo-white-iso-logos' height={116.45}></img>
+              <img className='bg-dark' src='https://www.cftooling.ie/wp-content/uploads/9001white-iso-logo-150x150.png' alt='4-footer-logo-white-iso-logos' height={105.64}></img>
             </div>
           </div>
-          <div className='m-3 me-0'>
+          <div id='isoContainer3' className='m-3 me-0'>
             <p>CZECH REPUBLIC</p>
             <p>
               C&F Manufacturing s.r.o.
@@ -283,23 +283,31 @@ function Home() {
             </div>
           </div>
         </div>
-        <div id='contact' className='mt-5'>
-          <h4>Contact Us</h4>
-          <div className='d-flex justify-content-between flex-row'>
-            <div className='w-50'>
-              <form>
-                <div>
-                  <input placeholder='First Name'></input>
-                  <input placeholder='Last Name'></input>
-                </div>
-                <div>
-                  <input placeholder='Email Address'></input>
-                  <input placeholder='Phone Number'></input>
-                </div>
-                <div>
-                  <textarea placeholder='Your Inquiry'></textarea>
-                </div>
-              </form>
+        <div className=''>
+          <div id='contact' className='py-5'>
+            <h4>Contact Us</h4>
+            <div className='d-flex justify-content-center flex-row flex-wrap'>
+              <div className='w-50 position-relative'>
+                <form>
+                  <div className='d-flex flex-row justify-content-start gap-3 mb-3'>
+                    <input className='ps-2' placeholder='First Name'></input>
+                    <input className='ps-2' placeholder='Last Name'></input>
+                  </div>
+                  <div className='d-flex flex-row justify-content-start gap-3 mb-3'>
+                    <input className='ps-2' placeholder='Email Address'></input>
+                    <input className='ps-2' placeholder='Phone Number'></input>
+                  </div>
+                  <div className='mb-2'>
+                    <textarea className='ps-2' placeholder='Your Inquiry'></textarea>
+                  </div>
+                  <div>
+                    <button className='btn btn-danger border rounded-0'>Submit</button>
+                  </div>
+                </form>
+              </div>
+              <div className='w-50'>
+                <img className='img-fluid' src='https://www.cftooling.ie/wp-content/uploads/WORLD-MAP2.png'></img>
+              </div>
             </div>
           </div>
         </div>
