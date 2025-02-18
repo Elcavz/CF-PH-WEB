@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import Services from './pages/Services';
 import Sectors from './pages/Sectors';
 import Careers from './pages/Careers';
-import Sustainability from './pages/Sustainability';
+import Overview from './pages/Overview';
 import Footer from './components/Footer';
 
 function App() {
@@ -14,11 +14,11 @@ function App() {
     <Router>
       <Navbar/>
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/Home' element={<Home/>}/>
         <Route path='/Services' element={<Services/>}/>
         <Route path='/Sectors' element={<Sectors/>}/>
         <Route path='/Careers' element={<Careers/>}/>
-        <Route path='/Sustainability' element={<Sustainability/>}/>
+        <Route path='/' element={<Overview/>}/>
         <Route path='/About' element={<About/>}/>
         <Route path='/Contact' element={<Contact/>}/>
       </Routes>
