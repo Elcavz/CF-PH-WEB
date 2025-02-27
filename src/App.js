@@ -8,6 +8,7 @@ import Sectors from './pages/Sectors';
 import Careers from './pages/Careers';
 import Overview from './pages/Overview';
 import Footer from './components/Footer';
+import Environmental from './pages/Environmental';
 
 function App() {
   return (
@@ -18,9 +19,10 @@ function App() {
         <Route path='/Services' element={<Services/>}/>
         <Route path='/Sectors' element={<Sectors/>}/>
         <Route path='/Careers' element={<Careers/>}/>
-        <Route path='/' element={<Overview/>}/>
         <Route path='/About' element={<About/>}/>
         <Route path='/Contact' element={<Contact/>}/>
+        <Route path='/Overview' element={<Overview/>}/>
+        <Route path='/' element={<Environmental/>}/>
       </Routes>
       <Footer/>
     </Router>

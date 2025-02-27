@@ -5,21 +5,6 @@
   font-family: "Open Sans", sans-serif;
 }
 
-#nav {
-  border-bottom: solid 5px red;
-}
-
-ul {
-  list-style-type: none;
-  text-align: center;
-}
-
-li {
-  display: inline-block;
-  padding: 20px;
-  font-size: 18px;
-}
-
 .carousel .carousel-item {
   height: 650px;
 }

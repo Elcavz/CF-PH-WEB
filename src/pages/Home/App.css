@@ -19,12 +19,6 @@ h3 {
   margin: 0;
 }
 
-li {
-  display: inline-block;
-  padding: 12px;
-  font-size: 18px;
-}
-
 .carousel .carousel-item {
   height: 470px;
 }

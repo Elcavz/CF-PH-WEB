@@ -283,7 +283,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className=''>
+        <div id='footer'>
           <div id='contact' className='py-5'>
             <h4>Contact Us</h4>
             <div className='d-flex justify-content-center flex-row flex-wrap'>
