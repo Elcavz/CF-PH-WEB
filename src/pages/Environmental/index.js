@@ -62,6 +62,56 @@ function Environmental() {
           </div>
         </div>
       </div>
+      <hr></hr>
+      <div className='container py-5'>
+        <div className='text-center mb-5'>
+          <h1>Carbon Reduction Roadmap For C&F Operations</h1>
+        </div>
+        <p className='fs-3'>
+          From 2019 to 2024, C&F has successfully reduced CO₂ intensity (per unit of sales) by 50.25% through process automation, efficiency improvements, energy-efficient assets, electrification, and electricity decarbonization. Moving forward, we aim to further reduce CO₂ intensity by up to 75%, reinforcing our commitment to sustainability and environmental responsibility.
+        </p>
+        <table className='table table-striped border border-dark'>
+          <thead>
+            <tr className='text-center'>
+              <th colSpan={3} className='border border-dark'>Target</th>
+              <th colSpan={3} className='border border-dark'>Achieved Emission Reduction</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className='border border-dark'>1</td>
+              <td className='border border-dark'>Base Year (YYYY)</td>
+              <td className='border border-dark'>2019</td>
+              <td className='border border-dark'>2022</td>
+              <td className='border border-dark'>2023</td>
+              <td className='border border-dark'>2024</td>
+            </tr>
+            <tr>
+              <td className='border border-dark'>2.1</td>
+              <td className='border border-dark'>GHG Intensity</td>
+              <td className='border border-dark'>0.000248118</td>
+              <td className='border border-dark'>0.00166934</td>
+              <td className='border border-dark'>0.000144802</td>
+              <td className='border border-dark'>0.00012345</td>
+            </tr>
+            <tr>
+              <td className='border border-dark'>2.2</td>
+              <td className='border border-dark'>GHG Intensity % Reduction (50% or above) target 2025</td>
+              <td className='border border-dark'>50%</td>
+              <td className='border border-dark'>33%</td>
+              <td className='border border-dark'>41.64%</td>
+              <td className='border border-dark'>50.25%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr></hr>
+      <div className='container py-5'>
+        <div className='text-center mb-5'>
+          <h1>Carbon Reduction Roadmap For C&F Operations</h1>
+        </div>
+        
+      </div>
     </div>
   )
 }
