@@ -42,12 +42,6 @@ function Home() {
                 aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                aria-label="Slide 5"></button>
             </div>
             <div className="carousel-inner">
               <div className="carousel-item active">
@@ -56,18 +50,6 @@ function Home() {
               </div>
               <div className="carousel-item">
                 <img src={carousel_img2} className="d-block w-100 h-100"
-                  alt="..."></img>
-              </div>
-              <div className="carousel-item">
-                <img src="https://mdevelopers.com/storage/0_web-development-testing_94af65a7.webp" className="d-block w-100 h-100"
-                  alt="..."></img>
-              </div>
-              <div className="carousel-item">
-                <img src="https://mdevelopers.com/storage/0_web-development-testing_94af65a7.webp" className="d-block w-100 h-100"
-                  alt="..."></img>
-              </div>
-              <div className="carousel-item">
-                <img src="https://mdevelopers.com/storage/0_web-development-testing_94af65a7.webp" className="d-block w-100 h-100"
                   alt="..."></img>
               </div>
             </div>
@@ -110,7 +92,7 @@ function Home() {
             </div>
             <div className="card-body d-flex justify-content-between flex-column">
               <h6 className="card-title">Tool-making and CNC Machining</h6>
-              <button type="button" className="btn btn-danger btn-md">EXPLORE</button>
+              {/* <button type="button" className="btn btn-danger btn-md">EXPLORE</button> */}
             </div>
           </div>
           <div className="card border-dark">
@@ -122,7 +104,7 @@ function Home() {
             </div>
             <div className="card-body d-flex justify-content-between flex-column">
               <h6 className="card-title">Finishing & Assembly</h6>
-              <button type="button" className="btn btn-danger btn-md">EXPLORE</button>
+              {/* <button type="button" className="btn btn-danger btn-md">EXPLORE</button> */}
             </div>
           </div>
           <div className="card border-dark">
@@ -134,7 +116,7 @@ function Home() {
             </div>
             <div className="card-body d-flex justify-content-between flex-column">
               <h6 className="card-title">Design & Project Management</h6>
-              <button type="button" className="btn btn-danger btn-md">EXPLORE</button>
+              {/* <button type="button" className="btn btn-danger btn-md">EXPLORE</button> */}
             </div>
           </div>
           <div className="card border-dark">
@@ -146,7 +128,7 @@ function Home() {
             </div>
             <div className="card-body d-flex justify-content-between flex-column">
               <h6 className="card-title">Punching, Forming, Stamping & Welding</h6>
-              <button type="button" className="btn btn-danger btn-md">EXPLORE</button>
+              {/* <button type="button" className="btn btn-danger btn-md">EXPLORE</button> */}
             </div>
           </div>
         </div>
@@ -224,7 +206,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div id='isoFooter' className='d-flex justify-content-between flex-row gap-5 flex-wrap'>
+        <div id='isoFooter' className='d-flex justify-content-between bg-danger flex-row gap-5 flex-wrap text-white px-5'>
           <div id='isoContainer1' className='m-3 ms-0'>
             <p>PHILIPPINES</p>
             <p>
@@ -241,7 +223,7 @@ function Home() {
               E: enquiries@cfmanufacturing.com
             </p>
             <div className='w-100'>
-              <img className='img-fluid bg-dark' src="https://www.cftooling.ie/wp-content/uploads/4-footer-logo-white-iso-logos-e1693572037680.png" alt="4-footer-logo-white-iso-logos"></img>
+              <img className='img-fluid' src="https://www.cftooling.ie/wp-content/uploads/4-footer-logo-white-iso-logos-e1693572037680.png" alt="4-footer-logo-white-iso-logos"></img>
             </div>
           </div>
           <div id='isoContainer2' className='m-3'>
@@ -260,7 +242,7 @@ function Home() {
               E: enquiries@cftooling.ie
             </p>
             <div className='w-100 text-center'>
-              <img className='bg-dark' src='https://www.cftooling.ie/wp-content/uploads/9001white-iso-logo-150x150.png' alt='4-footer-logo-white-iso-logos' height={105.64}></img>
+              <img src='https://www.cftooling.ie/wp-content/uploads/9001white-iso-logo-150x150.png' alt='4-footer-logo-white-iso-logos' height={105.64}></img>
             </div>
           </div>
           <div id='isoContainer3' className='m-3 me-0'>
@@ -279,7 +261,7 @@ function Home() {
               E: enquiries@cfmanufacturing.cz
             </p>
             <div className='w-100'>
-              <img className='img-fluid bg-dark' src='https://www.cftooling.ie/wp-content/uploads/4-footer-logo-white-iso-logos-e1693572037680.png' alt="4-footer-logo-white-iso-logos"></img>
+              <img className='img-fluid' src='https://www.cftooling.ie/wp-content/uploads/4-footer-logo-white-iso-logos-e1693572037680.png' alt="4-footer-logo-white-iso-logos"></img>
             </div>
           </div>
         </div>

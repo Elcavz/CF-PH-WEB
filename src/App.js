@@ -9,20 +9,24 @@ import Careers from './pages/Careers';
 import Overview from './pages/Overview';
 import Footer from './components/Footer';
 import Environmental from './pages/Environmental';
+import Social from './pages/Social';
+import Governance from './pages/Governance';
 
 function App() {
   return (
     <Router>
       <Navbar/>
       <Routes>
-        <Route path='/Home' element={<Home/>}/>
+        <Route path='/' element={<Home/>}/>
         <Route path='/Services' element={<Services/>}/>
         <Route path='/Sectors' element={<Sectors/>}/>
         <Route path='/Careers' element={<Careers/>}/>
         <Route path='/About' element={<About/>}/>
         <Route path='/Contact' element={<Contact/>}/>
         <Route path='/Overview' element={<Overview/>}/>
-        <Route path='/' element={<Environmental/>}/>
+        <Route path='/Environmental' element={<Environmental/>}/>
+        <Route path='/Social' element={<Social/>}/>
+        <Route path='/Governance' element={<Governance/>}/>
       </Routes>
       <Footer/>
     </Router>

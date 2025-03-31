@@ -13,7 +13,7 @@ function Navbar() {
           <li>
             <a href="/">Home</a>
           </li>
-          <li>
+          {/* <li>
             <Link to="/Services">Services</Link>
           </li>
           <li>
@@ -21,24 +21,24 @@ function Navbar() {
           </li>
           <li>
             <Link to="/Careers">Careers</Link>
-          </li>
+          </li> */}
           <div className="dropdown">
             <button className="dropbtn">Sustainability&nbsp;
               <i className="fa fa-caret-down"></i>
             </button>
             <div className="dropdown-content">
               <Link to="/Overview">Overview</Link>
-              <a href="#">Environment</a>
-              <a href="#">Social</a>
-              <a href="#">Governance</a>
+              <a href="/Environmental">Environment</a>
+              <a href="/Social">Social</a>
+              <a href="/Governance">Governance</a>
             </div>
           </div>
-          <li>
+          {/* <li>
             <Link to="/About">About Us</Link>
           </li>
           <li>
             <Link to="/Contact">Contact</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

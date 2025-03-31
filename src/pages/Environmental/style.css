@@ -13,3 +13,7 @@
 #environmental #key-targets img:hover {
     transform: scale(1.03);
 }
+
+#environmental .container .card {
+    min-height: 487px!important;
+}
