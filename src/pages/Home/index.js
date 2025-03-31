@@ -288,7 +288,7 @@ function Home() {
                 </form>
               </div>
               <div className='w-50'>
-                <img className='img-fluid' src='https://www.cftooling.ie/wp-content/uploads/WORLD-MAP2.png'></img>
+                <img className='img-fluid p-5' src='https://www.cftooling.ie/wp-content/uploads/WORLD-MAP2.png'></img>
               </div>
             </div>
           </div>

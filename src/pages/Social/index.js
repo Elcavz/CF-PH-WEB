@@ -5,6 +5,8 @@ import communityEngagement from './assets/community-engagement.png';
 import genderBalance from './assets/gender-balance.png';
 import training from './assets/training.png';
 import healthAndSafety from './assets/health-and-safety.png';
+import workSafety from './assets/work-safety.png';
+import edi from './assets/edi.png';
 
 function Social() {
   return (
@@ -62,6 +64,19 @@ function Social() {
           <img className='img-fluid' src={genderBalance} width={350}></img>
           <img className='img-fluid' src={training} width={350}></img>
           <img className='img-fluid' src={healthAndSafety} width={350}></img>
+        </div>
+      </div>
+      <hr></hr>
+      <div id='social-goals' className='container py-5'>
+        <div className='d-flex flex-row justify-content-between'>
+          <div className='w-50'>
+            <h3>Health and Safety Places</h3>
+            <img className='img-fluid p-5' src={workSafety} alt='Work Safety'></img>
+          </div>
+          <div className='w-50'>
+            <h3>Equity, Diversity, and Inclusion</h3>
+            <img className='img-fluid p-5' src={edi} alt='Equity, Diversity, and Inclusion'></img>
+          </div>
         </div>
       </div>
     </div>
