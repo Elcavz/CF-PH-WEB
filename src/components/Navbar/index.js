@@ -34,7 +34,7 @@ function Navbar() {
             </div>
           </div>
           <li>
-            <Link to="http://cfphilippines.com" target="_blank">Employee</Link>
+            <Link to="http://member.cfphilippines.com" target="_blank">Employee</Link>
           </li>
           {/* <li>
             <Link to="/About">About Us</Link>
