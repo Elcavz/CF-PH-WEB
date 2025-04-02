@@ -106,7 +106,7 @@ function Environmental() {
               <td className='border border-dark'>50%</td>
               <td className='border border-dark'>33%</td>
               <td className='border border-dark'>41.64%</td>
-              <td className='border border-dark'>50.25%</td>
+              <td className='border border-dark'>49.13%</td>
             </tr>
           </tbody>
         </table>

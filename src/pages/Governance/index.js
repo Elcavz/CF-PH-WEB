@@ -82,7 +82,7 @@ function Governance() {
             <h5>Business Ethics</h5>
             <p>
               C&F is committed to responsible business practices.
-              The <a href='https://www.hitachi.com/en/about/conduct/' target='_blank'>C&F Group Code of Ethics and Business Conduct</a> sets high standards for business practices and compliance, and spells out decision-making procedures and actions for all C&F Group executives and employees.
+              The C&F Group Code of Ethics and Business Conduct sets high standards for business practices and compliance, and spells out decision-making procedures and actions for all C&F Group executives and employees.
             </p>
           </div>
           <img className='img-fluid' src={businessEthics} alt='Business Ethics'></img>
@@ -103,7 +103,7 @@ function Governance() {
         <div className='d-flex justify-content-center my-4'>
           <div className='w-50'>
             <p>
-              C&F has established comprehensive and robust policies to respect the human rights of workers throughout our value chain. This includes our Human Rights Risk Management Implementation Manual, produced in accordance with the UN Guiding Principles on Business and Human Rights. Further details can be found on our <a href='https://www.hitachi.com/sustainability/social/index.html' target='_blank'>Social</a> page.
+              C&F has established comprehensive and robust policies to respect the human rights of workers throughout our value chain. This includes our Human Rights Risk Management Implementation Manual, produced in accordance with the UN Guiding Principles on Business and Human Rights. Further details can be found on our Social page.
             </p>
           </div>
         </div>
@@ -113,7 +113,7 @@ function Governance() {
         <div className='d-flex justify-content-center'>
           <div className='w-50'>
             <p>
-              We investigate and respond to issues relating to conflict minerals across our business to minimize human-rights risk in the procurement of minerals. This compliments C&F's Group policy for <a href='https://www.hitachi.com/procurement/csr/social/index.html' target='_blank'>Responsible Supply Chain of Minerals</a>.
+              We investigate and respond to issues relating to conflict minerals across our business to minimize human-rights risk in the procurement of minerals. This compliments C&F's Group policy for Responsible Supply Chain of Minerals.
             </p>
           </div>
         </div>
@@ -136,7 +136,7 @@ function Governance() {
         <div className='d-flex justify-content-center my-4'>
           <div className='w-50'>
             <p>
-              We investigate and respond to issues relating to conflict minerals across our business to minimize human-rights risk in the procurement of minerals. This compliments C&F's Group policy for <a href='https://www.hitachi.com/procurement/csr/social/index.html' target='_blank'>Responsible Supply Chain of Minerals</a>.
+              The C&F Manufacturing Phils. Corp. leads the One Compliance Program, a program for global compliance initiatives. We also conduct annual training for all employees to build understanding of our code of conduct and how they apply day-to-day.
             </p>
           </div>
         </div>

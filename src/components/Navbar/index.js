@@ -11,7 +11,7 @@ function Navbar() {
         </div>
         <ul className="m-0 p-0">
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           {/* <li>
             <Link to="/Services">Services</Link>
@@ -28,11 +28,14 @@ function Navbar() {
             </button>
             <div className="dropdown-content">
               <Link to="/Overview">Overview</Link>
-              <a href="/Environmental">Environment</a>
-              <a href="/Social">Social</a>
-              <a href="/Governance">Governance</a>
+              <Link to="/Environmental">Environment</Link>
+              <Link to="/Social">Social</Link>
+              <Link to="/Governance">Governance</Link>
             </div>
           </div>
+          <li>
+            <Link to="http://cfphilippines.com" target="_blank">Employee</Link>
+          </li>
           {/* <li>
             <Link to="/About">About Us</Link>
           </li>

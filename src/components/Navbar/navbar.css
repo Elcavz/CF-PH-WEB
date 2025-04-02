@@ -22,8 +22,9 @@ ul li a:hover {
     color: red;
 }
 
+#nav ul li:nth-child(1),
 .dropdown {
-  float: right;
+  float: left;
 }
 
 .dropdown .dropbtn {
