@@ -24,7 +24,7 @@ function Overview() {
           <p className='m-0 pb-3'>C&F Group believes that responsible business practices are key to long-term success. Through continuous improvement, collaboration, and innovation, we strive to create a positive impact on the planet and society while maintaining business excellence.</p>
         </div>
         <p className='m-0'>
-          C&F is proud to partner with the UN Global Compact (UNGC) to strengthen our commitment to sustainability. Together, we’re working toward a more equitable and responsible future because we believe that caring for people and the planet is at the heart of meaningful progress.
+          C&F is proud to partner with the <a href='https://unglobalcompact.org/what-is-gc/participants/168016' target='_blank'><b>UN Global Compact (UNGC)</b></a> to strengthen our commitment to sustainability. Together, we’re working toward a more equitable and responsible future because we believe that caring for people and the planet is at the heart of meaningful progress.
         </p>
       </div>
     </div>
