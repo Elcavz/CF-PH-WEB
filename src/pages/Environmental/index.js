@@ -74,7 +74,7 @@ function Environmental() {
           <h2>Carbon Reduction Roadmap For C&F Operations</h2>
         </div>
         <p className='fs-3'>
-          From 2019 to 2024, C&F has successfully reduced CO₂ intensity (per unit of sales) by 50.25% through process automation, efficiency improvements, energy-efficient assets, electrification, and electricity decarbonization. Moving forward, we aim to further reduce CO₂ intensity by up to 75%, reinforcing our commitment to sustainability and environmental responsibility.
+          From 2019 to 2024, C&F has successfully reduced CO₂ intensity (per unit of sales) by 49.13% through process automation, efficiency improvements, energy-efficient assets, electrification, and electricity decarbonization. Moving forward, we aim to further reduce CO₂ intensity by up to 75%, reinforcing our commitment to sustainability and environmental responsibility.
         </p>
         <table className='table table-striped border border-dark'>
           <thead>
