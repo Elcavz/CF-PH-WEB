@@ -31,6 +31,8 @@ import qaIso from './img/qa_iso.png';
 import qcEcovadis from './img/qa_ecovadis.png';
 import qcTqm from './img/qc_tqm.png';
 
+
+// continue
 function Home() {
   return (
     <div id='body'>
