@@ -87,93 +87,6 @@ function Environmental() {
         <p className='fs-3'>
           From 2019 to 2024, C&F has successfully reduced CO₂ intensity (per unit of sales) by 49.13% through process automation, efficiency improvements, energy-efficient assets, electrification, and electricity decarbonization. Moving forward, we aim to further reduce CO₂ intensity by up to 75%, reinforcing our commitment to sustainability and environmental responsibility.
         </p>
-        <table className='table table-striped border border-dark'>
-          <thead>
-            <tr className='text-center'>
-              <th colSpan={3} className='border border-dark'>Target</th>
-              <th colSpan={3} className='border border-dark'>Achieved Emission Reduction</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className='border border-dark'>1</td>
-              <td className='border border-dark'>Base Year (YYYY)</td>
-              <td className='border border-dark'>2019</td>
-              <td className='border border-dark'>2022</td>
-              <td className='border border-dark'>2023</td>
-              <td className='border border-dark'>2024</td>
-            </tr>
-            <tr>
-              <td className='border border-dark'>2.1</td>
-              <td className='border border-dark'>GHG Intensity</td>
-              <td className='border border-dark'>0.000248118</td>
-              <td className='border border-dark'>0.00166934</td>
-              <td className='border border-dark'>0.000144802</td>
-              <td className='border border-dark'>0.00012345</td>
-            </tr>
-            <tr>
-              <td className='border border-dark'>2.2</td>
-              <td className='border border-dark'>GHG Intensity % Reduction (50% or above) target 2025</td>
-              <td className='border border-dark'>50%</td>
-              <td className='border border-dark'>33%</td>
-              <td className='border border-dark'>41.64%</td>
-              <td className='border border-dark'>49.13%</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <hr></hr>
-      <div className='container py-5'>
-        <div className='text-center mb-5'>
-          <h2>Resource Efficiency Through Innovation</h2>
-        </div>
-        <div className='row row-cols-1 row-cols-sm-2 row-cols-md-3'>
-          <div className='col'>
-            <div class="card">
-              <img src={acb} class="card-img-top img-fluid" alt="..."></img>
-              <div class="card-body">
-                <h5 class="card-title">Adopting Circular Business:</h5>
-                <p class="card-text">Practices is a significant step toward sustainability and achieving a 50% improvement in resource and water use by 2050.</p>
-              </div>
-            </div>
-          </div>
-          <div className='col'>
-            <div class="card">
-              <img src={re} class="card-img-top img-fluid" alt="..."></img>
-              <div class="card-body">
-                <h5 class="card-title">Resource Efficiency:</h5>
-                <p class="card-text">Circular practices can minimize waste and enhance resource efficiency, leading to cost savings over time.</p>
-              </div>
-            </div>
-          </div>
-          <div className='col'>
-            <div class="card">
-              <img src={ei} class="card-img-top img-fluid" alt="..."></img>
-              <div class="card-body">
-                <h5 class="card-title">Environmental Impact:</h5>
-                <p class="card-text">Reducing resource and water use can significantly decrease your environmental footprint, contributing to global sustainability efforts.</p>
-              </div>
-            </div>
-          </div>
-          <div className='col'>
-            <div class="card">
-              <img src={rc} class="card-img-top img-fluid" alt="..."></img>
-              <div class="card-body">
-                <h5 class="card-title">Regulatory Compliance:</h5>
-                <p class="card-text">As regulations around sustainability tighten, adopting these practices can help ensure compliance and avoid potential penalties.</p>
-              </div>
-            </div>
-          </div>
-          <div className='col'>
-            <div class="card">
-              <img src={bi} class="card-img-top img-fluid" alt="..."></img>
-              <div class="card-body">
-                <h5 class="card-title">Brand Image</h5>
-                <p class="card-text">Demonstrating a commitment to sustainability can enhance your brand reputation, attracting eco-conscious consumers and investors.</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <hr></hr>
       <div className='container py-5'>
@@ -200,20 +113,6 @@ function Environmental() {
               Additionally, we are collaborating with partners across our value chain to implement programs for recycling, repairing, and reselling used products, helping to close the loop and reduce environmental impact.
             </p>
           </div>
-        </div>
-      </div>
-      <hr></hr>
-      <div className='container py-5'>
-        <div className='text-center mb-5'>
-          <h2>Minimizing Our Impact On Nature</h2>
-        </div>
-        <div className='d-flex flex-row flex-wrap'>
-          <div className='w-50 p-5 pt-0'>
-            <p>
-              Defining your impact on biodiversity and aligning your operations with planetary boundaries can help ensure a more sustainable future. What steps are you considering to assess your impact.
-            </p>
-          </div>
-          <img className='img-fluid' src={environmentalNature} alt='Minimizing Our Impact On Nature' width={450}></img>
         </div>
       </div>
       <hr></hr>
@@ -425,8 +324,7 @@ function Environmental() {
           <div>
             <h3>SUPPLIER DIVERSITY PROGRAM</h3>
             <img className='img-fluid my-3' src={supplierDiversityProgram}></img>
-            <div className='mt-3'>
-              <h4>Legends:</h4>
+            <div className='mt-2'>
               <table class="table table-bordered border-dark">
                 <thead>
                   <tr>
@@ -479,7 +377,6 @@ function Environmental() {
             <h3>SUPPLIER DIVERSITY PROGRAM</h3>
             <img className='img-fluid my-3' src={supplierSustainabilityComplaint2024}></img>
             <div className='mt-4'>
-              <h4>Legends:</h4>
               <table class="table table-bordered border-dark mt-3">
                 <thead>
                   <tr>
@@ -583,6 +480,73 @@ function Environmental() {
           <img className='img-fluid border border-dark mt-4' src={certificateOfTreatment2024} height={480} width={480}></img>
         </div>
       </section>
+      <hr></hr>
+      <div className='container py-5'>
+        <div className='text-center mb-5'>
+          <h2>Resource Efficiency Through Innovation</h2>
+        </div>
+        <div className='row row-cols-1 row-cols-sm-2 row-cols-md-3'>
+          <div className='col'>
+            <div class="card">
+              <img src={acb} class="card-img-top img-fluid" alt="..."></img>
+              <div class="card-body">
+                <h5 class="card-title">Adopting Circular Business:</h5>
+                <p class="card-text">Practices is a significant step toward sustainability and achieving a 50% improvement in resource and water use by 2050.</p>
+              </div>
+            </div>
+          </div>
+          <div className='col'>
+            <div class="card">
+              <img src={re} class="card-img-top img-fluid" alt="..."></img>
+              <div class="card-body">
+                <h5 class="card-title">Resource Efficiency:</h5>
+                <p class="card-text">Circular practices can minimize waste and enhance resource efficiency, leading to cost savings over time.</p>
+              </div>
+            </div>
+          </div>
+          <div className='col'>
+            <div class="card">
+              <img src={ei} class="card-img-top img-fluid" alt="..."></img>
+              <div class="card-body">
+                <h5 class="card-title">Environmental Impact:</h5>
+                <p class="card-text">Reducing resource and water use can significantly decrease your environmental footprint, contributing to global sustainability efforts.</p>
+              </div>
+            </div>
+          </div>
+          <div className='col'>
+            <div class="card">
+              <img src={rc} class="card-img-top img-fluid" alt="..."></img>
+              <div class="card-body">
+                <h5 class="card-title">Regulatory Compliance:</h5>
+                <p class="card-text">As regulations around sustainability tighten, adopting these practices can help ensure compliance and avoid potential penalties.</p>
+              </div>
+            </div>
+          </div>
+          <div className='col'>
+            <div class="card">
+              <img src={bi} class="card-img-top img-fluid" alt="..."></img>
+              <div class="card-body">
+                <h5 class="card-title">Brand Image</h5>
+                <p class="card-text">Demonstrating a commitment to sustainability can enhance your brand reputation, attracting eco-conscious consumers and investors.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr></hr>
+      <div className='container py-5'>
+        <div className='text-center mb-5'>
+          <h2>Minimizing Our Impact On Nature</h2>
+        </div>
+        <div className='d-flex flex-row flex-wrap'>
+          <div className='w-50 p-5 pt-0'>
+            <p>
+              Defining your impact on biodiversity and aligning your operations with planetary boundaries can help ensure a more sustainable future. What steps are you considering to assess your impact.
+            </p>
+          </div>
+          <img className='img-fluid' src={environmentalNature} alt='Minimizing Our Impact On Nature' width={450}></img>
+        </div>
+      </div>
     </div>
   )
 }
