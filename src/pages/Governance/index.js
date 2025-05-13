@@ -172,8 +172,56 @@ function Governance() {
           </div>
         </div>
       </div>
+      <hr></hr>
+      <section className='container py-5'>
+        <div className='text-center'>
+          <h2>ETHICS KPI 2024</h2>
+        </div>
+        <table class="table table-bordered border-dark mt-3">
+          <thead>
+            <tr>
+              <th>Type of Concern</th>
+              <th>No. of Cases</th>
+              <th>Status</th>
+              <th>Action Taken</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="concern-type">Workplace Misconduct</td>
+              <td class="zero-cases">0</td>
+              <td class="na-status">N/A</td>
+              <td class="na-status">N/A</td>
+            </tr>
+            <tr>
+              <td class="concern-type">Harassment Complaints</td>
+              <td class="zero-cases">0</td>
+              <td class="na-status">N/A</td>
+              <td class="na-status">N/A</td>
+            </tr>
+            <tr>
+              <td class="concern-type">Conflict of Interest</td>
+              <td class="zero-cases">0</td>
+              <td class="na-status">N/A</td>
+              <td class="na-status">N/A</td>
+            </tr>
+            <tr>
+              <td class="concern-type">Discrimination Reports</td>
+              <td class="zero-cases">0</td>
+              <td class="na-status">N/A</td>
+              <td class="na-status">N/A</td>
+            </tr>
+            <tr>
+              <td class="concern-type">Ethics Hotline Reports</td>
+              <td class="zero-cases">0</td>
+              <td class="na-status">N/A</td>
+              <td class="na-status">N/A</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </div>
   )
 }
 
-export default Governance; 
+export default Governance;

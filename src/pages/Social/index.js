@@ -7,6 +7,7 @@ import training from './assets/training.png';
 import healthAndSafety from './assets/health-and-safety.png';
 import workSafety from './assets/work-safety.png';
 import edi from './assets/edi.png';
+import internalDiversityKpi from './assets/internal-diversity-kpi.png';
 
 function Social() {
   return (
@@ -79,6 +80,161 @@ function Social() {
           </div>
         </div>
       </div>
+      <hr></hr>
+      <section id='labor-and-human-rights-kpi' className='container py-5'>
+        <div className='text-center'>
+          <h2>LABOR AND HUMAN RIGHTS KPIs (2024)</h2>
+        </div>
+        <div className='my-3'>
+          <table class="table table-bordered border-dark table-striped">
+            <thead>
+              <tr>
+                <th>KPI</th>
+                <th>2024 Target</th>
+                <th>YTD Actual</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>% of workforce with formal employment contracts</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td class="status-achieved">Achieved</td>
+              </tr>
+              <tr>
+                <td>% of employees receiving annual rights and ethical training</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td class="status-achieved">Achieved</td>
+              </tr>
+              <tr>
+                <td>Number of reported child/forced labor cases</td>
+                <td>0</td>
+                <td>0</td>
+                <td class="status-achieved">Achieved</td>
+              </tr>
+              <tr>
+                <td>Lost Time Injury Frequency Rate (LTIFR)</td>
+                <td>≤1.5</td>
+                <td>0.69</td>
+                <td class="status-achieved">Achieved</td>
+              </tr>
+              <tr>
+                <td>Gender diversity in leadership positions</td>
+                <td>≥30%</td>
+                <td>55%</td>
+                <td class="status-achieved">Achieved</td>
+              </tr>
+              <tr>
+                <td>Grievance resolution rate within 10 days</td>
+                <td>≥90%</td>
+                <td>92%</td>
+                <td class="status-achieved">Achieved</td>
+              </tr>
+              <tr>
+                <td>Workplace satisfaction survey response rate</td>
+                <td>≥75%</td>
+                <td>85%</td>
+                <td class="status-achieved">Achieved</td>
+              </tr>
+              <tr>
+                <td>% of subcontracted labor verified for compliance</td>
+                <td>≥90%</td>
+                <td>100%</td>
+                <td class="status-exceeded">Exceeded</td>
+              </tr>
+              <tr>
+                <td>Percentage of facilities with completed DEI assessments</td>
+                <td>100%</td>
+                <td>100%</td>
+                <td class="status-achieved">Achieved</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="container mt-5">
+          <div className='text-center'>
+            <h2>TRAINING MONITORING</h2>
+          </div>
+          <div class="table-responsive">
+            <table class="table border-dark table-bordered">
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>YEAR</th>
+                  <th>TARGET (No. of Employees)</th>
+                  <th>ACTUAL (No. of Employees)</th>
+                  <th>Average hours of training per employee</th>
+                  <th>Percentage % (Employee attended the training)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2023</td>
+                  <td>350.00</td>
+                  <td>335.00</td>
+                  <td>88.00</td>
+                  <td>95.71%</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>2024</td>
+                  <td>503.00</td>
+                  <td>500.00</td>
+                  <td>96.00</td>
+                  <td>99.40%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <hr></hr>
+      <section className='container py-5'>
+        <div className='text-center'>
+          <h2>INTERNAL DIVERSITY KPI</h2>
+        </div>
+        <img className='img-fluid' src={internalDiversityKpi}></img>
+      </section>
+      <hr></hr>
+      <section className='container py-5'>
+        <div className='text-center'>
+          <h2>LIVING WAGE METRICS/2024 WAGE LEVEL ASSESSMENT</h2>
+        </div>
+        <table class="table table-bordered border-dark mt-4">
+          <thead>
+            <tr>
+              <th>Indicator</th>
+              <th>Value</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Percentage of direct employees covered by a living wage benchmarking analysis</td>
+              <td>100%</td>
+              <td class="notes-cell">All direct employees included in the scope of internal HR assessment.</td>
+            </tr>
+            <tr>
+              <td>Percentage of direct employees paid below the living wage</td>
+              <td>60–70%</td>
+              <td class="notes-cell">Majority of machine operators and entry-level roles earn below <span class="bold-text">P18,000/month</span>.</td>
+            </tr>
+            <tr>
+              <td>Percentage of all employees paid below living wage, including direct and non-employee workers</td>
+              <td>65–75%</td>
+              <td class="notes-cell">Includes outsourced roles such as janitorial and security services.</td>
+            </tr>
+            <tr>
+              <td>Percentage of average wage gap for direct employees paid below the living wage against benchmark</td>
+              <td>20–30%</td>
+              <td class="notes-cell">The wage gap calculated based on average pay vs. living wage threshold.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </div>
   )
 }

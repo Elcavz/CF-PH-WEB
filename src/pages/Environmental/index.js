@@ -12,6 +12,17 @@ import ei from './assets/ei.png';
 import rc from './assets/rc.png';
 import bi from './assets/bi.png';
 import environmentalNature from './assets/environmental_nature.png';
+import supplierDiversityProgram from './assets/supplier-diversity-program.png';
+import supplierSustainabilityComplaint2024 from './assets/supplier-sustainability-complaint-2024.png';
+import crlCalabarquezCorp from './assets/CRL-Calabarquez-Corp.png';
+import crlCalabarquezCorp2 from './assets/CRL-Calabarquez-Corp-2.png';
+import crlCalabarquezCorp3 from './assets/CRL-Calabarquez-Corp-3.png';
+import wem2024 from './assets/WEM-2024.png';
+import wem2 from './assets/WEM-2024-2.png';
+import wem3 from './assets/WEM-2024-3.png';
+import fourthQuarterDomesticWasteWater2024Result1 from './assets/2024-4th-Quarter-Domestic-Wastewater-Result1.png';
+import fourthQuarterDomesticWasteWater2024Result2 from './assets/2024-4th-Quarter-Domestic-Wastewater-Result2.png';
+import certificateOfTreatment2024 from './assets/certificate-of-treatment-2024.png';
 
 function Environmental() {
   return (
@@ -205,6 +216,373 @@ function Environmental() {
           <img className='img-fluid' src={environmentalNature} alt='Minimizing Our Impact On Nature' width={450}></img>
         </div>
       </div>
+      <hr></hr>
+      <section className='container py-5'>
+        <div className='text-center'>
+          <h2>GHG Emission Value/Inventory</h2>
+        </div>
+        <table class="table table-bordered border-dark mt-4">
+          <thead>
+            <tr>
+              <th colSpan={7} className='text-center'>C&F GHG Emission Report</th>
+            </tr>
+            <tr>
+              <th>Sr. No.</th>
+              <th>Item</th>
+              <th>Base/Target</th>
+              <th colSpan={4} className='text-center'>Actual data</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="centered">1</td>
+              <td>Base year (YYYY)</td>
+              <td class="centered">2019</td>
+              <td class="centered">2022</td>
+              <td class="centered">2023</td>
+              <td class="centered">2024</td>
+              <td class="centered">2025</td>
+            </tr>
+            <tr>
+              <td class="centered">1.1</td>
+              <td>Scope 1 (tons)</td>
+              <td class="centered">686</td>
+              <td class="centered">527.4</td>
+              <td class="centered">510</td>
+              <td class="centered">305</td>
+              <td class="centered ongoing">ongoing</td>
+            </tr>
+            <tr>
+              <td class="centered">1.2</td>
+              <td>Scope 2 (tons)</td>
+              <td class="centered">1423</td>
+              <td class="centered">1442.42</td>
+              <td class="centered">1879.23</td>
+              <td class="centered">2282.46</td>
+              <td class="centered ongoing">ongoing</td>
+            </tr>
+            <tr>
+              <td class="centered">1.3</td>
+              <td>Turnover ($)</td>
+              <td class="centered">8,500,000</td>
+              <td class="centered">11,800,000</td>
+              <td class="centered">16,500,000</td>
+              <td class="centered">20,500,000</td>
+              <td class="centered ongoing">ongoing</td>
+            </tr>
+            <tr>
+              <td class="centered">2.1</td>
+              <td>Target GHG reduction %</td>
+              <td></td>
+              <td class="centered">-20%</td>
+              <td class="centered negative-value">-30%</td>
+              <td class="centered negative-value">-40%</td>
+              <td class="centered negative-value">-50%</td>
+            </tr>
+            <tr>
+              <td class="centered">2.2</td>
+              <td>Actual GHG reduction %</td>
+              <td></td>
+              <td class="centered negative-value">-33%</td>
+              <td class="centered negative-value">-42%</td>
+              <td class="centered negative-value">-49.13%</td>
+              <td class="centered ongoing">ongoing</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-bordered border-dark mt-5">
+          <thead>
+            <tr>
+              <th colspan="3" class="text-center">Scope 3</th>
+            </tr>
+            <tr>
+              <th>S No.</th>
+              <th>Flow</th>
+              <th>CO2e MT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Downstream delivery</td>
+              <td class="number-cell">388.00</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Upstream</td>
+              <td class="number-cell">215.00</td>
+            </tr>
+            <tr class="total-row">
+              <td colspan="2" className='text-center'>Total</td>
+              <td class="number-cell"><b>603.00</b></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr></hr>
+      <section className='container py-5'>
+        <div className='text-center'>
+          <h2>YEAR 2024 CONSUMPTION</h2>
+        </div>
+        <table className='table table-bordered border-dark mt-4'>
+          <tbody>
+            <tr>
+              <td><b>ELECTRICITY</b></td>
+              <td><b>3,371,900 KWH</b></td>
+            </tr>
+            <tr>
+              <td><b>DIESEL</b></td>
+              <td><b>121,205 LITER</b></td>
+            </tr>
+            <tr>
+              <td><b>WATER</b></td>
+              <td><b>22,023 LITER</b></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr></hr>
+      <section className='container py-5'>
+        <div className='text-center'>
+          <h2>SUSTAINABLE PROCUREMENT KPI 2024</h2>
+        </div>
+        <table class="table table-bordered border-dark mt-4">
+          <thead>
+            <tr>
+              <th className='text-center'>KPI</th>
+              <th>2024 Target</th>
+              <th>YTD Actual</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="kpi-name">ESG Assessment of New Suppliers</td>
+              <td>100%</td>
+              <td>95%</td>
+              <td class="status-ontrack">On Track</td>
+            </tr>
+            <tr>
+              <td class="kpi-name">Local Sourcing by Spend</td>
+              <td>≥ 60%</td>
+              <td>62%</td>
+              <td class="status-achieved">Achieved</td>
+            </tr>
+            <tr>
+              <td class="kpi-name">Supplier Code Compliance</td>
+              <td>100%</td>
+              <td>100%</td>
+              <td class="status-achieved">Achieved</td>
+            </tr>
+            <tr>
+              <td class="kpi-name">Spend on Sustainable Materials</td>
+              <td>≥ 75%</td>
+              <td>90%</td>
+              <td class="status-exceeded">Exceeded</td>
+            </tr>
+            <tr>
+              <td class="kpi-name">High-Risk Supplier Audits</td>
+              <td>75%</td>
+              <td>95%</td>
+              <td class="status-exceeded">Exceeded</td>
+            </tr>
+            <tr>
+              <td class="kpi-name">Procurement Staff ESG Training</td>
+              <td>2 sessions</td>
+              <td>2 sessions</td>
+              <td class="status-achieved">Achieved</td>
+            </tr>
+            <tr>
+              <td class="kpi-name">CO₂ Reduction from Transport</td>
+              <td>10%</td>
+              <td>12%</td>
+              <td class="status-exceeded">Exceeded</td>
+            </tr>
+            <tr>
+              <td class="kpi-name">Paperless Procurement Transactions</td>
+              <td>100%</td>
+              <td>100%</td>
+              <td class="status-achieved">Achieved</td>
+            </tr>
+            <tr>
+              <td class="kpi-name">Supplier Diversity (SMEs, Women-led)</td>
+              <td>30%</td>
+              <td>33%</td>
+              <td class="status-achieved">Achieved</td>
+            </tr>
+            <tr>
+              <td class="kpi-name">Grievance Resolution Time (Avg. Days)</td>
+              <td>≤ 10 days</td>
+              <td>8 days</td>
+              <td class="status-achieved">Achieved</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr></hr>
+      <section className='p-5'>
+        <div className='d-flex flex-row justify-content-between flex-wrap'>
+          <div>
+            <h3>SUPPLIER DIVERSITY PROGRAM</h3>
+            <img className='img-fluid my-3' src={supplierDiversityProgram}></img>
+            <div className='mt-3'>
+              <h4>Legends:</h4>
+              <table class="table table-bordered border-dark">
+                <thead>
+                  <tr>
+                    <th>Diversity Program</th>
+                    <th>Description</th>
+                    <th>Percentage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="program-name">WBE</td>
+                    <td>Women Owned Business</td>
+                    <td class="percentage-cell">25%</td>
+                  </tr>
+                  <tr>
+                    <td class="program-name">LBTBE</td>
+                    <td>LGBTQ+ Owned Business</td>
+                    <td class="percentage-cell">2%</td>
+                  </tr>
+                  <tr>
+                    <td class="program-name">SME</td>
+                    <td>Small Midsize Enterprise</td>
+                    <td class="percentage-cell">25%</td>
+                  </tr>
+                  <tr>
+                    <td class="program-name">SBE</td>
+                    <td>Small Business Enterprise</td>
+                    <td class="percentage-cell">43%</td>
+                  </tr>
+                  <tr>
+                    <td class="program-name">MBE</td>
+                    <td>Minority Owned Business</td>
+                    <td class="percentage-cell">0%</td>
+                  </tr>
+                  <tr>
+                    <td class="program-name">VBE</td>
+                    <td>Veteran Owned Business</td>
+                    <td class="percentage-cell">2%</td>
+                  </tr>
+                  <tr>
+                    <td class="program-name">DBE</td>
+                    <td>Disability/Veteran Owned Business</td>
+                    <td class="percentage-cell">2%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div>
+            <h3>SUPPLIER DIVERSITY PROGRAM</h3>
+            <img className='img-fluid my-3' src={supplierSustainabilityComplaint2024}></img>
+            <div className='mt-4'>
+              <h4>Legends:</h4>
+              <table class="table table-bordered border-dark mt-3">
+                <thead>
+                  <tr>
+                    <th>Description</th>
+                    <th>Target Supplier Compliant</th>
+                    <th>Actual Supplier Compliant</th>
+                    <th>Percentage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="description-cell">Supplier Code of Conduct</td>
+                    <td class="number-cell">52</td>
+                    <td class="number-cell">52</td>
+                    <td class="percentage-cell perfect-score">100%</td>
+                  </tr>
+                  <tr>
+                    <td class="description-cell">Supplier Contract</td>
+                    <td class="number-cell">52</td>
+                    <td class="number-cell">52</td>
+                    <td class="percentage-cell perfect-score">100%</td>
+                  </tr>
+                  <tr>
+                    <td class="description-cell">Sustainability Assessment</td>
+                    <td class="number-cell">52</td>
+                    <td class="number-cell">49</td>
+                    <td class="percentage-cell high-score">94%</td>
+                  </tr>
+                  <tr>
+                    <td class="description-cell">Sustainability On-Site Audit</td>
+                    <td class="number-cell">52</td>
+                    <td class="number-cell">49</td>
+                    <td class="percentage-cell high-score">94%</td>
+                  </tr>
+                  <tr>
+                    <td class="description-cell">Corrective Action/Capacity Building</td>
+                    <td class="number-cell">52</td>
+                    <td class="number-cell">47</td>
+                    <td class="percentage-cell high-score">90%</td>
+                  </tr>
+                  <tr>
+                    <td class="description-cell">Supplier Risk Assessment</td>
+                    <td class="number-cell">52</td>
+                    <td class="number-cell">49</td>
+                    <td class="percentage-cell high-score">94%</td>
+                  </tr>
+                  <tr>
+                    <td class="description-cell">C&F Buyers Training</td>
+                    <td class="number-cell">3</td>
+                    <td class="number-cell">3</td>
+                    <td class="percentage-cell perfect-score">100%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr></hr>
+      <section className='py-5 px-3'>
+        <div className='text-center'>
+          <h2>AMBIENT AIR REPORT 2024</h2>
+        </div>
+        <div className='d-flex flex-wrap flex-row justify-content-evenly mt-3'>
+          <img className='img-fluid' src={crlCalabarquezCorp} height={600} width={600}></img>
+          <img className='img-fluid' src={crlCalabarquezCorp2} height={600} width={600}></img>
+          <img className='img-fluid border border-dark' src={crlCalabarquezCorp3} height={600} width={600}></img>
+        </div>
+      </section>
+      <hr></hr>
+      <section className='py-5 px-3'>
+        <div className='text-center'>
+          <h2>WEM 2024</h2>
+        </div>
+        <div className='d-flex flex-wrap flex-row justify-content-evenly mt-3'>
+          <img className='img-fluid' src={wem2024} height={600} width={600}></img>
+          <img className='img-fluid' src={wem2} height={600} width={600}></img>
+          <img className='img-fluid border border-dark' src={wem3} height={600} width={600}></img>
+        </div>
+      </section>
+      <hr></hr>
+      <section className='container py-5'>
+        <div className='text-center'>
+          <h2>2024 4TH QUARTER DOMESTIC WASTEWATER</h2>
+        </div>
+        <div className='d-flex flex-wrap flex-row justify-content-evenly mt-3'>
+          <div className='mt-4'>
+            <h3>Result 1</h3>
+            <img className='img-fluid' src={fourthQuarterDomesticWasteWater2024Result1} height={560} width={560}></img>
+          </div>
+          <div className='mt-4'>
+            <h3>Result 2</h3>
+            <img className='img-fluid' src={fourthQuarterDomesticWasteWater2024Result2} height={560} width={560}></img>
+          </div>
+        </div>
+      </section>
+      <hr></hr>
+      <section className='container py-5'>
+        <div className='text-center'>
+          <h2>CERTIFICATE OF TREATMENT 2024</h2>
+          <img className='img-fluid border border-dark mt-4' src={certificateOfTreatment2024} height={480} width={480}></img>
+        </div>
+      </section>
     </div>
   )
 }
