@@ -182,9 +182,9 @@ function Social() {
                   <td>2</td>
                   <td>2024</td>
                   <td>503.00</td>
-                  <td>500.00</td>
+                  <td>503.00</td>
                   <td>96.00</td>
-                  <td>99.40%</td>
+                  <td>100%</td>
                 </tr>
               </tbody>
             </table>
