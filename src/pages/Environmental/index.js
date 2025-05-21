@@ -161,15 +161,6 @@ function Environmental() {
               <td class="centered ongoing">ongoing</td>
             </tr>
             <tr>
-              <td class="centered">1.3</td>
-              <td>Turnover ($)</td>
-              <td class="centered">8,500,000</td>
-              <td class="centered">11,800,000</td>
-              <td class="centered">16,500,000</td>
-              <td class="centered">20,500,000</td>
-              <td class="centered ongoing">ongoing</td>
-            </tr>
-            <tr>
               <td class="centered">2.1</td>
               <td>Target GHG reduction %</td>
               <td></td>
