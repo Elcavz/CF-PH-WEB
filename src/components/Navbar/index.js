@@ -22,7 +22,7 @@ function Navbar() {
           <li>
             <Link to="/Careers">Careers</Link>
           </li> */}
-          {/* <div className="dropdown">
+          <div className="dropdown">
             <button className="dropbtn">Sustainability&nbsp;
               <i className="fa fa-caret-down"></i>
             </button>
@@ -32,7 +32,7 @@ function Navbar() {
               <Link to="/Social">Social</Link>
               <Link to="/Governance">Governance</Link>
             </div>
-          </div> */}
+          </div>
           <li>
             <Link to="http://member.cfphilippines.com" target="_blank">Employee</Link>
           </li>
