@@ -27,7 +27,8 @@ ul li a:hover {
   float: left;
 }
 
-.dropdown .dropbtn {
+.dropdown .dropbtn,
+.dropdown .dropbtn1 {
   font-size: 16px;
   border: none;
   outline: none;
@@ -37,12 +38,13 @@ ul li a:hover {
   margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn, .dropdown1:hover .dropbtn1 {
     text-decoration: underline;
     color: red;
 }
 
-.dropdown-content {
+.dropdown-content,
+.dropdown-content1 {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -65,5 +67,9 @@ ul li a:hover {
 }
 
 .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown1:hover .dropdown-content1 {
   display: block;
 }
