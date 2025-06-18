@@ -1,9 +1,6 @@
 import '../Home/App.css';
 import carousel_img1 from './landing_page_image/shared image.jpg';
 import carousel_img2 from './landing_page_image/shared image (1).jpg';
-import carousel_img3 from './landing_page_image/shared image.jpg';
-import carousel_img4 from './landing_page_image/shared image.jpg';
-import carousel_img5 from './landing_page_image/shared image.jpg';
 import img1 from './img/CF-54-1024x683.jpg';
 import cardImg1 from './img/CF-4-1024x768.jpg';
 import cardImg2 from './img/CFv81.jpg';
@@ -27,9 +24,6 @@ import cs15 from './customer_logo/panasonic_logo.png';
 import cs16 from './customer_logo/mchale_logo.png';
 import cs17 from './customer_logo/flex_logo.png';
 import cs18 from './customer_logo/eaton_logo.png';
-import qaIso from './img/qa_iso.png';
-import qcEcovadis from './img/qa_ecovadis.png';
-import qcTqm from './img/qc_tqm.png';
 
 
 // continue
