@@ -166,7 +166,7 @@ function Environmental() {
             </tr>
             <tr>
               <td class="centered">2.1</td>
-              <td>Target GHG reduction %</td>
+              <td>Target CO₂ Intensity Reduction (%)</td>
               <td></td>
               <td class="centered">-20%</td>
               <td class="centered negative-value">-30%</td>
@@ -175,7 +175,7 @@ function Environmental() {
             </tr>
             <tr>
               <td class="centered">2.2</td>
-              <td>Actual GHG reduction %</td>
+              <td>Actual CO₂ Intensity Reduction (%)</td>
               <td></td>
               <td class="centered negative-value">-33%</td>
               <td class="centered negative-value">-42%</td>
