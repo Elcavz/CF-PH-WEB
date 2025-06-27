@@ -1,4 +1,6 @@
 import '../Home/App.css';
+import React, { useState } from 'react';
+import Swal from 'sweetalert2';
 import carousel_img1 from './landing_page_image/shared image.jpg';
 import carousel_img2 from './landing_page_image/shared image (1).jpg';
 import img1 from './img/CF-54-1024x683.jpg';
@@ -25,11 +27,58 @@ import cs16 from './customer_logo/mchale_logo.png';
 import cs17 from './customer_logo/flex_logo.png';
 import cs18 from './customer_logo/eaton_logo.png';
 
-
 // continue
 function Home() {
+  let [inputValue, setInputValue] = useState('');
+
+  const testDl = () => {
+    if (inputValue === "3at0n@2025") {
+      window.location.href = "https://cfphilippines.com/Eaton-Data/Download/Eaton-Data-06032025.zip";
+      setInputValue('');
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "Password is incorrect!",
+        icon: "error",
+        showConfirmButton: false,
+        timer: 1300,
+      });
+      setInputValue('');
+    }
+  };
+
   return (
     <div id='body'>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Enter Password:</h1>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="input-group mb-3">
+                <input
+                  type="password"
+                  className="form-control"
+                  aria-describedby="download"
+                  value={inputValue}
+                  onChange={(e) => setInputValue(e.target.value)}
+                />
+                <button
+                  id="download"
+                  className="btn btn-success"
+                  type="button"
+                  onClick={testDl}
+                >
+                  <i className="fa-solid fa-cloud-arrow-down"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className='bg-white container'>
         <div className='d-flex m-auto container p-0'>
           <div id="carouselExampleIndicators" className="carousel slide bg-dark w-100 mt-3" data-bs-ride="carousel">

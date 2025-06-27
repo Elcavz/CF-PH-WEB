@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Logo from "./assets/logo/cf-and-icon.png"
 import '../Navbar/navbar.css';
-import eatonDataQrCode from './assets/logo/Eaton_Data_QRCode.png';
 
 function Navbar() {
   return (
@@ -32,12 +31,7 @@ function Navbar() {
               <Link to="/Environmental">Environment</Link>
               <Link to="/Social">Social</Link>
               <Link to="/Governance">Governance</Link>
-              <div className="dropdown1">
-                <button className="dropbtn1">Eaton Data</button>
-                <div className="dropdown-content1 p-3 border border-dark border-2">
-                  <img className="img-fluid" src={eatonDataQrCode}></img>
-                </div>
-              </div>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-lock"></i>&nbsp;&nbsp;Eaton Data</a>
             </div>
           </div>
           <li>
