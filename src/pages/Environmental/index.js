@@ -213,6 +213,88 @@ function Environmental() {
             </tr>
           </tbody>
         </table>
+
+        <section className='py-5 px-3 container'>
+          <div className='text-center'>
+            <h2>REC CERTIFICATE</h2>
+          </div>
+          <div className='d-flex flex-wrap flex-row justify-content-evenly mt-3'>
+            <img className='img-fluid' src={recCertificate} height={600} width={600}></img>
+          </div>
+          <div className='mt-5'>
+            <h3>Production Device Details</h3>
+            <table class="table table-bordered border-dark">
+              <thead>
+                <tr>
+                  <th>Device</th>
+                  <th>Country of Origin</th>
+                  <th>Energy Source</th>
+                  <th>Technology</th>
+                  <th>Supported</th>
+                  <th>Commissioning Date</th>
+                  <th>Carbon (CO<sub>2</sub> / MWh)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Magat Hydroelectric Power Plant</td>
+                  <td>Philippines</td>
+                  <td>Hydro-electric</td>
+                  <td>Dam</td>
+                  <td>No</td>
+                  <td>1983-08-14</td>
+                  <td>0.000000</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3>Redeemed Certificates</h3>
+            <table class="table table-bordered border-dark">
+              <thead>
+                <tr>
+                  <th>From Certificate ID</th>
+                  <th>To Certificate ID</th>
+                  <th>Number of Certificates</th>
+                  <th>Offset Attributes</th>
+                  <th>Period of Production</th>
+                  <th>Issuer</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0000-0221-5881-7368.010000</td>
+                  <td>0000-0221-5881-7393.009999</td>
+                  <td>25.000000</td>
+                  <td>Incl</td>
+                  <td>2024-06-26 - 2024-07-25</td>
+                  <td>The Green Certificate Company (Central Issuer)</td>
+                </tr>
+                <tr>
+                  <td>0000-0221-5889-1364.460000</td>
+                  <td>0000-0221-5889-1939.459999</td>
+                  <td>575.000000</td>
+                  <td>Incl</td>
+                  <td>2024-07-26 - 2024-08-25</td>
+                  <td>The Green Certificate Company (Central Issuer)</td>
+                </tr>
+              </tbody>
+            </table>
+            <div className='text-center mt-4'>
+              <h3>Auditor Notes</h3>
+              <br></br>
+              <p>
+                This statement is proof of the secure and unique redemption of the I-RECs stated above for the named beneficiary to be reported
+                against consumption in the country during the reporting year stated. I-RECs are assigned to a beneficiary at redemption and cannot be
+                further assigned to a third party. No other use of these I-RECs is valid under the I-REC Standard.
+                Where offset attributes are 'incl' the device registrant, who exclusively holds the environmental attribute rights, has undertaken never
+                to release carbon offsets in association with these MWh; 'excl' means carbon offsets relating to these MWh may be traded
+                independently at some point in the future.
+                Thermal plants emit carbon as part of the combustion process. While this is not zero carbon, it is generally recognised as carbon neutral
+                where the source is recent biomass.
+              </p>
+            </div>
+          </div>
+        </section>
       </section>
       <hr></hr>
       <section className='container py-5'>
@@ -410,88 +492,6 @@ function Environmental() {
             </tr>
           </tbody>
         </table>
-      </section>
-      <hr></hr>
-      <section className='py-5 px-3 container'>
-        <div className='text-center'>
-          <h2>REC CERTIFICATE</h2>
-        </div>
-        <div className='d-flex flex-wrap flex-row justify-content-evenly mt-3'>
-          <img className='img-fluid' src={recCertificate} height={600} width={600}></img>
-        </div>
-        <div className='mt-5'>
-          <h3>Production Device Details</h3>
-          <table class="table table-bordered border-dark">
-            <thead>
-              <tr>
-                <th>Device</th>
-                <th>Country of Origin</th>
-                <th>Energy Source</th>
-                <th>Technology</th>
-                <th>Supported</th>
-                <th>Commissioning Date</th>
-                <th>Carbon (CO<sub>2</sub> / MWh)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Magat Hydroelectric Power Plant</td>
-                <td>Philippines</td>
-                <td>Hydro-electric</td>
-                <td>Dam</td>
-                <td>No</td>
-                <td>1983-08-14</td>
-                <td>0.000000</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h3>Redeemed Certificates</h3>
-          <table class="table table-bordered border-dark">
-            <thead>
-              <tr>
-                <th>From Certificate ID</th>
-                <th>To Certificate ID</th>
-                <th>Number of Certificates</th>
-                <th>Offset Attributes</th>
-                <th>Period of Production</th>
-                <th>Issuer</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>0000-0221-5881-7368.010000</td>
-                <td>0000-0221-5881-7393.009999</td>
-                <td>25.000000</td>
-                <td>Incl</td>
-                <td>2024-06-26 - 2024-07-25</td>
-                <td>The Green Certificate Company (Central Issuer)</td>
-              </tr>
-              <tr>
-                <td>0000-0221-5889-1364.460000</td>
-                <td>0000-0221-5889-1939.459999</td>
-                <td>575.000000</td>
-                <td>Incl</td>
-                <td>2024-07-26 - 2024-08-25</td>
-                <td>The Green Certificate Company (Central Issuer)</td>
-              </tr>
-            </tbody>
-          </table>
-          <div className='text-center mt-4'>
-            <h3>Auditor Notes</h3>
-            <br></br>
-            <p>
-              This statement is proof of the secure and unique redemption of the I-RECs stated above for the named beneficiary to be reported
-              against consumption in the country during the reporting year stated. I-RECs are assigned to a beneficiary at redemption and cannot be
-              further assigned to a third party. No other use of these I-RECs is valid under the I-REC Standard.
-              Where offset attributes are 'incl' the device registrant, who exclusively holds the environmental attribute rights, has undertaken never
-              to release carbon offsets in association with these MWh; 'excl' means carbon offsets relating to these MWh may be traded
-              independently at some point in the future.
-              Thermal plants emit carbon as part of the combustion process. While this is not zero carbon, it is generally recognised as carbon neutral
-              where the source is recent biomass.
-            </p>
-          </div>
-        </div>
       </section>
       <hr></hr>
       <section className='p-5'>
