@@ -312,6 +312,103 @@ function Environmental() {
             </tr>
           </tbody>
         </table>
+
+        <table class="table table-bordered border-dark">
+          <thead>
+            <tr>
+              <th>Sr. No.</th>
+              <th>KPI</th>
+              <th>2022</th>
+              <th>2023</th>
+              <th>2024</th>
+              <th>Target 2025</th>
+              <th>Unit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>% of Tier 1 Suppliers with ISO 14001 Certification</td>
+              <td>45%</td>
+              <td>57%</td>
+              <td>63%</td>
+              <td>75%</td>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>% of Suppliers Audited for Environmental Criteria</td>
+              <td>22%</td>
+              <td>34%</td>
+              <td>94%</td>
+              <td>100%</td>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Procurement Spend on Local Suppliers</td>
+              <td>58%</td>
+              <td>61%</td>
+              <td>64%</td>
+              <td>≥65%</td>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Average Supplier Sustainability Score (Internal)</td>
+              <td>68/100</td>
+              <td>73/100</td>
+              <td>77/100</td>
+              <td>≥80</td>
+              <td>Score</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Supplier Code of Conduct</td>
+              <td>100%</td>
+              <td>100%</td>
+              <td>100%</td>
+              <td>100%</td>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Supplier Contract</td>
+              <td>100%</td>
+              <td>100%</td>
+              <td>100%</td>
+              <td>100%</td>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Corrective Action/ Capacity Building</td>
+              <td>75%</td>
+              <td>80%</td>
+              <td>90%</td>
+              <td>100%</td>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Supplier Risk Assessment</td>
+              <td>62%</td>
+              <td>76%</td>
+              <td>94%</td>
+              <td>100%</td>
+              <td>%</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>C&F Buyers Training</td>
+              <td>100%</td>
+              <td>100%</td>
+              <td>100%</td>
+              <td>100%</td>
+              <td>%</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
       <hr></hr>
       <section className='p-5'>
