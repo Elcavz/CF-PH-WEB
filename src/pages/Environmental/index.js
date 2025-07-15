@@ -162,7 +162,7 @@ function Environmental() {
               <td class="centered">1423</td>
               <td class="centered">1442.42</td>
               <td class="centered">1879.23</td>
-              <td class="centered">2282.46</td>
+              <td class="centered"><div className='alert alert-warning mb-1 p-2'>Included 600 REC</div>1876.31</td>
               <td class="centered ongoing">ongoing</td>
             </tr>
             <tr>
@@ -180,7 +180,7 @@ function Environmental() {
               <td></td>
               <td class="centered negative-value">-33%</td>
               <td class="centered negative-value">-42%</td>
-              <td class="centered negative-value">-49.13%</td>
+              <td class="centered negative-value">57.11%</td>
               <td class="centered ongoing">ongoing</td>
             </tr>
           </tbody>
