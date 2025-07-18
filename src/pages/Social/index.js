@@ -155,7 +155,7 @@ function Social() {
         </div>
         <div class="container mt-5">
           <div className='text-center'>
-            <h2>TRAINING MONITORING</h2>
+            <h2>LABOR & HUMAN RIGHTS TRAINING MONITORING</h2>
           </div>
           <div class="table-responsive">
             <table class="table border-dark table-bordered">
@@ -165,26 +165,288 @@ function Social() {
                   <th>YEAR</th>
                   <th>TARGET (No. of Employees)</th>
                   <th>ACTUAL (No. of Employees)</th>
-                  <th>Average hours of training per employee</th>
                   <th>Percentage % (Employee attended the training)</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>1</td>
-                  <td>2023</td>
-                  <td>350.00</td>
-                  <td>335.00</td>
-                  <td>88.00</td>
-                  <td>95.71%</td>
+                  <td>2022</td>
+                  <td>250.00</td>
+                  <td>250.00</td>
+                  <td>100.00%</td>
                 </tr>
                 <tr>
                   <td>2</td>
+                  <td>2023</td>
+                  <td>350.00</td>
+                  <td>350.00</td>
+                  <td>100.00%</td>
+                </tr>
+                <tr>
+                  <td>3</td>
                   <td>2024</td>
                   <td>503.00</td>
                   <td>503.00</td>
-                  <td>96.00</td>
-                  <td>100%</td>
+                  <td>100.00%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div className='text-center'>
+            <h2>CHILD LABOR INCIDENTS</h2>
+          </div>
+          <div class="table-responsive">
+            <table class="table border-dark table-bordered">
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Year</th>
+                  <th>TARGET</th>
+                  <th>ACTUAL</th>
+                  <th>PERCENTAGE %</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2022</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td class="percentage">0.00%</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>2023</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td class="percentage">0.00%</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>2024</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td class="percentage">0.00%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div className='text-center'>
+            <h2>FORCED LABOR INCIDENTS</h2>
+          </div>
+          <div class="table-responsive">
+            <table class="table border-dark table-bordered">
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Year</th>
+                  <th>TARGET</th>
+                  <th>ACTUAL</th>
+                  <th>PERCENTAGE %</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2022</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td class="percentage">0.00%</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>2023</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td class="percentage">0.00%</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>2024</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td class="percentage">0.00%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div className='text-center'>
+            <h2>HUMAN TRAFFICKING INCIDENTS</h2>
+          </div>
+          <div class="table-responsive">
+            <table class="table border-dark table-bordered">
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Year</th>
+                  <th>TARGET</th>
+                  <th>ACTUAL</th>
+                  <th>PERCENTAGE %</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2022</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td class="percentage">0.00%</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>2023</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td class="percentage">0.00%</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>2024</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td class="percentage">0.00%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div className='text-center'>
+            <h2>SOCIAL DIALOGUE</h2>
+          </div>
+          <div class="table-responsive">
+            <table class="table border-dark table-bordered">
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Year</th>
+                  <th>Attendees</th>
+                  <th>Concerns Raised</th>
+                  <th>Resolved Issues</th>
+                  <th>Percentage of Resolution</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2022</td>
+                  <td>8.00</td>
+                  <td>14.00</td>
+                  <td>14.00</td>
+                  <td class="percentage">100.00%</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>2023</td>
+                  <td>8.00</td>
+                  <td>12.00</td>
+                  <td>12.00</td>
+                  <td class="percentage">100.00%</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>2024</td>
+                  <td>8.00</td>
+                  <td>8.00</td>
+                  <td>8.00</td>
+                  <td class="percentage">100.00%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div className='text-center'>
+            <h2>EXTERNAL STAKEHOLDERS</h2>
+          </div>
+          <div class="table-responsive">
+            <table class="table border-dark table-bordered">
+              <thead>
+                <tr>
+                  <th rowspan="2">No.</th>
+                  <th rowspan="2">Year</th>
+                  <th colspan="2">MMA</th>
+                  <th colspan="2">TOMODACHI</th>
+                  <th rowspan="2">Percentage of Resolution</th>
+                </tr>
+                <tr class="subheader">
+                  <th>Concerns Raised</th>
+                  <th>Resolved Issues</th>
+                  <th>Concerns Raised</th>
+                  <th>Resolved Issues</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2022</td>
+                  <td>7.00</td>
+                  <td>7.00</td>
+                  <td>8.00</td>
+                  <td>8.00</td>
+                  <td>100.00%</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>2023</td>
+                  <td>5.00</td>
+                  <td>5.00</td>
+                  <td>10.00</td>
+                  <td>10.00</td>
+                  <td>100.00%</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>2024</td>
+                  <td>8.00</td>
+                  <td>8.00</td>
+                  <td>6.00</td>
+                  <td>6.00</td>
+                  <td>100.00%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div className='text-center'>
+            <h2>LOST TIME INJURY FREQUENCY RATE</h2>
+          </div>
+          <div class="table-responsive">
+            <table class="table border-dark table-bordered">
+              <thead>
+                <tr>
+                  <th>Sr. No.</th>
+                  <th>Year</th>
+                  <th>Total Man Hours Worked</th>
+                  <th>Lost Time Injury Frequency Rate (LTIFR)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2022</td>
+                  <td class="man-hours">701200</td>
+                  <td class="highlight">0.6</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>2023</td>
+                  <td class="man-hours">945000</td>
+                  <td class="highlight">1.05</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>2024</td>
+                  <td class="man-hours">1431000</td>
+                  <td class="highlight">0.69</td>
                 </tr>
               </tbody>
             </table>

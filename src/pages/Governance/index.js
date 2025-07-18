@@ -220,6 +220,172 @@ function Governance() {
           </tbody>
         </table>
       </section>
+      <section className='mb-5'>
+        <div class="container">
+          <div className='text-center'>
+            <h2>ETHICS TRAINING MONITORING</h2>
+          </div>
+          <div class="table-responsive">
+            <table class="table border-dark table-bordered">
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>YEAR</th>
+                  <th>TARGET (No. of Employees)</th>
+                  <th>ACTUAL (No. of Employees)</th>
+                  <th>Percentage % (Employee attended the training)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2022</td>
+                  <td>250.00</td>
+                  <td>250.00</td>
+                  <td>100.00%</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>2023</td>
+                  <td>350.00</td>
+                  <td>350.00</td>
+                  <td>100.00%</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>2024</td>
+                  <td>503.00</td>
+                  <td>503.00</td>
+                  <td>100.00%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div className='text-center'>
+            <h2>CORRUPTION INCIDENTS</h2>
+          </div>
+          <div class="table-responsive">
+            <table class="table border-dark table-bordered">
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Year</th>
+                  <th>TARGET</th>
+                  <th>ACTUAL</th>
+                  <th>PERCENTAGE %</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2022</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td class="percentage">0.00%</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>2023</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td class="percentage">0.00%</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>2024</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td class="percentage">0.00%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div className='text-center'>
+            <h2>WHISTLE BLOWING INCIDENTS</h2>
+          </div>
+          <div class="table-responsive">
+            <table class="table border-dark table-bordered">
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Year</th>
+                  <th>TARGET</th>
+                  <th>ACTUAL</th>
+                  <th>PERCENTAGE %</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2022</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td class="percentage">0.00%</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>2023</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td class="percentage">0.00%</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>2024</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td class="percentage">0.00%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div className='text-center'>
+            <h2>INFORMATION SECURITY INCIDENTS</h2>
+          </div>
+          <div class="table-responsive">
+            <table class="table border-dark table-bordered">
+              <thead>
+                <tr>
+                  <th>No.</th>
+                  <th>Year</th>
+                  <th>TARGET</th>
+                  <th>ACTUAL</th>
+                  <th>PERCENTAGE %</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2022</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td class="percentage">0.00%</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>2023</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td class="percentage">0.00%</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>2024</td>
+                  <td>0.00</td>
+                  <td>0.00</td>
+                  <td class="percentage">0.00%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
