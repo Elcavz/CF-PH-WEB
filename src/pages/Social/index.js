@@ -434,7 +434,7 @@ function Social() {
                   <td>1</td>
                   <td>2022</td>
                   <td class="man-hours">701200</td>
-                  <td class="highlight">0.6</td>
+                  <td class="highlight">1.6</td>
                 </tr>
                 <tr>
                   <td>2</td>
