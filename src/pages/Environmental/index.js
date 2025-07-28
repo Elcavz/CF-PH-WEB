@@ -86,7 +86,7 @@ function Environmental() {
           <h2>Carbon Reduction Roadmap For C&F Operations</h2>
         </div>
         <p className='fs-3'>
-          From 2019 to 2024, C&F reduced its CO₂ intensity (per unit of sales) by 49.13% through strategic initiatives, including process automation, operational efficiency improvements, investments in energy-efficient assets, electrification, and electricity decarbonization.
+          From 2019 to 2024, C&F reduced its CO₂ intensity (per unit of sales) by 57.11% through strategic initiatives, including process automation, operational efficiency improvements, investments in energy-efficient assets, electrification, and electricity decarbonization.
 
           Building on this progress, we are committed to further reducing our CO₂ intensity by up to 75% by 2027, reinforcing our dedication to sustainability and environmental stewardship.
 
