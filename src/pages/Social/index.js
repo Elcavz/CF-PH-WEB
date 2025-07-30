@@ -80,7 +80,7 @@ function Social() {
           </div>
         </div>
       </div>
-      <hr></hr>
+      {/* <hr></hr>
       <section id='labor-and-human-rights-kpi' className='container py-5'>
         <div className='text-center'>
           <h2>LABOR AND HUMAN RIGHTS KPIs (2024)</h2>
@@ -496,7 +496,7 @@ function Social() {
             </tr>
           </tbody>
         </table>
-      </section>
+      </section> */}
     </div>
   )
 }
