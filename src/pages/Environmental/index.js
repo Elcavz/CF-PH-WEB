@@ -296,7 +296,7 @@ function Environmental() {
           </div>
         </section>
       </section>
-      <hr></hr>
+      {/* <hr></hr>
       <section className='container py-5'>
         <div className='text-center'>
           <h2>YEAR 2024 CONSUMPTION</h2>
@@ -317,7 +317,7 @@ function Environmental() {
             </tr>
           </tbody>
         </table>
-      </section>
+      </section> */}
       <hr></hr>
       <section className='container py-5'>
         <div className='text-center'>
