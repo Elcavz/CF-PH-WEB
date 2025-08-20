@@ -296,7 +296,7 @@ function Environmental() {
           </div>
         </section>
       </section>
-      {/* <hr></hr>
+      <hr></hr>
       <section className='container py-5'>
         <div className='text-center'>
           <h2>YEAR 2024 CONSUMPTION</h2>
@@ -317,7 +317,7 @@ function Environmental() {
             </tr>
           </tbody>
         </table>
-      </section> */}
+      </section>
       <hr></hr>
       <section className='container py-5'>
         <div className='text-center'>
@@ -611,7 +611,7 @@ function Environmental() {
         </div>
       </section>
       <hr></hr>
-      {/* <section className='py-5 px-3'>
+      <section className='py-5 px-3'>
         <div className='text-center'>
           <h2>AMBIENT AIR REPORT 2024</h2>
         </div>
@@ -655,7 +655,7 @@ function Environmental() {
           <img className='img-fluid border border-dark mt-4' src={certificateOfTreatment2024} height={480} width={480}></img>
         </div>
       </section>
-      <hr></hr> */}
+      <hr></hr>
       <div className='container py-5'>
         <div className='text-center mb-5'>
           <h2>Resource Efficiency Through Innovation</h2>

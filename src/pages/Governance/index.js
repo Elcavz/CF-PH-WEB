@@ -172,7 +172,7 @@ function Governance() {
           </div>
         </div>
       </div>
-      {/* <hr></hr>
+      <hr></hr>
       <section className='container py-5'>
         <div className='text-center'>
           <h2>ETHICS KPI 2024</h2>
@@ -385,7 +385,7 @@ function Governance() {
             </table>
           </div>
         </div>
-      </section> */}
+      </section>
     </div>
   )
 }
