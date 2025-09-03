@@ -297,7 +297,7 @@ function Environmental() {
         </section>
       </section>
       <hr></hr>
-      <section className='container py-5'>
+      {/* <section className='container py-5'>
         <div className='text-center'>
           <h2>YEAR 2024 CONSUMPTION</h2>
         </div>
@@ -655,7 +655,7 @@ function Environmental() {
           <img className='img-fluid border border-dark mt-4' src={certificateOfTreatment2024} height={480} width={480}></img>
         </div>
       </section>
-      <hr></hr>
+      <hr></hr> */}
       <div className='container py-5'>
         <div className='text-center mb-5'>
           <h2>Resource Efficiency Through Innovation</h2>
