@@ -453,7 +453,7 @@ function Social() {
           </div>
         </div>
       </section>
-      <hr></hr> */}
+      <hr></hr>
       <section className='container py-5'>
         <div className='text-center'>
           <h2>INTERNAL DIVERSITY KPI</h2>
@@ -496,7 +496,7 @@ function Social() {
             </tr>
           </tbody>
         </table>
-      </section>
+      </section> */}
     </div>
   )
 }
