@@ -24,6 +24,7 @@ import fourthQuarterDomesticWasteWater2024Result1 from './assets/2024-4th-Quarte
 import fourthQuarterDomesticWasteWater2024Result2 from './assets/2024-4th-Quarter-Domestic-Wastewater-Result2.png';
 import certificateOfTreatment2024 from './assets/certificate-of-treatment-2024.png';
 import recCertificate from './assets/REC-Certificate.png';
+import ghgEmission from './assets/4600148b-3716-424f-90f7-f0a922de7c50.png';
 
 function Environmental() {
   return (
@@ -84,16 +85,17 @@ function Environmental() {
       <div className='container py-5'>
         <div className='text-center mb-5'>
           <h2>Carbon Reduction Roadmap For C&F Operations</h2>
+        <img className='img-fluid' src={ghgEmission}></img>
         </div>
-        <p className='fs-3'>
+        {/* <p className='fs-3'>
           From 2019 to 2024, C&F reduced its CO₂ intensity (per unit of sales) by 57.11% through strategic initiatives, including process automation, operational efficiency improvements, investments in energy-efficient assets, electrification, and electricity decarbonization.
 
           Building on this progress, we are committed to further reducing our CO₂ intensity by up to 75% by 2027, reinforcing our dedication to sustainability and environmental stewardship.
 
           Additionally, in 2024, C&F procured 600 Renewable Energy Certificates (RECs) to support clean energy generation. This milestone will soon be reflected on our website as part of our transparent sustainability reporting.
-        </p>
+        </p> */}
       </div>
-      <hr></hr>
+      {/* <hr></hr>
       <div className='container py-5'>
         <div className='d-sm-flex flex-row flex-wrap justify-content-between'>
           <div className='w-50 p-5 border border-dark'>
@@ -120,8 +122,8 @@ function Environmental() {
           </div>
         </div>
       </div>
-      <hr></hr>
-      <section className='container py-5'>
+      <hr></hr> */}
+      {/* <section className='container py-5'>
         <div className='text-center'>
           <h2>GHG Emission Value/Inventory</h2>
         </div>
@@ -295,7 +297,7 @@ function Environmental() {
             </div>
           </div>
         </section>
-      </section>
+      </section> */}
       <hr></hr>
       {/* <section className='container py-5'>
         <div className='text-center'>

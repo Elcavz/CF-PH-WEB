@@ -110,8 +110,8 @@ function Home() {
             </button>
           </div>
         </div>
-        <div className='container py-5 my-3 px-5 d-flex flex-row border border-danger border-3 rounded-top-5 rounded-bottom-5'>
-          <div className='px-5 d-flex flex-column justify-content-evenly align-items-center'>
+        <div className='container py-4 py-md-5 my-3 px-3 px-md-5 d-flex flex-column flex-lg-row align-items-center border border-danger border-3 rounded-top-5 rounded-bottom-5 intro-section'>
+          <div className='px-0 px-md-4 d-flex flex-column justify-content-evenly intro-section-text'>
             <p>
               C&F, founded in Galway, Ireland, in 1989, specializes in delivering precision-engineered sheet metal solutions to diverse industries.
             </p>
@@ -122,8 +122,8 @@ function Home() {
               From design to assembly and integration, we deliver customized production solutions tailored to your needs.
             </p>
           </div>
-          <div>
-            <img className='img-fluid' src={img1}></img>
+          <div className='intro-section-media mt-3 mt-lg-0'>
+            <img className='img-fluid' src={img1} alt='C&F Manufacturing facility'></img>
           </div>
         </div>
 
@@ -311,29 +311,29 @@ function Home() {
           </div>
         </div>
         <div id='footer'>
-          <div id='contact' className='py-5'>
+          <div id='contact' className='py-5 px-3 px-md-4'>
             <h4>Contact Us</h4>
-            <div className='d-flex justify-content-center flex-row flex-wrap'>
-              <div className='w-50 position-relative'>
+            <div className='d-flex justify-content-center flex-row flex-wrap contact-layout'>
+              <div className='contact-form-col position-relative'>
                 <form>
-                  <div className='d-flex flex-row justify-content-start gap-3 mb-3'>
-                    <input className='ps-2' placeholder='First Name'></input>
-                    <input className='ps-2' placeholder='Last Name'></input>
+                  <div className='contact-input-row'>
+                    <input className='ps-2 form-control' placeholder='First Name'></input>
+                    <input className='ps-2 form-control' placeholder='Last Name'></input>
                   </div>
-                  <div className='d-flex flex-row justify-content-start gap-3 mb-3'>
-                    <input className='ps-2' placeholder='Email Address'></input>
-                    <input className='ps-2' placeholder='Phone Number'></input>
+                  <div className='contact-input-row'>
+                    <input className='ps-2 form-control' placeholder='Email Address'></input>
+                    <input className='ps-2 form-control' placeholder='Phone Number'></input>
                   </div>
                   <div className='mb-2'>
-                    <textarea className='ps-2' placeholder='Your Inquiry'></textarea>
+                    <textarea className='ps-2 form-control' placeholder='Your Inquiry'></textarea>
                   </div>
                   <div>
                     <button className='btn btn-danger border rounded-0'>Submit</button>
                   </div>
                 </form>
               </div>
-              <div className='w-50'>
-                <img className='img-fluid p-5' src='https://www.cftooling.ie/wp-content/uploads/WORLD-MAP2.png'></img>
+              <div className='contact-map-col'>
+                <img className='img-fluid p-3 p-lg-5' src='https://www.cftooling.ie/wp-content/uploads/WORLD-MAP2.png' alt='World map'></img>
               </div>
             </div>
           </div>
