@@ -24,7 +24,7 @@ import fourthQuarterDomesticWasteWater2024Result1 from './assets/2024-4th-Quarte
 import fourthQuarterDomesticWasteWater2024Result2 from './assets/2024-4th-Quarter-Domestic-Wastewater-Result2.png';
 import certificateOfTreatment2024 from './assets/certificate-of-treatment-2024.png';
 import recCertificate from './assets/REC-Certificate.png';
-import ghgEmission from './assets/4600148b-3716-424f-90f7-f0a922de7c50.png';
+import ghgEmission from './assets/image.png';
 
 function Environmental() {
   return (
